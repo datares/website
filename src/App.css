@@ -14,6 +14,15 @@
 }
 
 .App-header {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.General-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,10 +38,26 @@
   align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  text-align: left;
+}
+
+.Stats-header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #47A4B8;
+  color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Wave-spacing {
+  margin-top: 10%;
 }
 
 @keyframes App-logo-spin {
