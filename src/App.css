@@ -60,6 +60,13 @@
   margin-top: 10%;
 }
 
+.Footer {
+  min-height: 35vh;
+  margin-top: 2%;
+  justify-content: center;
+  font-size: 2vmin;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

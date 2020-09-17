@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header, Menu, 
-        Button, Divider, Image,
-        Grid, Container, Statistic} from 'semantic-ui-react';
+        Button, Divider, Image, Icon,
+        Grid, Container} from 'semantic-ui-react';
 
 import Particles from 'react-particles-js';
 
@@ -57,7 +57,7 @@ class App extends React.Component {
           </div>
         <div className="App">
           <div className="App-header">
-            <Container>
+            <Container fluid>
               <Image src={logo} size="huge" centered></Image>
             <br></br>
             <p>
@@ -129,12 +129,21 @@ class App extends React.Component {
                         We publish a variety of data centric journal articles.
                         Take a look at some of our featured stories.
                       </p>
+                      <a href='/datablog'>
+                      <Button size="huge" color="orange">
+                        Learn More
+                      </Button></a>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
             </Container>
           </div>
           <Divider/>
+          {/* <div className='canvas-image'>
+            <Container fluid>
+              <Image src={canvasImage} floated='right' fluid></Image>
+            </Container>
+          </div> */}
           <div className="datares-header">
             <Container>
               <Grid divided='vertically'>
@@ -148,6 +157,10 @@ class App extends React.Component {
                     We tackle advanced machine learning problems in the areas of computer vision, 
                     natural language processing, and reinforcement learning. 
                   </p>
+                  <a href="/research">
+                  <Button size="huge" color="orange">
+                        Learn More
+                  </Button></a>
                   </div>
                   <br></br>
                   <div style={{marginTop: 100}}>
@@ -159,6 +172,10 @@ class App extends React.Component {
                     We offer pro bono consulting services for startups 
                     and companies within the Los Angeles area.
                     </p>
+                    <a href='/consulting'>
+                    <Button size="huge" color="orange">
+                        Learn More
+                    </Button></a>
                   </div>
                 </Grid.Row>
               </Grid>
@@ -166,18 +183,20 @@ class App extends React.Component {
           </div>
           <Divider/>
           <div className="General-header">
-            <Header style={{fontSize: 40}}>
-              Want To Contribute To DataRes?
-            </Header> <br/>
-            <Button size="massive" color="orange" >
-              Sponsor Us
-            </Button>
-            <div className="Wave-spacing">
-              <Image src={wave2} size='massive'></Image>
-            </div>
+            <Container fluid>
+              <Header style={{fontSize: 40}}>
+                Want To Contribute To DataRes?
+              </Header> <br/>
+              <Button size="massive" color="orange" >
+                Sponsor Us
+              </Button>
+              <div className="Wave-spacing">
+                <Image src={wave2} size='massive'></Image>
+              </div>
+            </Container>
           </div>
           <div className="General-header">
-            <Container>
+            <Container fluid>
               <Header style={{fontSize: 40}}>
                 Our Team              
               </Header>
@@ -185,10 +204,43 @@ class App extends React.Component {
           </div>
           <Divider/>
           <div className="General-header">
-            <Container>
+            <Container fluid>
               <Header style={{fontSize: 40}}>
                 Where We Have Been              
               </Header>
+            </Container>
+          </div>
+          <Divider/>
+          <div className='Footer'>
+            <Container fluid style={{marginTop: 20, marginBottom: 20}}>
+              <Image src={logo} size='medium' centered></Image>
+              <br></br>
+              <p>
+              If you are interested in learning more about our organization or collaborating with us, 
+              you can reach out to us at <br></br> 
+              <a href="mailto:ucladatares@gmail.com">ucladatares@gmail.com</a> or get in touch with us online.
+              </p> <br></br>
+              <div>
+                <Button color='facebook'>
+                  <Icon name='facebook' /> Facebook
+                </Button>
+                <Button color='twitter'>
+                  <Icon name='twitter' /> Twitter
+                </Button>
+                <Button color='linkedin'>
+                  <Icon name='linkedin' /> LinkedIn
+                </Button>
+                <Button color='instagram'>
+                  <Icon name='instagram' /> Instagram
+                </Button>
+                <Button color='youtube'>
+                  <Icon name='youtube' /> YouTube
+                </Button>
+              </div>
+              <br></br><br></br>
+              <p>
+              © DataRes 2020 
+              </p>
             </Container>
           </div>
         </div>
