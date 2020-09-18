@@ -13,6 +13,19 @@
   }
 }
 
+.Landing-header {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.Navbar-items {
+  font-size: 3em;
+}
+
 .App-header {
   min-height: 75vh;
   display: flex;
@@ -32,7 +45,7 @@
 }
 
 .datares-header {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: left;

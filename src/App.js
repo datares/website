@@ -8,11 +8,11 @@ import Particles from 'react-particles-js';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
-import logo from './images/logo.png';
+import logo from './images/logo.svg';
 import orangeBar from './images/orange_bar.svg';
-import wave1 from './images/wave1.svg';
-import wave2 from './images/wave2.svg';
-import canvasImage from './images/canvas.svg';
+import navbarWave from './images/navbar_wave.svg';
+import bottomWave from './images/bottom_wave.svg';
+import teamWave from './images/teampage_wave.svg';
 
 class App extends React.Component {
   constructor() {
@@ -24,39 +24,55 @@ class App extends React.Component {
     const {activeItem} = this.state;
     return (
       <div>
-          <div style={{padding: 20}}>
+          <div style={{padding: 20, 
+                       backgroundImage: `url(${navbarWave})`,
+                       backgroundSize: "cover",
+                       maxHeight: "auto",
+                       height: "45vh"}}>
+            <div className="Navbar-items">
             <Menu position="right" size="massive" secondary>
               <Menu.Menu position='right'>
                 <Menu.Item
                   name='Home'
                   active={activeItem === 'Home'}
                   onClick={this.handleItemClick}
-                />
+                  style={{color: "white", 
+                          fontWeight: "bold",
+                          fontSize: 20}} />
                 <Menu.Item
                   name='Blog'
                   active={activeItem === 'Blog'}
                   onClick={this.handleItemClick}
-                />
+                  style={{color: "white", 
+                          fontWeight: "bold",
+                          fontSize: 20}} />
                 <Menu.Item
                   name='Consulting'
                   active={activeItem === 'Friends'}
                   onClick={this.handleItemClick}
-                />
+                  style={{color: "white", 
+                          fontWeight: "bold",
+                          fontSize: 20}} />
                 <Menu.Item
                   name='Research'
                   active={activeItem === 'Research'}
                   onClick={this.handleItemClick}
-                />
+                  style={{color: "white", 
+                          fontWeight: "bold",
+                          fontSize: 20}} />
                 <Menu.Item
                   name='Team'
                   active={activeItem === 'Team'}
                   onClick={this.handleItemClick}
-                />
+                  style={{color: "white", 
+                          fontWeight: "bold",
+                          fontSize: 20}} />
               </Menu.Menu>
             </Menu>
+            </div>
           </div>
         <div className="App">
-          <div className="App-header">
+          <div className="Landing-header">
             <Container fluid>
               <Image src={logo} size="huge" centered></Image>
             <br></br>
@@ -70,9 +86,6 @@ class App extends React.Component {
             </Button>
             </Container>
           </div>
-          <Container fluid>
-            <Image src={wave1} size="massive" fluid></Image>
-          </Container>
           <div className="datares-header">
               <Container>
                 <Grid>
@@ -190,24 +203,6 @@ class App extends React.Component {
               <Button size="massive" color="orange" >
                 Sponsor Us
               </Button>
-              <div className="Wave-spacing">
-                <Image src={wave2} size='massive'></Image>
-              </div>
-            </Container>
-          </div>
-          <div className="General-header">
-            <Container fluid>
-              <Header style={{fontSize: 40}}>
-                Our Team              
-              </Header>
-            </Container>
-          </div>
-          <Divider/>
-          <div className="General-header">
-            <Container fluid>
-              <Header style={{fontSize: 40}}>
-                Where We Have Been              
-              </Header>
             </Container>
           </div>
           <Divider/>
