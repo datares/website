@@ -13,6 +13,8 @@ import orangeBar from './images/orange_bar.svg';
 import navbarWave from './images/navbar_wave.svg';
 import bottomWave from './images/bottom_wave.svg';
 import teamWave from './images/teampage_wave.svg';
+import numberWave from './images/number_wave.svg';
+import datablogWave from './images/datablog_wave.svg';
 
 class App extends React.Component {
   constructor() {
@@ -24,11 +26,11 @@ class App extends React.Component {
     const {activeItem} = this.state;
     return (
       <div>
-          <div style={{padding: 20, 
-                       backgroundImage: `url(${navbarWave})`,
+
+          <div style={{backgroundImage: `url(${navbarWave})`,
                        backgroundSize: "cover",
-                       maxHeight: "auto",
-                       height: "45vh"}}>
+                       height: "45vh",
+                       width: "100%"}}>
             <div className="Navbar-items">
             <Menu position="right" size="massive" secondary>
               <Menu.Menu position='right'>
@@ -71,6 +73,7 @@ class App extends React.Component {
             </Menu>
             </div>
           </div>
+
         <div className="App">
           <div className="Landing-header">
             <Container fluid>
@@ -81,18 +84,21 @@ class App extends React.Component {
                 The Premier Data Science Organization @ UCLA
               </strong> 
             </p><br></br>
-            <Button size="massive" color="orange" style={{fontSize: 25}}>
+            <Button size="massive" color="orange" style={{fontSize: "2rem", 
+                                                          borderRadius: 35, 
+                                                          width: "30vh"}}>
               Join Us
             </Button>
             </Container>
           </div>
-          <div className="datares-header">
+
+          <div className="intro-header">
               <Container>
                 <Grid>
                   <br></br>
                   <Grid.Row>
                     <Image src={ orangeBar } size='large'></Image>
-                    <Header style={{fontSize: 40}}>
+                    <Header style={{fontSize: 50}}>
                       At DataRes, we solve problems and craft stories with data.
                     </Header>
                     <p>
@@ -104,12 +110,16 @@ class App extends React.Component {
                   </Grid.Row>
                 </Grid>
               </Container>
-            </div>
-          <div className='Stats-header'>
+          </div>
+
+          <div className='Stats-header' style={{backgroundImage: `url(${numberWave})`,
+                                                backgroundSize: "cover",
+                                                height: "50vh",
+                                                width: "auto"}}>
             <Container fluid>
               <Grid>
-                <Grid.Row columns={4}>
-                  <Grid.Column>
+                <Grid.Row columns={4} style={{margin: 'auto'}}>
+                  <Grid.Column stretched>
                     <Header style={{fontSize: 100, color: 'white'}} centered>18</Header>
                     <p><strong>Articles Published</strong></p>
                   </Grid.Column>
@@ -129,13 +139,17 @@ class App extends React.Component {
               </Grid>
             </Container>
           </div>
-          <div className='datares-header'>
+
+          <div className='datablog-header' style={{backgroundImage: `url(${datablogWave})`,
+                                                backgroundSize: "cover",
+                                                height: "30vh",
+                                                width: "auto"}}>
             <Container>
               <Grid>
                   <Grid.Row>
                     <Grid.Column>
                       <Image src={ orangeBar } size='large'></Image>
-                      <Header style={{fontSize: 40}}>
+                      <Header style={{fontSize: 40, color: 'white'}}>
                         Data Blog: Creating data-backed narratives.
                       </Header>
                       <p>
@@ -151,12 +165,7 @@ class App extends React.Component {
                 </Grid>
             </Container>
           </div>
-          <Divider/>
-          {/* <div className='canvas-image'>
-            <Container fluid>
-              <Image src={canvasImage} floated='right' fluid></Image>
-            </Container>
-          </div> */}
+
           <div className="datares-header">
             <Container>
               <Grid divided='vertically'>
@@ -194,7 +203,7 @@ class App extends React.Component {
               </Grid>
             </Container>
           </div>
-          <Divider/>
+
           <div className="General-header">
             <Container fluid>
               <Header style={{fontSize: 40}}>
@@ -205,7 +214,7 @@ class App extends React.Component {
               </Button>
             </Container>
           </div>
-          <Divider/>
+
           <div className='Footer'>
             <Container fluid style={{marginTop: 20, marginBottom: 20}}>
               <Image src={logo} size='medium' centered></Image>
