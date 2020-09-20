@@ -1,7 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Card, Grid} from 'semantic-ui-react';
+            Segment, Grid} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/DataBlog.css';
@@ -14,7 +14,7 @@ import wave from '../Assets/DataBlog/wave.svg';
 
 // Temporarily added articles (in datewise order)
 // Will eventually replace with articles dynamically updated from Medium website
-var Articles = [
+const Articles = [
     {
         'url': 'https://medium.com/@ucladatares/secrets-to-maximizing-success-in-the-speed-dating-experience-7f4f50c40019',
         'image': 'https://miro.medium.com/max/1400/0*KiVI-aajNSVLC7wc',
@@ -87,9 +87,9 @@ var Articles = [
     }
 ]
 
-const articles_per_row = 4;
-const num_articles = Articles.length;
-const num_rows = Math.ceil(num_articles/articles_per_row);
+// const articles_per_row = 4;
+// const num_articles = Articles.length;
+// const num_rows = Math.ceil(num_articles/articles_per_row);
 
 class DataBlog extends React.Component {
     render() {
@@ -101,10 +101,10 @@ class DataBlog extends React.Component {
                     <Container>
                         <Grid>
                             <Grid.Row columns={2}>
-                                <Grid.Column>
+                                <Grid.Column width={7}>
                                     <Image src={blogImage} size='huge'></Image>
                                 </Grid.Column>
-                                <Grid.Column>
+                                <Grid.Column width={9}>
                                     <div className='Title'>
                                         <Header> Data Blog </Header>
                                     </div>
@@ -131,33 +131,27 @@ class DataBlog extends React.Component {
                 {/* Will replace with medium API for dynamic updates when 
                     access token is approved */}
                 <div>
-                    <Container fluid>
-                        <div className='Latest-Title'>
+                    <Container>
+                        {/* <div className='Latest-Title'>
                             <Header >
                                 Latest DataBlog Articles
                             </Header>
-                        </div>
-                        <div>
+                        </div> */}
                             {/* TODO: Need to create an auto grid */}
                             {Articles.map(article => (
-                                    <div className='Gallery'>
+                                    <Container style={{padding: 20}}>
                                     <a href={article.url} rel="noopener noreferrer" target="_blank">
-                                    <Card>
-                                        <Image src={article.image} wrapped ui={false}></Image>
-                                        <Card.Content>
-                                            <Card.Header>{article.title}</Card.Header><br></br>
-                                            <Card.Meta>{article.meta}</Card.Meta><br></br>
-                                        </Card.Content>
-                                        <Card.Content extra>
-                                            <span style={{color: "black"}}>
+                                    <Segment size="small" onClick={() => {}}>
+                                        <Image centered size="large" src={article.image}></Image>
+                                            <Header style={{fontSize: 20}}>{article.title}</Header>
+                                            <Header style={{fontSize: 15}}>{article.meta}</Header>
+                                            <div style={{ fontSize: 12, color: "black"}}>
                                                 {article.authors}
-                                            </span>
-                                        </Card.Content>
-                                    </Card>
+                                            </div>
+                                    </Segment>
                                     </a>
-                                    </div>
+                                    </Container>
                             ))}
-                        </div>
                     </Container>
                 </div>
 

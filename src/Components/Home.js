@@ -18,9 +18,8 @@ import bottomWave from '../Assets/Home/bottom_wave.svg';
 class Home extends React.Component {
     render() {
         return (
-        <div className="Home">
-          
-          <div className="Landing-header">
+        <div>
+          <div >
             <Container fluid>
               <Image src={logo} size="huge" centered></Image>
             <br></br>

@@ -1,7 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Card, Grid} from 'semantic-ui-react';
+            Segment, Grid, Divider} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Research.css';
@@ -74,47 +74,39 @@ class Research extends React.Component {
 
                 {/* Ideally, add react search bar */}
 
-                
+                <Container>
                 <Grid columns={2}>
                     {/* Will replace with medium API for dynamic updates when 
                     access token is approved */}
-                    <Grid.Row>
-                        <div>
+                    <Grid.Column width={8}>
                         <Container fluid>
-                            <div className='Latest-Research-Title'>
-                                <Header>
+                                <Header style={{fontSize: 40}}>
                                     Latest Research Articles
                                 </Header>
-                            </div>
                             <div>
                                 {/* TODO: Need to create an auto grid */}
                                 {Articles.map(article => (
-                                        <div className="Gallery">
+                                        <Container style={{padding: 20}}>
                                         <a href={article.url} rel="noopener noreferrer" target="_blank">
-                                        <Card>
-                                            <Image src={article.image} wrapped ui={false}></Image>
-                                            <Card.Content>
-                                                <Card.Header>{article.title}</Card.Header><br></br>
-                                                <Card.Meta>{article.meta}</Card.Meta><br></br>
-                                            </Card.Content>
-                                            <Card.Content extra>
-                                                <span style={{color: "black"}}>
+                                        <Segment size="small" onClick={() => {}}>
+                                            <Image centered size="large" src={article.image}></Image>
+                                                <Header style={{fontSize: 20}}>{article.title}</Header>
+                                                <Header style={{fontSize: 15}}>{article.meta}</Header>
+                                                <div style={{ fontSize: 12, color: "black"}}>
                                                     {article.authors}
-                                                </span>
-                                            </Card.Content>
-                                        </Card>
+                                                </div>
+                                        </Segment>
                                         </a>
-                                        </div>
+                                        </Container>
                                 ))}
                             </div>
                         </Container>
-                        </div>
-                    </Grid.Row>
-                    <Grid.Row>
-                        <YouTube videoId="FgzM3zpZ55o" opts={youtubeOpts} onReady={this._onReady} />;         
-                    </Grid.Row>
+                    </Grid.Column>
+                    <Grid.Column width={8}>
+                        <YouTube videoId="FgzM3zpZ55o" opts={youtubeOpts} onReady={this._onReady} />         
+                    </Grid.Column>
                 </Grid>
-
+                </Container>
             </div>
         );
     }
