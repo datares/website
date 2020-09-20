@@ -1,0 +1,14 @@
+.Title {
+    font-size: 3em;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.Gallery {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+}

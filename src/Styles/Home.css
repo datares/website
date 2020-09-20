@@ -1,0 +1,112 @@
+.Home {
+    text-align: center;
+    color: black;
+}
+
+.Landing-header {
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.App-header {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  }
+  
+.General-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.datares-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: left;
+}
+
+.intro-header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: left;
+}
+
+.datablog-header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: left;
+    color: white;
+}
+
+.research-header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: left;
+    color: black;
+}
+
+.contribute-header {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+    color: black;
+}
+
+.contribute-header-description {
+    margin-top: 5%;
+}
+
+.Stats-header {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.Wave-spacing {
+    margin-top: 10%;
+}
+
+.Footer {
+    min-height: 30vh;
+    justify-content: center;
+    font-size: 2vmin;
+}
