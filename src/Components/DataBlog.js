@@ -135,7 +135,8 @@ class DataBlog extends React.Component {
                 <div style={{backgroundImage: `url(${wave})`,
                                                 backgroundSize: "cover",
                                                 height: "50vh",
-                                                width: "auto"}}>
+                                                width: "auto",
+                                                paddingBottom: 80}}>
                 </div>
 
                 {/* Ideally, add react search bar */}
@@ -143,7 +144,7 @@ class DataBlog extends React.Component {
                 {/* Will replace with medium API for dynamic updates when 
                     access token is approved */}
                 <div>
-                    <Container>
+                    <Container style={{paddingBottom: 50}}>
                         {/* <div className='Latest-Title'>
                             <Header >
                                 Latest DataBlog Articles

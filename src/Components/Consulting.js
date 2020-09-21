@@ -26,20 +26,17 @@ class Consulting extends React.Component {
                     <Container>
                         <Grid>
                             <Grid.Row columns={2}>
-                                <Grid.Column>
-                                    <Image src={consultingImage} size='large'></Image>
+                                <Grid.Column width={7}>
+                                    <Image src={ consultingImage } size='large'></Image>
                                 </Grid.Column>
-                                <Grid.Column>
+                                <Grid.Column width={9}>
                                     <div className='Title'>
                                         <Header> Consulting </Header>
                                     </div>
                                     <p className='Description'>
-                                    Our team offers pro-bono consulting to small businesses, leveraging 
-                                    their data to generate meaningful insights and provide concrete 
-                                    business value. 
-                                    {/* In doing so, we will 
-                                    provide our more experienced members the opportunity to hone their 
-                                    data science skillsets out in the real world.  */}
+                                        Our team offers pro-bono consulting to small businesses, leveraging 
+                                        their data to generate meaningful insights and provide concrete 
+                                        business value.
                                     </p>   
                                     <Divider></Divider>                                 
                                 </Grid.Column>
@@ -50,11 +47,14 @@ class Consulting extends React.Component {
                 </div>
 
                 {/* Wave Image */}
-                <div style={{backgroundImage: `url(${wave})`,
-                                                backgroundSize: "cover",
-                                                height: "50vh",
-                                                width: "auto",
-                                                marginTop: '1%'}}>
+                <div>
+                    <div style={{backgroundImage: `url(${wave})`,
+                                                    backgroundSize: "cover",
+                                                    minHeight: "30vh",
+                                                    width: "auto",
+                                                    marginTop: '1%'}}>
+                        
+                    </div>
                 </div>
 
                 {/* Add client list here */}

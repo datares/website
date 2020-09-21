@@ -82,55 +82,61 @@ class Team extends React.Component {
     }
     render() {
         return (
-            <div >
-             {/* Header/Title */}   
-            <Container>
-                    <div className='Title'>
-                        
+            <div>
+            
+                <div style={{paddingBottom: 30, paddingTop: 20}}>
+                    <Header style={{fontSize: 80}}>
+                        Our Team
+                    </Header>
+                </div>
+
+                <div style={{backgroundImage: `url(${wave})`,
+                        backgroundSize: "cover",
+                        minHeight: '80vh',
+                        maxHeight: '120vh',
+                        width: "auto", 
+                        paddingTop: 50}}>
+
+                    {/* Team Description */}
+                    <Container>
+                    <div style={{paddingTop: '10%'}}>
+                        <Container>
+                            <Grid>
+                            <Grid.Row columns={5}>
+                                {row1.map(user => (
+                                    <Grid.Column>
+                                        <Image centered src={user.image} size='small'></Image>
+                                        <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                        <Header style={{fontSize: 16, color: '#F2A173'}}>{user.title}</Header>
+                                    </Grid.Column>
+                                ))}
+                            </Grid.Row>
+                            <Grid.Row columns={4}>
+                                {row2.map(user => (
+                                    <Grid.Column>
+                                        <Image centered src={user.image} size='small'></Image>
+                                        <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                        <Header style={{fontSize: 16, color: '#F2A173'}}>{user.title}</Header>
+                                    </Grid.Column>
+                                ))}
+                            </Grid.Row>
+                            </Grid>
+                        </Container>
                     </div>
-            </Container>
-            {/* Team Description */}
-            <div style={{paddingTop: 40, paddingBottom: 100}}>
-            <div style={{paddingBottom: 100}}>
-            <Header style={{fontSize: 80}}>
-                            Our Team
-            </Header>
+                    </Container>
+
+                    {/* Where we've been */}
+                    <div style={{marginTop: '20%'}}>
+                        <Header style={{fontSize:60}}>
+                                Where We've Been
+                        </Header>
+                        <div>
+                            <Image src={logos} size='massive' style={{marginTop: "5%", marginBottom: "5%"}} centered></Image>
+                        </div>
+                    </div>
+
             </div>
-                <Container style={{paddingTop: 20}}>
-                    <Grid>
-                    <Grid.Row columns={5}>
-                        {row1.map(user => (
-                            <Grid.Column>
-                                <Image centered src={user.image} size='small'></Image>
-                                <Header style={{fontSize: 20}}>{user.name}</Header>
-                                <Header style={{fontSize: 15}}>{user.title}</Header>
-                            </Grid.Column>
-                        ))}
-                    </Grid.Row>
-                    <Grid.Row columns={4}>
-                        {row2.map(user => (
-                             <Grid.Column>
-                                <Image centered src={user.image} size='small'></Image>
-                                <Header style={{fontSize: 20}}>{user.name}</Header>
-                                <Header style={{fontSize: 15}}>{user.title}</Header>
-                             </Grid.Column>
-                        ))}
-                    </Grid.Row>
-                    </Grid>
-                </Container>
-            </div>
-            <Header style={{fontSize:60}}>
-                    Where We've Been
-                </Header>
-            {/* Where we've been */}
-            <div style={{backgroundImage: `url(${wave})`,
-                         backgroundSize: "cover",
-                         width: "auto", 
-                         paddingTop: 50}}>
-                
-                <Image src={logos} size='massive' style={{marginTop: "8%", marginBottom: "10%"}} centered></Image>
-                <br/>
-            </div>
+
             </div>
         );
     }

@@ -22,8 +22,10 @@ class Home extends React.Component {
           <div className="Landing">
             <Container fluid>
               <Image src={logo} size="huge" centered></Image>
-            <div className='SubHeading'>
-              The Premier Data Science Organization @ UCLA
+            <div>
+              <p style={{paddingTop: '3%', fontSize: 25}}>
+                The Premier Data Science Organization @ UCLA
+              </p>
             </div>
             </Container>
           </div>
@@ -32,6 +34,7 @@ class Home extends React.Component {
               <Container>
                 <Grid>
                   <Grid.Row>
+                    <Grid.Column>
                     <Image src={ orangeBar } size='large'></Image>
                       <Header style={{fontSize: "2em"}}>
                         At DataRes, we solve problems and craft stories with data.
@@ -42,6 +45,7 @@ class Home extends React.Component {
                         with data, creating powerful visualizations, or building
                         predictive models, you have a home at DataRes.
                       </p>
+                      </Grid.Column>
                   </Grid.Row>
                 </Grid>
               </Container>
@@ -51,24 +55,24 @@ class Home extends React.Component {
                                                 backgroundSize: "cover",
                                                 height: "50vh",
                                                 width: "auto"}}>
-            <Container fluid>
+            <Container>
               <Grid>
-                <Grid.Row columns={4} style={{margin: 'auto'}}>
-                  <Grid.Column stretched>
-                    <Header style={{fontSize: "3.5em", color: 'white'}} centered>10+</Header>
-                    <p><strong>Articles Published</strong></p>
+                <Grid.Row columns={4}>
+                  <Grid.Column>
+                    <p className="Stat-Number">10+</p>
+                    <p className="Stat-Description">Articles Published</p>
                   </Grid.Column>
                   <Grid.Column>
-                  <Header style={{fontSize: "3.5em", color: 'white'}} centered>5</Header>
-                    <p><strong>Research Projects</strong></p>
+                    <p className="Stat-Number">5</p>
+                    <p className="Stat-Description">Research Projects</p>
                   </Grid.Column>
                   <Grid.Column>
-                  <Header style={{fontSize: "3.5em", color: 'white'}} centered>70+</Header>
-                    <p><strong>Active Members</strong></p>
+                    <p className="Stat-Number">70+</p>
+                    <p className="Stat-Description">Active Members</p>
                   </Grid.Column>
                   <Grid.Column>
-                  <Header style={{fontSize: "3.5em", color: 'white'}} centered>35+</Header>
-                    <p><strong>Companies Represented</strong></p>
+                    <p className="Stat-Number">35+</p>
+                    <p className="Stat-Description">Companies Represented</p>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
@@ -77,7 +81,7 @@ class Home extends React.Component {
 
           <div className='datablog-header' style={{backgroundImage: `url(${datablogWave})`,
                                                 backgroundSize: "cover",
-                                                height: "100vh",
+                                                height: "90vh",
                                                 width: "auto"}}>
             <Container>
               <Grid>
@@ -136,7 +140,7 @@ class Home extends React.Component {
             </Container>
           </div>
 
-          <div className='datablog-header' style={{backgroundImage: `url(${flippedWave})`,
+          <div className='consulting-header' style={{backgroundImage: `url(${flippedWave})`,
                                                   backgroundSize: "cover",
                                                   height: "115vh",
                                                   width: "100%"}}>

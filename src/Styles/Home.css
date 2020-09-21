@@ -7,11 +7,6 @@
     margin-top: 23%;
 }
 
-.SubHeading {
-    padding-top: 3%;
-    font-size: 0.8em;
-}
-
 .Landing-header {
     min-height: 150vh;
     display: flex;
@@ -60,8 +55,15 @@
 }
 
 .datablog-header {
-    min-height: 70vh;
-    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: left;
+    color: white;
+}
+
+.consulting-header {
     flex-direction: column;
     align-items: left;
     justify-content: center;
@@ -71,8 +73,8 @@
 }
 
 .research-header {
-    min-height: 70vh;
     display: flex;
+    min-height: 70vh;
     flex-direction: column;
     align-items: left;
     justify-content: center;
@@ -118,4 +120,38 @@
     min-height: 30vh;
     justify-content: center;
     font-size: 2vmin;
+}
+
+.Stat-Number {
+    font-size: 3.5em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5%;
+    margin: 0;
+}
+
+.Stat-Description {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px){
+    .Stat-Number {
+        font-size: 2em;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        padding: 5%;
+        margin: 5%;
+    }
+    
+    .Stat-Description {
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
 }
