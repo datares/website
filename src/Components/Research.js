@@ -53,21 +53,24 @@ class Research extends React.Component {
                         <Grid>
                             <Grid.Row columns={2}>
                                 <Grid.Column>
-                                    <div className='Title'>
-                                        <Header> Research </Header>
-                                    </div>
+                                <div className='Title'>
+                                    <Header> Research </Header>
+                                </div>
                                     <p className='Description'>
                                         Our teams investigates a range of advanced machine learning problems 
                                         primarily involving deep learning and reinforcement learning. 
                                         <Divider/>
-                                    <div style={{padding: 8}}>
-                                            <Button  fluid floated="right" color="orange" size="massive">Apply</Button>
+                                    <div style={{marginTop: '5%'}}>
+                                            <Button  fluid floated="right" color="orange" size="massive"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    window.location.href='https://airtable.com/shrHMxx13Z10UdXnC';
+                                                }}>Apply</Button>
                                         </div>
                                     </p>
-                                    
                                 </Grid.Column>
                                 <Grid.Column>
-                                    <Image src={researchImage} size='large'></Image>
+                                    <Image src={researchImage} size='large' style={{marginTop: '3%'}}></Image>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
