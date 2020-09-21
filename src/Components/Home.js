@@ -18,19 +18,13 @@ import bottomWave from '../Assets/Home/bottom_wave.svg';
 class Home extends React.Component {
     render() {
         return (
-        <div style={{paddingTop: "8em"}} className="Home">
-          <div >
+        <div>
+          <div className="Landing">
             <Container fluid>
-              <Image src={logo} size="massive" centered></Image>
-            <br></br>
-            <p>
-                The Premier Data Science Organization @ UCLA
-            </p>
-            <Button size="big" color="orange" style={{fontSize: "1em", 
-                                                          borderRadius: 35, 
-                                                          width: "23%"}}>
-              Join Us
-            </Button>
+              <Image src={logo} size="huge" centered></Image>
+            <div className='SubHeading'>
+              The Premier Data Science Organization @ UCLA
+            </div>
             </Container>
           </div>
 
@@ -61,7 +55,7 @@ class Home extends React.Component {
               <Grid>
                 <Grid.Row columns={4} style={{margin: 'auto'}}>
                   <Grid.Column stretched>
-                    <Header style={{fontSize: "3.5em", color: 'white'}} centered>18</Header>
+                    <Header style={{fontSize: "3.5em", color: 'white'}} centered>10+</Header>
                     <p><strong>Articles Published</strong></p>
                   </Grid.Column>
                   <Grid.Column>
