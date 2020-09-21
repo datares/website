@@ -106,7 +106,7 @@ class DataBlog extends React.Component {
                         <Grid>
                             <Grid.Row columns={2}>
                                 <Grid.Column width={7}>
-                                    <Image src={blogImage} size='huge'></Image>
+                                    <Image src={blogImage} size='large'></Image>
                                 </Grid.Column>
                                 <Grid.Column width={9}>
                                     <div className='Title'>
@@ -117,8 +117,12 @@ class DataBlog extends React.Component {
                                         complemented by colorful visualizations. Take a look at some of
                                         the analytical insights we've unearthed.
                                         <Divider/>
-                                        <div style={{padding: 8}}>
-                                            <Button  fluid floated="right" color="orange" size="massive">Apply</Button>
+                                        <div style={{marginTop: '5%'}}>
+                                            <Button fluid floated="right" color="orange" size="massive"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    window.location.href='https://airtable.com/shruXlMn10XpJ6opl';
+                                                }}>Apply</Button>
                                         </div>
                                     </p>
                                 </Grid.Column>

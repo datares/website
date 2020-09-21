@@ -10,7 +10,7 @@ import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
 import consultingImage from '../Assets/Consulting/consulting_image.svg';
-import wave from '../Assets/Consulting/wave.svg';
+import wave from '../Assets/Consulting/bottom_wave.svg';
 
 class Consulting extends React.Component {
     componentDidMount(){
@@ -27,7 +27,7 @@ class Consulting extends React.Component {
                         <Grid>
                             <Grid.Row columns={2}>
                                 <Grid.Column>
-                                    <Image src={consultingImage} size='huge'></Image>
+                                    <Image src={consultingImage} size='large'></Image>
                                 </Grid.Column>
                                 <Grid.Column>
                                     <div className='Title'>
@@ -35,39 +35,30 @@ class Consulting extends React.Component {
                                     </div>
                                     <p className='Description'>
                                     Our team offers pro-bono consulting to small businesses, leveraging 
-                                    their data to generate meaningful insights. 
+                                    their data to generate meaningful insights and provide concrete 
+                                    business value. 
                                     {/* In doing so, we will 
                                     provide our more experienced members the opportunity to hone their 
                                     data science skillsets out in the real world.  */}
-                                    <Divider/>
-                                    <div style={{padding: 8}}>
-                                            <Button  fluid floated="right" color="orange" size="massive">Apply</Button>
-                                        </div>
-                                    </p>
-                                    
+                                    </p>   
+                                    <Divider></Divider>                                 
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
                     </Container>
+                    
                 </div>
 
                 {/* Wave Image */}
                 <div style={{backgroundImage: `url(${wave})`,
                                                 backgroundSize: "cover",
                                                 height: "50vh",
-                                                width: "auto"}}>
+                                                width: "auto",
+                                                marginTop: '1%'}}>
                 </div>
 
                 {/* Add client list here */}
-                <div>
-                    <Container fluid>
-                        <div class='Latest-Title'>
-                            <Header>
-                                Stay tuned for updates.
-                            </Header>
-                        </div>
-                    </Container>
-                </div>
+                <div></div>
 
             </div>
         );

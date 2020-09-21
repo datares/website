@@ -33,15 +33,15 @@ class Home extends React.Component {
                 <Grid>
                   <Grid.Row>
                     <Image src={ orangeBar } size='large'></Image>
-                    <Header style={{fontSize: "2em"}}>
-                      At DataRes, we solve problems and craft stories with data.
-                    </Header>
-                    <p>
-                      We provide a platform for aspiring data scientists and analysts
-                      to collaborate on impactful data projects. If you love playing
-                      with data, creating powerful visualizations, or building
-                      predictive models, you have a home at DataRes.
-                    </p>
+                      <Header style={{fontSize: "2em"}}>
+                        At DataRes, we solve problems and craft stories with data.
+                      </Header>
+                      <p>
+                        We provide a platform for aspiring data scientists and analysts
+                        to collaborate on impactful data projects. If you love playing
+                        with data, creating powerful visualizations, or building
+                        predictive models, you have a home at DataRes.
+                      </p>
                   </Grid.Row>
                 </Grid>
               </Container>
@@ -92,12 +92,14 @@ class Home extends React.Component {
                         We publish a variety of data centric journal articles.
                         Take a look at some of our featured stories.
                       </p>
-                      <a href='/datablog'>
-                      <Button size="huge" color="orange" style={{fontSize: "0.9em", 
-                                                          borderRadius: 35, 
-                                                          width: "50%"}}>
+                      <Button fluid floated='right' size="huge" color="orange" 
+                            onClick={(e) => {
+                                  e.preventDefault();
+                                  window.location.href='/datablog';
+                              }}
+                            style={{borderRadius: 20}}>
                         Learn More
-                      </Button></a>
+                      </Button>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
@@ -118,12 +120,14 @@ class Home extends React.Component {
                       We tackle advanced machine learning problems in the areas of computer vision, 
                       natural language processing, and reinforcement learning. 
                     </p>
-                    <a href="/research">
-                    <Button size="huge" color="orange" style={{fontSize: "0.9em", 
-                                                          borderRadius: 35, 
-                                                          width: "50%"}}>
-                          Learn More
-                    </Button></a>
+                    <Button fluid floated='left' size="huge" color="orange" 
+                            onClick={(e) => {
+                                  e.preventDefault();
+                                  window.location.href='/research';
+                              }}
+                            style={{borderRadius: 20}}>
+                        Learn More
+                      </Button>
                     </div>
                   </Grid.Column>
                   <Grid.Column></Grid.Column>
@@ -150,12 +154,14 @@ class Home extends React.Component {
                       We offer pro bono consulting services for startups 
                       and companies within the Los Angeles area.
                       </p>
-                      <a href='/consulting'>
-                      <Button size="huge" color="orange" style={{fontSize: "0.9em", 
-                                                          borderRadius: 35, 
-                                                          width: "50%"}}>
-                          Learn More
-                      </Button></a>
+                      <Button fluid floated='right' size="huge" color="orange" 
+                            onClick={(e) => {
+                                  e.preventDefault();
+                                  window.location.href='/consulting';
+                              }}
+                            style={{borderRadius: 20}}>
+                        Learn More
+                      </Button>
                     </div>
                   </Grid.Column>
                 </Grid.Row>
@@ -166,13 +172,19 @@ class Home extends React.Component {
           <div className="contribute-header">
             <Container>
               <Header style={{fontSize: "2em"}}>
-                Want To Contribute To DataRes? <br></br> Sponsor Us!
+                Want To Contribute To DataRes? <br></br>
               </Header>
-              <Button size="massive" color="orange" style={{fontSize: "1em", 
-                                                          borderRadius: 35, 
-                                                          width: "30%",
-                                                          marginTop: '5%'}}>
-                Sponsorship Brochure
+              <Button floated='center' size="huge" color="orange" 
+                            onClick={(e) => {
+                                  e.preventDefault();
+                                  window.location.href='https://drive.google.com/file/d/17ypxJqurOepvSfPlGOYvGaoMzVQ5OmFv/view?usp=sharing';
+                              }}
+                            style={{borderRadius: 20,
+                                    width: '40%',
+                                    marginTop: '5%',
+                                    padding: 20,
+                                    fontSize: 25}}>
+                        Sponsor Us
               </Button>
               <div className='contribute-header-description'>
                 <p style={{fontSize: "0.9em"}}>
@@ -193,17 +205,27 @@ class Home extends React.Component {
                                                 width: "auto"}}>
             <Container>
               
-              <Container fluid style={{paddingTop: 200}}>
+              <Container fluid style={{paddingTop: 200, paddingBottom: 50}}>
                 <Grid style={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                 }} columns={2}>
+                  <a href="https://www.facebook.com/ucladatares" target="_blank">
                     <Icon inverted size="huge" color="white" name='facebook' fitted/>
+                  </a>
+                  <a href="https://twitter.com/DataresUcla" target="_blank">
                     <Icon inverted size="huge" color="white" name='twitter' fitted/>
+                  </a>
+                  <a href="https://www.linkedin.com/company/ucla-datares/" target="_blank">
                     <Icon inverted size="huge" color="white" name='linkedin' fitted/>
+                  </a>
+                  <a href="https://www.instagram.com/ucladatares/" target="_blank">
                     <Icon inverted size="huge" color="white" name='instagram' fitted/>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCmKnJ7aUWRcpfc2NMo2-_Hw" target="_blank">
                     <Icon  inverted size="huge" color="white" name='youtube' fitted/>
+                  </a>
                 </Grid>
                 
               </Container>
