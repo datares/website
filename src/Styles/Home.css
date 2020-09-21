@@ -3,6 +3,15 @@
     color: black;
 }
 
+.Landing {
+    margin-top: 23%;
+}
+
+.SubHeading {
+    padding-top: 3%;
+    font-size: 0.8em;
+}
+
 .Landing-header {
     min-height: 150vh;
     display: flex;

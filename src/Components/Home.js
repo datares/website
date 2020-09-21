@@ -19,20 +19,12 @@ class Home extends React.Component {
     render() {
         return (
         <div>
-          <div >
+          <div className="Landing">
             <Container fluid>
               <Image src={logo} size="huge" centered></Image>
-            <br></br>
-            <p>
-              <strong>
-                The Premier Data Science Organization @ UCLA
-              </strong> 
-            </p><br></br>
-            <Button size="massive" color="orange" style={{fontSize: "1em", 
-                                                          borderRadius: 35, 
-                                                          width: "23%"}}>
-              Join Us
-            </Button>
+            <div className='SubHeading'>
+              The Premier Data Science Organization @ UCLA
+            </div>
             </Container>
           </div>
 
@@ -63,7 +55,7 @@ class Home extends React.Component {
               <Grid>
                 <Grid.Row columns={4} style={{margin: 'auto'}}>
                   <Grid.Column stretched>
-                    <Header style={{fontSize: "3.5em", color: 'white'}} centered>18</Header>
+                    <Header style={{fontSize: "3.5em", color: 'white'}} centered>10+</Header>
                     <p><strong>Articles Published</strong></p>
                   </Grid.Column>
                   <Grid.Column>
