@@ -1,7 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image,
-            Grid} from 'semantic-ui-react';
+            Grid, Button, Divider} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Consulting.css';
@@ -13,6 +13,10 @@ import consultingImage from '../Assets/Consulting/consulting_image.svg';
 import wave from '../Assets/Consulting/wave.svg';
 
 class Consulting extends React.Component {
+    componentDidMount(){
+        const {handleActive} = this.props;
+        handleActive("Consulting");
+    }
     render() {
         return (
             <div className='Body'>
@@ -31,10 +35,16 @@ class Consulting extends React.Component {
                                     </div>
                                     <p className='Description'>
                                     Our team offers pro-bono consulting to small businesses, leveraging 
-                                    their data to generate meaningful insights. In doing so, we will 
+                                    their data to generate meaningful insights. 
+                                    {/* In doing so, we will 
                                     provide our more experienced members the opportunity to hone their 
-                                    data science skillsets out in the real world. 
+                                    data science skillsets out in the real world.  */}
+                                    <Divider/>
+                                    <div style={{padding: 8}}>
+                                            <Button  fluid floated="right" color="orange" size="massive">Apply</Button>
+                                        </div>
                                     </p>
+                                    
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>

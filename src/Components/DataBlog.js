@@ -1,7 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Segment, Grid} from 'semantic-ui-react';
+            Segment, Grid, Button, Divider} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/DataBlog.css';
@@ -92,6 +92,10 @@ const Articles = [
 // const num_rows = Math.ceil(num_articles/articles_per_row);
 
 class DataBlog extends React.Component {
+    componentDidMount(){
+        const {handleActive} = this.props;
+        handleActive("Data Blog");
+    }
     render() {
         return (
             <div className='Body'>
@@ -112,6 +116,10 @@ class DataBlog extends React.Component {
                                         Our teams publish a variety of data-centric journal articles,
                                         complemented by colorful visualizations. Take a look at some of
                                         the analytical insights we've unearthed.
+                                        <Divider/>
+                                        <div style={{padding: 8}}>
+                                            <Button  fluid floated="right" color="orange" size="massive">Apply</Button>
+                                        </div>
                                     </p>
                                 </Grid.Column>
                             </Grid.Row>

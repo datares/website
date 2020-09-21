@@ -23,6 +23,7 @@ class App extends React.Component {
     this.state = { activeItem: 'Home' }
   }
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleActive = (e, new_active) => this.setState({ activeItem: new_active })
   render () {
     const {activeItem} = this.state;
     return (
@@ -34,19 +35,21 @@ class App extends React.Component {
                        width: "auto"}}>
             <div className="Navbar-items">
                 <Router>
-                  <NavBar activeItem={activeItem} handleItemClick={this.handleItemClick}/>
+                  <NavBar activeItem={activeItem} 
+                          handleItemClick={this.handleItemClick}/>
                   <Switch>
                     <Route exact path="/datablog">
-                      <DataBlog />
+                      
+                      <DataBlog handleActive={this.handleActive}  />
                     </Route>
                     <Route exact path='/research'>
-                      <Research />
+                      <Research handleActive={this.handleActive} />
                     </Route>
                     <Route exact path='/consulting'>
-                      <Consulting />
+                      <Consulting handleActive={this.handleActive} />
                     </Route>
                     <Route exact path='/team'>
-                      <Team />
+                      <Team handleActive={this.handleActive} />
                     </Route>
                     <Route path="/">
                       <Home />

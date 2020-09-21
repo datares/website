@@ -14,121 +14,124 @@ import wave from '../Assets/Team/wave.svg';
 
 // Import Profiles
 import arnav from '../Assets/Team/Profiles/arnav.png';
+import aden from '../Assets/Team/Profiles/aden.png';
+import andy from '../Assets/Team/Profiles/andy.png';
+import dhruv from '../Assets/Team/Profiles/dhruv.png';
+import francesco from '../Assets/Team/Profiles/francesco.png';
+import gautam from '../Assets/Team/Profiles/gautam.png';
+import michelle from '../Assets/Team/Profiles/michelle.png';
+import raghava from '../Assets/Team/Profiles/raghava.png';
+import varchasvi from '../Assets/Team/Profiles/varchasvi.png';
 
-var row1 = [
+
+const row1 = [
     {
         'name': 'Arnav Garg',
         'title': 'Co-President',
-        'image': '../Assets/Team/Profiles/arnav.png'
+        'image': arnav
     },
     {
         'name': 'Raghava Govil',
         'title': 'Co-President',
-        'image': '../Assets/Team/Profiles/raghava.png'
+        'image': raghava
     },
     {
         'name': 'Gautam Nambiar',
         'title': 'Vice-President',
-        'image': '../Assets/Team/Profiles/gautam.png'
+        'image': gautam
     },
     {
         'name': 'Varchasvi Vedula',
         'title': 'Workshop Head',
-        'image': '../Assets/Team/Profiles/varchasvi.png'
+        'image': varchasvi
     },
     {
         'name': 'Andy Shen',
         'title': 'Design Head',
-        'image': '../Assets/Team/Profiles/andy.png'
+        'image': andy
     }
 ]
-
-var row2 = [
+const row2 = [
     {
         'name': 'Michelle Lee',
         'title': 'Data Blog Head',
-        'image': '../Assets/Team/Profiles/michelle.png'
+        'image': michelle
     },
     {
         'name': 'Francesco Colonnese',
         'title': 'Research Head',
-        'image': '../Assets/Team/Profiles/francesco.png'
+        'image': francesco
     },
     {
         'name': 'Dhruv Chakraborty',
         'title': 'Consulting Head',
-        'image': '../Assets/Team/Profiles/dhruv.png'
+        'image': dhruv
     },
     {
         'name': 'Aden Chiu',
         'title': 'Finance and Marketing Head',
-        'image': '../Assets/Team/Profiles/aden.png'
+        'image': aden
     }
 ]
 
 
 class Team extends React.Component {
+    componentDidMount(){
+        const {handleActive} = this.props;
+        handleActive("Team");
+    }
     render() {
         return (
-            <div class="Body">
-
+            <div >
              {/* Header/Title */}   
-            <div className="Header">
-                <Container>
+            <Container>
                     <div className='Title'>
-                        <Header>
-                            Our Team
-                        </Header>
+                        
                     </div>
-                </Container>
-            </div>
-
+            </Container>
             {/* Team Description */}
-            <div style={{backgroundImage: `url(${wave})`,
-                                                backgroundSize: "cover",
-                                                height: "100vh",
-                                                width: "auto"}}>
-                <Container>
-                    <div>
+            <div style={{paddingTop: 40, paddingBottom: 100}}>
+            <div style={{paddingBottom: 100}}>
+            <Header style={{fontSize: 80}}>
+                            Our Team
+            </Header>
+            </div>
+                <Container style={{paddingTop: 20}}>
                     <Grid>
                     <Grid.Row columns={5}>
                         {row1.map(user => (
-                            <div style={{alignContent: "center", margin: "3%", color: 'white'}}>
-                                <Grid.Column>
-                                    <Image src={arnav} size='small'></Image>
-                                    <p><strong>{user.name}</strong></p>
-                                    <p>{user.title}</p>
-                                </Grid.Column>
-                            </div>
+                            <Grid.Column>
+                                <Image centered src={user.image} size='small'></Image>
+                                <Header style={{fontSize: 20}}>{user.name}</Header>
+                                <Header style={{fontSize: 15}}>{user.title}</Header>
+                            </Grid.Column>
                         ))}
                     </Grid.Row>
                     <Grid.Row columns={4}>
                         {row2.map(user => (
-                            <div style={{alignContent: "center", margin: "3%", color: 'white'}}>
-                                <Grid.Column>
-                                    <Image src={arnav} size='small'></Image>
-                                    <p><strong>{user.name}</strong></p>
-                                    <p>{user.title}</p>
-                                </Grid.Column>
-                            </div>
+                             <Grid.Column>
+                                <Image centered src={user.image} size='small'></Image>
+                                <Header style={{fontSize: 20}}>{user.name}</Header>
+                                <Header style={{fontSize: 15}}>{user.title}</Header>
+                             </Grid.Column>
                         ))}
                     </Grid.Row>
                     </Grid>
-                    </div>
                 </Container>
             </div>
-
-            {/* Where we've been */}
-            <div className='Title' style={{textAlign: "center"}}>
-                <Header>
+            <Header style={{fontSize:60}}>
                     Where We've Been
                 </Header>
+            {/* Where we've been */}
+            <div style={{backgroundImage: `url(${wave})`,
+                         backgroundSize: "cover",
+                         width: "auto", 
+                         paddingTop: 50}}>
+                
                 <Image src={logos} size='massive' style={{marginTop: "8%", marginBottom: "10%"}} centered></Image>
+                <br/>
             </div>
-
             </div>
-
-
         );
     }
 }

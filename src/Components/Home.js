@@ -18,17 +18,15 @@ import bottomWave from '../Assets/Home/bottom_wave.svg';
 class Home extends React.Component {
     render() {
         return (
-        <div>
+        <div style={{paddingTop: "8em"}} className="Home">
           <div >
             <Container fluid>
-              <Image src={logo} size="huge" centered></Image>
+              <Image src={logo} size="massive" centered></Image>
             <br></br>
             <p>
-              <strong>
                 The Premier Data Science Organization @ UCLA
-              </strong> 
-            </p><br></br>
-            <Button size="massive" color="orange" style={{fontSize: "1em", 
+            </p>
+            <Button size="big" color="orange" style={{fontSize: "1em", 
                                                           borderRadius: 35, 
                                                           width: "23%"}}>
               Join Us
@@ -184,26 +182,12 @@ class Home extends React.Component {
               </Button>
               <div className='contribute-header-description'>
                 <p style={{fontSize: "0.9em"}}>
-                If you are interested in learning more about our organization or collaborating with us, 
-                you can reach out to us at <br></br> 
+                Interested in learning more about our organization? Want to collab?<br/> 
+                Reach out to us at <span/> 
                 <a href="mailto:ucladatares@gmail.com">ucladatares@gmail.com</a> or get in touch with us online.
                 </p>
                 <div style={{marginTop: '5%'}}>
-                  <Button color='facebook'>
-                    <Icon name='facebook' fitted/>
-                  </Button>
-                  <Button color='twitter'>
-                    <Icon name='twitter' fitted/>
-                  </Button>
-                  <Button color='linkedin'>
-                    <Icon name='linkedin' fitted/>
-                  </Button>
-                  <Button color='instagram'>
-                    <Icon name='instagram' fitted/>
-                  </Button>
-                  <Button color='youtube'>
-                    <Icon name='youtube' fitted/>
-                  </Button>
+                    
                 </div>     
               </div>
             </Container>
@@ -214,12 +198,26 @@ class Home extends React.Component {
                                                 height: "auto",
                                                 width: "auto"}}>
             <Container>
-              <p>
-              © DataRes 2020 
-              </p>
+              
+              <Container fluid style={{paddingTop: 200}}>
+                <Grid style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }} columns={2}>
+                    <Icon inverted size="huge" color="white" name='facebook' fitted/>
+                    <Icon inverted size="huge" color="white" name='twitter' fitted/>
+                    <Icon inverted size="huge" color="white" name='linkedin' fitted/>
+                    <Icon inverted size="huge" color="white" name='instagram' fitted/>
+                    <Icon  inverted size="huge" color="white" name='youtube' fitted/>
+                </Grid>
+                
+              </Container>
             </Container>
           </div>
+             
         </div>
+        
         );
     }
 }

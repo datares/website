@@ -1,14 +1,14 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Segment, Grid, Divider} from 'semantic-ui-react';
+            Segment, Grid, Button, Divider} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Research.css';
 import '../Styles/Utils.css';
 import 'semantic-ui-css/semantic.min.css';
 
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 
 // Import Images
 import researchImage from '../Assets/Research/research_image.svg';
@@ -32,14 +32,18 @@ var Articles = [
 ]
 
 class Research extends React.Component {
+    componentDidMount(){
+        const {handleActive} = this.props;
+        handleActive("Research");
+    }
     render() {
-        var youtubeOpts = {
-            height: '390',
-            width: '640',
-            playerVars: {
-                autoplay: 0
-            }
-        };
+        // var youtubeOpts = {
+        //     height: '390',
+        //     width: '640',
+        //     playerVars: {
+        //         autoplay: 0
+        //     }
+        // };
         return (
             <div className='Body'>
                 
@@ -55,7 +59,12 @@ class Research extends React.Component {
                                     <p className='Description'>
                                         Our teams investigates a range of advanced machine learning problems 
                                         primarily involving deep learning and reinforcement learning. 
+                                        <Divider/>
+                                    <div style={{padding: 8}}>
+                                            <Button  fluid floated="right" color="orange" size="massive">Apply</Button>
+                                        </div>
                                     </p>
+                                    
                                 </Grid.Column>
                                 <Grid.Column>
                                     <Image src={researchImage} size='large'></Image>
@@ -75,11 +84,7 @@ class Research extends React.Component {
                 {/* Ideally, add react search bar */}
 
                 <Container>
-                <Grid columns={2}>
-                    {/* Will replace with medium API for dynamic updates when 
-                    access token is approved */}
-                    <Grid.Column width={8}>
-                        <Container fluid>
+                <Container fluid>
                                 <Header style={{fontSize: 40}}>
                                     Latest Research Articles
                                 </Header>
@@ -101,11 +106,7 @@ class Research extends React.Component {
                                 ))}
                             </div>
                         </Container>
-                    </Grid.Column>
-                    <Grid.Column width={8}>
-                        <YouTube videoId="FgzM3zpZ55o" opts={youtubeOpts} onReady={this._onReady} />         
-                    </Grid.Column>
-                </Grid>
+                    
                 </Container>
             </div>
         );
