@@ -91,34 +91,34 @@ class Team extends React.Component {
 
                 <div style={{backgroundImage: `url(${wave})`,
                         backgroundSize: "cover",
-                        minHeight: '80vh',
-                        maxHeight: '120vh',
+                        minHeight: '100vh',
+                        height: '150vh',
                         width: "auto", 
                         paddingTop: 50}}>
 
                     {/* Team Description */}
                     <Container>
-                    <div style={{paddingTop: '10%'}}>
-                        <Container>
-                                <Grid columns={2}>
-                                    <Grid.Column>
-                                {row1.map(user => (
-                                    <Segment>
-                                        <Image centered src={user.image} size='small'></Image>
-                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
-                                        <Header style={{fontSize: 16, color: '#F2A173'}}>{user.title}</Header>
-                                    </Segment>
-                                ))}
-                                    </Grid.Column>
-                                    <Grid.Column>
-                                {row2.map(user => (
-                                    <Segment>
-                                        <Image centered src={user.image} size='small'></Image>
-                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
-                                        <Header style={{fontSize: 16, color: '#F2A173'}}>{user.title}</Header>
-                                    </Segment>
-                                ))}
-                                    </Grid.Column>
+                    <div style={{paddingTop: '10%', alignItems: 'center', textAlign: 'center'}}>
+                        <Container fluid style={{paddingBottom: '5%'}}>
+                                <Grid>
+                                    <Grid.Row centered>
+                                        {row1.map(user => (
+                                            <Segment padded style={{backgroundColor: 'transparent', border: 0, margin: '1.5%'}}>
+                                                <Image centered src={user.image} size='small'></Image>
+                                                <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
+                                                <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                            </Segment>
+                                        ))}
+                                    </Grid.Row>
+                                    <Grid.Row centered>
+                                        {row2.map(user => (
+                                            <Segment padded style={{backgroundColor: 'transparent', border: 0, margin: '1.5%'}}>
+                                                <Image centered src={user.image} size='small'></Image>
+                                                <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
+                                                <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                            </Segment>
+                                        ))}
+                                    </Grid.Row>
                                 </Grid>
                         </Container>
                     </div>

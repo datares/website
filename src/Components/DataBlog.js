@@ -10,7 +10,7 @@ import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
 import blogImage from '../Assets/DataBlog/blog_image.svg';
-import wave from '../Assets/DataBlog/wave.svg';
+import wave from '../Assets/DataBlog/team_wave.svg';
 
 // Temporarily added articles (in datewise order)
 // Will eventually replace with articles dynamically updated from Medium website
@@ -121,8 +121,10 @@ class DataBlog extends React.Component {
                                             <Button fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    window.location.href='https://airtable.com/shruXlMn10XpJ6opl';
-                                                }}>Apply</Button>
+                                                    window.open('https://airtable.com/shruXlMn10XpJ6opl', "_blank");
+                                                }}>
+                                                Apply
+                                            </Button>
                                         </div>
                                     </p>
                                 </Grid.Column>
@@ -145,26 +147,28 @@ class DataBlog extends React.Component {
                     access token is approved */}
                 <div>
                     <Container style={{paddingBottom: 50}}>
-                        {/* <div className='Latest-Title'>
-                            <Header >
-                                Latest DataBlog Articles
-                            </Header>
-                        </div> */}
-                            {/* TODO: Need to create an auto grid */}
-                            {Articles.map(article => (
-                                    <Container style={{padding: 20}}>
-                                    <a href={article.url} rel="noopener noreferrer" target="_blank">
-                                    <Segment size="small" onClick={() => {}}>
-                                        <Image centered size="large" src={article.image}></Image>
-                                            <Header style={{fontSize: 20}}>{article.title}</Header>
-                                            <Header style={{fontSize: 15}}>{article.meta}</Header>
-                                            <div style={{ fontSize: 12, color: "black"}}>
-                                                {article.authors}
-                                            </div>
-                                    </Segment>
-                                    </a>
-                                    </Container>
-                            ))}
+                        <Container fluid>
+                            <div style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
+                                <Header >
+                                    Latest DataBlog Articles
+                                </Header>
+                            </div>
+                                {/* TODO: Need to create an auto grid */}
+                                {Articles.map(article => (
+                                        <Container fluid style={{margin: '5%'}}>
+                                            <a href={article.url} rel="noopener noreferrer" target="_blank">
+                                            <Segment style={{margin: 0}} size="big" onClick={() => {}}>
+                                                <Image centered size="large" src={article.image}></Image>
+                                                    <Header style={{fontSize: 20, overflow: 'auto'}}>{article.title}</Header>
+                                                    <Header style={{fontSize: 15}}>{article.meta}</Header>
+                                                    <div style={{ fontSize: 12, color: "black"}}>
+                                                        {article.authors}
+                                                    </div>
+                                            </Segment>
+                                            </a>
+                                        </Container>
+                                ))}
+                        </Container>
                     </Container>
                 </div>
 
