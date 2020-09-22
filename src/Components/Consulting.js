@@ -1,7 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image,
-            Grid, Button, Divider} from 'semantic-ui-react';
+            Grid, Divider} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Consulting.css';

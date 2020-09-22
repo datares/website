@@ -215,19 +215,19 @@ class Home extends React.Component {
                     alignItems: 'center',
                     justifyContent: 'center',
                 }} columns={2}>
-                  <a href="https://www.facebook.com/ucladatares" target="_blank">
+                  <a href="https://www.facebook.com/ucladatares" rel="noopener noreferrer" target="_blank">
                     <Icon inverted size="huge" color="white" name='facebook' fitted/>
                   </a>
-                  <a href="https://twitter.com/DataresUcla" target="_blank">
+                  <a href="https://twitter.com/DataresUcla" rel="noopener noreferrer" target="_blank">
                     <Icon inverted size="huge" color="white" name='twitter' fitted/>
                   </a>
-                  <a href="https://www.linkedin.com/company/ucla-datares/" target="_blank">
+                  <a href="https://www.linkedin.com/company/ucla-datares/" rel="noopener noreferrer" target="_blank">
                     <Icon inverted size="huge" color="white" name='linkedin' fitted/>
                   </a>
-                  <a href="https://www.instagram.com/ucladatares/" target="_blank">
+                  <a href="https://www.instagram.com/ucladatares/" rel="noopener noreferrer" target="_blank">
                     <Icon inverted size="huge" color="white" name='instagram' fitted/>
                   </a>
-                  <a href="https://www.youtube.com/channel/UCmKnJ7aUWRcpfc2NMo2-_Hw" target="_blank">
+                  <a href="https://www.youtube.com/channel/UCmKnJ7aUWRcpfc2NMo2-_Hw" rel="noopener noreferrer" target="_blank">
                     <Icon  inverted size="huge" color="white" name='youtube' fitted/>
                   </a>
                 </Grid>
