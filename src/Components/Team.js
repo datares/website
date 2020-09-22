@@ -1,7 +1,7 @@
 // Import React Components
 import React from 'react';
 import {Header, Container, Image, 
-            Grid} from 'semantic-ui-react';
+            Grid, Segment} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Team.css';
@@ -9,7 +9,6 @@ import '../Styles/Utils.css';
 import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
-import logos from '../Assets/Team/logos.png';
 import wave from '../Assets/Team/wave.svg';
 
 // Import Profiles
@@ -101,40 +100,29 @@ class Team extends React.Component {
                     <Container>
                     <div style={{paddingTop: '10%'}}>
                         <Container>
-                            <Grid>
-                            <Grid.Row columns={5}>
+                                <Grid columns={2}>
+                                    <Grid.Column>
                                 {row1.map(user => (
-                                    <Grid.Column>
+                                    <Segment>
                                         <Image centered src={user.image} size='small'></Image>
-                                        <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                         <Header style={{fontSize: 16, color: '#F2A173'}}>{user.title}</Header>
-                                    </Grid.Column>
+                                    </Segment>
                                 ))}
-                            </Grid.Row>
-                            <Grid.Row columns={4}>
+                                    </Grid.Column>
+                                    <Grid.Column>
                                 {row2.map(user => (
-                                    <Grid.Column>
+                                    <Segment>
                                         <Image centered src={user.image} size='small'></Image>
-                                        <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                         <Header style={{fontSize: 16, color: '#F2A173'}}>{user.title}</Header>
-                                    </Grid.Column>
+                                    </Segment>
                                 ))}
-                            </Grid.Row>
-                            </Grid>
+                                    </Grid.Column>
+                                </Grid>
                         </Container>
                     </div>
                     </Container>
-
-                    {/* Where we've been */}
-                    <div style={{marginTop: '20%'}}>
-                        <Header style={{fontSize:60}}>
-                                Where We've Been
-                        </Header>
-                        <div>
-                            <Image src={logos} size='massive' style={{marginTop: "5%", marginBottom: "5%"}} centered></Image>
-                        </div>
-                    </div>
-
             </div>
 
             </div>

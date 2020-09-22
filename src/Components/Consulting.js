@@ -26,11 +26,8 @@ class Consulting extends React.Component {
                     <Container>
                         <Grid>
                             <Grid.Row columns={2}>
-                                <Grid.Column width={7}>
-                                    <Image src={ consultingImage } size='large'></Image>
-                                </Grid.Column>
                                 <Grid.Column width={9}>
-                                    <div className='Title'>
+                                <div className='Title'>
                                         <Header> Consulting </Header>
                                     </div>
                                     <p className='Description'>
@@ -38,7 +35,10 @@ class Consulting extends React.Component {
                                         their data to generate meaningful insights and provide concrete 
                                         business value.
                                     </p>   
-                                    <Divider></Divider>                                 
+                                    <Divider></Divider>     
+                                </Grid.Column>
+                                <Grid.Column width={7}>
+                                <Image src={ consultingImage } size='large'></Image>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>

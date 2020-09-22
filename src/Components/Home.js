@@ -1,7 +1,7 @@
 // Import React Components
 import React from 'react';
 import {Header, Button, Image, Icon,
-    Grid, Container} from 'semantic-ui-react';
+    Grid, Container, Divider} from 'semantic-ui-react';
 
 // Import CSS
 import '../Styles/Home.css';
@@ -9,6 +9,8 @@ import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
 import logo from '../Assets/Home/logo.svg';
+import logos from '../Assets/Team/logos.png';
+
 import orangeBar from '../Assets/Home/orange_bar.svg';
 import numberWave from '../Assets/Home/number_wave.svg';
 import datablogWave from '../Assets/Home/background_div.svg';
@@ -50,6 +52,16 @@ class Home extends React.Component {
                 </Grid>
               </Container>
           </div>
+          <Divider/>
+            {/* Where we've been */}
+            <div style={{marginTop: '8%'}}>
+              <Header style={{fontSize:60}}>
+                      Where We've Been
+              </Header>
+              <div>
+                  <Image src={logos} size='massive' style={{marginTop: "5%", marginBottom: "5%"}} centered></Image>
+              </div>
+            </div>
 
           <div className='Stats-header' style={{backgroundImage: `url(${numberWave})`,
                                                 backgroundSize: "cover",
