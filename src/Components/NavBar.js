@@ -7,7 +7,7 @@ export default class Hello extends Component {
     render () {
       const {activeItem, handleItemClick} = this.props
       return <div>
-            <Menu style={{padding: 20}} position="right" size="large" secondary>
+            <Menu style={{padding: 20}} position="right" size="large" secondary stackable>
               <Menu.Menu position='right'>
                   <Link to="/">
                     <Menu.Item

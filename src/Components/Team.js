@@ -1,7 +1,7 @@
 // Import React Components
 import React from 'react';
 import {Header, Container, Image, 
-            Grid} from 'semantic-ui-react';
+            Grid, Segment} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Team.css';
@@ -9,7 +9,6 @@ import '../Styles/Utils.css';
 import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
-import logos from '../Assets/Team/logos.png';
 import wave from '../Assets/Team/wave.svg';
 
 // Import Profiles
@@ -82,55 +81,50 @@ class Team extends React.Component {
     }
     render() {
         return (
-            <div >
-             {/* Header/Title */}   
-            <Container>
-                    <div className='Title'>
-                        
+            <div>
+            
+                <div style={{paddingBottom: 30, paddingTop: 20}}>
+                    <Header style={{fontSize: 80}}>
+                        Our Team
+                    </Header>
+                </div>
+
+                <div style={{backgroundImage: `url(${wave})`,
+                        backgroundSize: "cover",
+                        minHeight: '100vh',
+                        height: '150vh',
+                        width: "auto", 
+                        paddingTop: 50}}>
+
+                    {/* Team Description */}
+                    <Container>
+                    <div style={{paddingTop: '10%', alignItems: 'center', textAlign: 'center'}}>
+                        <Container fluid style={{paddingBottom: '5%'}}>
+                                <Grid>
+                                    <Grid.Row centered>
+                                        {row1.map(user => (
+                                            <Segment padded style={{backgroundColor: 'transparent', border: 0, margin: '1.5%'}}>
+                                                <Image centered src={user.image} size='small'></Image>
+                                                <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
+                                                <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                            </Segment>
+                                        ))}
+                                    </Grid.Row>
+                                    <Grid.Row centered>
+                                        {row2.map(user => (
+                                            <Segment padded style={{backgroundColor: 'transparent', border: 0, margin: '1.5%'}}>
+                                                <Image centered src={user.image} size='small'></Image>
+                                                <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
+                                                <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                            </Segment>
+                                        ))}
+                                    </Grid.Row>
+                                </Grid>
+                        </Container>
                     </div>
-            </Container>
-            {/* Team Description */}
-            <div style={{paddingTop: 40, paddingBottom: 100}}>
-            <div style={{paddingBottom: 100}}>
-            <Header style={{fontSize: 80}}>
-                            Our Team
-            </Header>
+                    </Container>
             </div>
-                <Container style={{paddingTop: 20}}>
-                    <Grid>
-                    <Grid.Row columns={5}>
-                        {row1.map(user => (
-                            <Grid.Column>
-                                <Image centered src={user.image} size='small'></Image>
-                                <Header style={{fontSize: 20}}>{user.name}</Header>
-                                <Header style={{fontSize: 15}}>{user.title}</Header>
-                            </Grid.Column>
-                        ))}
-                    </Grid.Row>
-                    <Grid.Row columns={4}>
-                        {row2.map(user => (
-                             <Grid.Column>
-                                <Image centered src={user.image} size='small'></Image>
-                                <Header style={{fontSize: 20}}>{user.name}</Header>
-                                <Header style={{fontSize: 15}}>{user.title}</Header>
-                             </Grid.Column>
-                        ))}
-                    </Grid.Row>
-                    </Grid>
-                </Container>
-            </div>
-            <Header style={{fontSize:60}}>
-                    Where We've Been
-                </Header>
-            {/* Where we've been */}
-            <div style={{backgroundImage: `url(${wave})`,
-                         backgroundSize: "cover",
-                         width: "auto", 
-                         paddingTop: 50}}>
-                
-                <Image src={logos} size='massive' style={{marginTop: "8%", marginBottom: "10%"}} centered></Image>
-                <br/>
-            </div>
+
             </div>
         );
     }

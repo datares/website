@@ -12,7 +12,7 @@ import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
 import researchImage from '../Assets/Research/research_image.svg';
-import wave from '../Assets/Research/wave.svg';
+import wave from '../Assets/Research/team_wave.svg';
 
 var Articles = [
     {
@@ -50,12 +50,12 @@ class Research extends React.Component {
                 {/* Main Description  */}
                 <div className="Header">
                     <Container>
+                        <div className='Title'>
+                            <Header> Research </Header>
+                        </div>
                         <Grid>
                             <Grid.Row columns={2}>
                                 <Grid.Column>
-                                <div className='Title'>
-                                    <Header> Research </Header>
-                                </div>
                                     <p className='Description'>
                                         Our teams investigates a range of advanced machine learning problems 
                                         primarily involving deep learning and reinforcement learning. 
@@ -64,13 +64,13 @@ class Research extends React.Component {
                                             <Button  fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    window.location.href='https://airtable.com/shrHMxx13Z10UdXnC';
+                                                    window.open('https://airtable.com/shrHMxx13Z10UdXnC', "_blank");
                                                 }}>Apply</Button>
                                         </div>
                                     </p>
                                 </Grid.Column>
                                 <Grid.Column>
-                                    <Image src={researchImage} size='large' style={{marginTop: '3%'}}></Image>
+                                    <Image src={researchImage} size='large'></Image>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
@@ -81,30 +81,31 @@ class Research extends React.Component {
                 <div style={{backgroundImage: `url(${wave})`,
                                 backgroundSize: "cover",
                                 height: "50vh",
-                                width: "auto"}}>
+                                width: "auto",
+                                paddingBottom: 50}}>
                 </div>
 
                 {/* Ideally, add react search bar */}
 
-                <Container>
-                <Container fluid>
-                                <Header style={{fontSize: 40}}>
+                <Container style={{paddingBottom: 50}}>
+                    <Container fluid>
+                                <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
                                     Latest Research Articles
                                 </Header>
                             <div>
                                 {/* TODO: Need to create an auto grid */}
                                 {Articles.map(article => (
-                                        <Container style={{padding: 20}}>
-                                        <a href={article.url} rel="noopener noreferrer" target="_blank">
-                                        <Segment size="small" onClick={() => {}}>
-                                            <Image centered size="large" src={article.image}></Image>
-                                                <Header style={{fontSize: 20}}>{article.title}</Header>
-                                                <Header style={{fontSize: 15}}>{article.meta}</Header>
-                                                <div style={{ fontSize: 12, color: "black"}}>
-                                                    {article.authors}
-                                                </div>
-                                        </Segment>
-                                        </a>
+                                        <Container style={{margin: '5%'}}>
+                                            <a href={article.url} rel="noopener noreferrer" target="_blank">
+                                            <Segment style={{margin: 0}} size="big" onClick={() => {}}>
+                                                <Image centered size="large" src={article.image}></Image>
+                                                    <Header style={{fontSize: 20}}>{article.title}</Header>
+                                                    <Header style={{fontSize: 15}}>{article.meta}</Header>
+                                                    <div style={{ fontSize: 12, color: "black"}}>
+                                                        {article.authors}
+                                                    </div>
+                                            </Segment>
+                                            </a>
                                         </Container>
                                 ))}
                             </div>
