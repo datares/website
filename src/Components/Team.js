@@ -103,21 +103,25 @@ class Team extends React.Component {
                                 <Grid>
                                     <Grid.Row centered>
                                         {row1.map(user => (
-                                            <Segment padded style={{backgroundColor: 'transparent', border: 0, margin: '1.5%'}}>
-                                                <Image centered src={user.image} size='small'></Image>
-                                                <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
-                                                <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
-                                            </Segment>
+                                            <div className='Segment-alignment'>
+                                                <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
+                                                    <Image centered src={user.image} size='small'></Image>
+                                                    <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
+                                                    <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                                </Segment>
+                                            </div>
                                         ))}
                                     </Grid.Row>
-                                    <Grid.Row centered>
-                                        {row2.map(user => (
-                                            <Segment padded style={{backgroundColor: 'transparent', border: 0, margin: '1.5%'}}>
-                                                <Image centered src={user.image} size='small'></Image>
-                                                <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
-                                                <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
-                                            </Segment>
-                                        ))}
+                                    <Grid.Row centered>                            
+                                            {row2.map(user => (
+                                                <div className='Segment-alignment'> 
+                                                    <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
+                                                        <Image centered src={user.image} size='small'></Image>
+                                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
+                                                        <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                                    </Segment>
+                                                </div>
+                                            ))}
                                     </Grid.Row>
                                 </Grid>
                         </Container>
