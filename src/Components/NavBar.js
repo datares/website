@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import {Menu} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
-
+import {
+  isBrowser
+} from "react-device-detect";
 export default class Hello extends Component {
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
     render () {
       const {activeItem, handleItemClick} = this.props
+      const colorCondition = (activeItem === "Home" && isBrowser)  ? "white" : "black";
       return <div>
             <Menu style={{padding: 20}} position="right" size="large" secondary stackable>
               <Menu.Menu position='right'>
@@ -14,7 +17,8 @@ export default class Hello extends Component {
                       name='Home'
                       active={activeItem === 'Home'}
                       onClick={handleItemClick}
-                      style={{color: activeItem === "Home" ? "white" : "black",
+                      
+                      style={{color: colorCondition,
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
@@ -23,7 +27,7 @@ export default class Hello extends Component {
                       name='DataBlog'
                       active={activeItem === 'DataBlog'}
                       onClick={handleItemClick}
-                      style={{color: activeItem === "Home" ? "white" : "black", 
+                      style={{color: colorCondition, 
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
@@ -32,7 +36,7 @@ export default class Hello extends Component {
                       name='Research'
                       active={activeItem === 'Research'}
                       onClick={handleItemClick}
-                      style={{color: activeItem === "Home" ? "white" : "black", 
+                      style={{color: colorCondition, 
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
@@ -41,7 +45,7 @@ export default class Hello extends Component {
                       name='Consulting'
                       active={activeItem === 'Friends'}
                       onClick={handleItemClick}
-                      style={{color: activeItem === "Home" ? "white" : "black", 
+                      style={{color: colorCondition, 
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
@@ -50,7 +54,7 @@ export default class Hello extends Component {
                       name='Team'
                       active={activeItem === 'Team'}
                       onClick={handleItemClick}
-                      style={{color: activeItem === "Home" ? "white" : "black", 
+                      style={{color: colorCondition, 
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>

@@ -2,6 +2,7 @@
 import React from 'react';
 import {Header, Container, Image, 
             Segment, Grid, Button, Divider} from 'semantic-ui-react';
+import ReactMarkdown from 'react-markdown'
 
 // Import JS
 import '../Styles/Research.css';
@@ -13,7 +14,7 @@ import 'semantic-ui-css/semantic.min.css';
 // Import Images
 import researchImage from '../Assets/Research/research_image.svg';
 import wave from '../Assets/Research/team_wave.svg';
-
+import research_intro from '../Assets/Research/intro.js'
 var Articles = [
     {
         'url': 'https://medium.com/@ucladatares/rlette-casino-roulette-through-reinforcement-learning-67e865843f0d',
@@ -76,7 +77,16 @@ class Research extends React.Component {
                         </Grid>
                     </Container>
                 </div>
-
+                <div>
+                    <Container style={{paddingBottom: 50}}>
+                        <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
+                                Plans for Fall 2020
+                        </Header>
+                    <Segment style={{textAlign: 'left'}}>
+                        <ReactMarkdown source={research_intro} />
+                        </Segment>
+                    </Container>
+                </div>
                 {/* Wave Image */}
                 <div style={{backgroundImage: `url(${wave})`,
                                 backgroundSize: "cover",
@@ -84,9 +94,7 @@ class Research extends React.Component {
                                 width: "auto",
                                 paddingBottom: 50}}>
                 </div>
-
                 {/* Ideally, add react search bar */}
-
                 <Container style={{paddingBottom: 50}}>
                     <Container fluid>
                                 <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
