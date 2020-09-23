@@ -1,7 +1,7 @@
 // Import React Modules
 import React from 'react';
-import {BrowserRouter as Router, 
-  Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, 
+  Switch, Route, withRouter} from 'react-router-dom';
 
 // Import custom modules
 import Home from './Components/Home.js';
@@ -34,12 +34,11 @@ class App extends React.Component {
                        height: "45vh",
                        width: "auto"}}>
             <div className="Navbar-items">
-                <Router>
+                <Router basename="/">
                   <NavBar activeItem={activeItem} 
                           handleItemClick={this.handleItemClick}/>
                   <Switch>
                     <Route path="/datablog">
-                      
                       <DataBlog handleActive={this.handleActive}  />
                     </Route>
                     <Route path='/research'>
