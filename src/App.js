@@ -1,7 +1,7 @@
 // Import React Modules
 import React from 'react';
 import {HashRouter as Router, 
-  Switch, Route, withRouter} from 'react-router-dom';
+  Switch, Route} from 'react-router-dom';
 
 // Import custom modules
 import Home from './Components/Home.js';
@@ -10,6 +10,7 @@ import Research from './Components/Research.js';
 import Consulting from './Components/Consulting.js';
 import Team from './Components/Team.js';
 import NavBar from './Components/NavBar.js'
+import ScrollToTop from './Components/ScrollToTop.js'
 // Import CSS
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
@@ -35,6 +36,7 @@ class App extends React.Component {
                        width: "auto"}}>
             <div className="Navbar-items">
                 <Router basename="/">
+                  <ScrollToTop />
                   <NavBar activeItem={activeItem} 
                           handleItemClick={this.handleItemClick}/>
                   <Switch>

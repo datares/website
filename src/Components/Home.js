@@ -2,7 +2,7 @@
 import React from 'react';
 import {Header, Button, Image, Icon,
     Grid, Container, Divider} from 'semantic-ui-react';
-
+import {Link} from 'react-router-dom'
 // Import CSS
 import '../Styles/Home.css';
 import 'semantic-ui-css/semantic.min.css';
@@ -115,14 +115,12 @@ class Home extends React.Component {
                           We publish a variety of data centric journal articles.
                           Take a look at some of our featured stories.
                         </p>
+                        <Link to="/datablog">
                         <Button fluid floated='right' size="huge" color="orange" 
-                              onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href='/datablog';
-                                }}
                               style={{borderRadius: 20}}>
                           Learn More
                         </Button>
+                        </Link>
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>
@@ -144,14 +142,12 @@ class Home extends React.Component {
                       We tackle advanced machine learning problems in the areas of computer vision, 
                       natural language processing, and reinforcement learning. 
                     </p>
+                    <Link to="/research">
                     <Button fluid floated='left' size="huge" color="orange" 
-                            onClick={(e) => {
-                                  e.preventDefault();
-                                  window.location.href='/research';
-                              }}
                             style={{borderRadius: 20}}>
                         Learn More
                       </Button>
+                    </Link>
                     </div>
                   </Grid.Column>
                   <Grid.Column></Grid.Column>
@@ -179,14 +175,12 @@ class Home extends React.Component {
                       We offer pro bono consulting services for startups 
                       and companies within the Los Angeles area.
                       </p>
+                      <Link to="/consulting">
                       <Button fluid floated='right' size="huge" color="orange" 
-                            onClick={(e) => {
-                                  e.preventDefault();
-                                  window.location.href='/consulting';
-                              }}
-                            style={{borderRadius: 20}}>
+                              style={{borderRadius: 20}}>
                         Learn More
                       </Button>
+                      </Link>
                     </div>
                   </Grid.Column>
                 </Grid.Row>
