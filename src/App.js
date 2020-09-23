@@ -38,20 +38,20 @@ class App extends React.Component {
                   <NavBar activeItem={activeItem} 
                           handleItemClick={this.handleItemClick}/>
                   <Switch>
-                    <Route exact path="/datablog">
+                    <Route path="/datablog">
                       
                       <DataBlog handleActive={this.handleActive}  />
                     </Route>
-                    <Route exact path='/research'>
+                    <Route path='/research'>
                       <Research handleActive={this.handleActive} />
                     </Route>
-                    <Route exact path='/consulting'>
+                    <Route path='/consulting'>
                       <Consulting handleActive={this.handleActive} />
                     </Route>
-                    <Route exact path='/team'>
+                    <Route path='/team'>
                       <Team handleActive={this.handleActive} />
                     </Route>
-                    <Route path="/">
+                    <Route exact path="/">
                       <Home />
                     </Route>
                   </Switch>
