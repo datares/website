@@ -2,6 +2,7 @@
 import React from 'react';
 import {Header, Container, Image, 
             Segment, Grid, Button, Divider} from 'semantic-ui-react';
+import ReactMarkdown from 'react-markdown'
 
 // Import JS
 import '../Styles/DataBlog.css';
@@ -11,6 +12,7 @@ import 'semantic-ui-css/semantic.min.css';
 // Import Images
 import blogImage from '../Assets/DataBlog/blog_image.svg';
 import wave from '../Assets/DataBlog/team_wave.svg';
+import datablog_intro from '../Assets/DataBlog/intro.js'
 
 // Temporarily added articles (in datewise order)
 // Will eventually replace with articles dynamically updated from Medium website
@@ -132,7 +134,13 @@ class DataBlog extends React.Component {
                         </Grid>
                     </Container>
                 </div>
-
+                <div>
+                    <Container style={{paddingBottom: 50}}>
+                        <Segment style={{textAlign: 'left'}}>
+                            <ReactMarkdown source={datablog_intro} />
+                        </Segment>
+                    </Container>
+                </div>
                 {/* Wave Image */}
                 <div style={{backgroundImage: `url(${wave})`,
                                                 backgroundSize: "cover",
