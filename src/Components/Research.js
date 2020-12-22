@@ -33,10 +33,12 @@ var Articles = [
 ]
 
 class Research extends React.Component {
-    componentDidMount(){
+    
+    componentDidMount() {
         const {handleActive} = this.props;
         handleActive("Research");
     }
+    
     render() {
         // var youtubeOpts = {
         //     height: '390',

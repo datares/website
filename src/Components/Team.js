@@ -26,44 +26,52 @@ const row1 = [
     {
         'name': 'Arnav Garg',
         'title': 'Co-President',
-        'image': arnav
+        'image': arnav,
+        'linkedin': 'https://www.linkedin.com/in/arnavgrg'
     },
     {
         'name': 'Raghava Govil',
         'title': 'Co-President',
-        'image': raghava
+        'image': raghava,
+        'linkedin': 'https://www.linkedin.com/in/raghava-govil'
     },
     {
         'name': 'Michelle Lee',
         'title': 'Data Blog Head',
-        'image': michelle
+        'image': michelle,
+        'linkedin': 'https://www.linkedin.com/in/michelle14lee'
     },
     {
         'name': 'Francesco Colonnese',
         'title': 'Research Head',
-        'image': francesco
+        'image': francesco,
+        'linkedin': 'https://www.linkedin.com/in/fcolonnese'
     }
 ]
 const row2 = [
     {
         'name': 'Varchasvi Vedula',
         'title': 'Workshop Head',
-        'image': varchasvi
+        'image': varchasvi,
+        'linkedin': 'https://www.linkedin.com/in/varchasvi-vedula'
     },
     {
         'name': 'Andy Shen',
         'title': 'Design Head',
-        'image': andy
+        'image': andy,
+        'linkedin': 'https://www.linkedin.com/in/thantzinoo-andy'
     },
     {
         'name': 'Dhruv Chakraborty',
         'title': 'Consulting Head',
-        'image': dhruv
+        'image': dhruv,
+        'linkedin': 'https://www.linkedin.com/in/dhruv-chakraborty'
     },
     {
         'name': 'Morgan Neuwirth',
         'title': 'Social Head',
-        'image': morgan
+        'image': morgan,
+        'linkedin': 'https://www.linkedin.com/in/morgan-neuwirth'
     }
 ]
 
@@ -129,22 +137,26 @@ class Team extends React.Component {
                                     <Grid.Row centered>
                                         {row1.map(user => (
                                             <div className='Segment-alignment'>
+                                                <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                 <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                     <Image centered src={user.image} size='small'></Image>
                                                     <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                     <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
                                                 </Segment>
+                                                </a>
                                             </div>
                                         ))}
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row2.map(user => (
                                                 <div className='Segment-alignment'> 
+                                                    <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                         <Image centered src={user.image} size='small'></Image>
                                                         <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
                                                     </Segment>
+                                                    </a>
                                                 </div>
                                             ))}
                                     </Grid.Row>

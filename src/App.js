@@ -5,6 +5,7 @@ import {HashRouter as Router,
 
 // Import custom modules
 import Home from './Components/Home.js';
+import FAQ from './Components/FAQ.js';
 import DataBlog from './Components/DataBlog.js';
 import Research from './Components/Research.js';
 import Consulting from './Components/Consulting.js';
@@ -40,6 +41,9 @@ class App extends React.Component {
                   <NavBar activeItem={activeItem} 
                           handleItemClick={this.handleItemClick}/>
                   <Switch>
+                    <Route path='/faq'>
+                      <FAQ handleActive={this.handleActive} />
+                    </Route>
                     <Route path="/datablog">
                       <DataBlog handleActive={this.handleActive}  />
                     </Route>

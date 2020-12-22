@@ -27,9 +27,7 @@ class Home extends React.Component {
                 <Image src={logo} size="huge" centered></Image>
               </div>
               <div>
-                <p style={{paddingTop: '3%', fontSize: 25}}>
-                  The Premier Data Science Organization @ UCLA
-                </p>
+                <Header style={{paddingTop: '3%', fontSize: 25}}> The Premier Data Science Organization @ UCLA </Header>
               </div>
             </Container>
           </div>
