@@ -16,6 +16,13 @@ import wave from '../Assets/DataBlog/team_wave.svg';
 // Will eventually replace with articles dynamically updated from Medium website
 const Articles = [
     {
+        'url': 'https://ucladatares.medium.com/an-investigation-of-the-california-wildfire-crisis-7104b1cb4a69',
+        'image': 'https://miro.medium.com/max/1400/0*ItJqZEPpFNtGFrHO',
+        'title': 'An Investigation of the California Wildfire Crisis',
+        'meta': 'December 21 2020',
+        'authors': 'Adhvaith Vijay (Project Lead), Danielle Goldwirth, Tara Jaigopal, Jaclyn Chiu, Angelina Kim'
+    },
+    {
         'url': 'https://medium.com/@ucladatares/secrets-to-maximizing-success-in-the-speed-dating-experience-7f4f50c40019',
         'image': 'https://miro.medium.com/max/1400/0*KiVI-aajNSVLC7wc',
         'title': 'Secrets to Maximizing Success in the (Speed) Dating Experience',
@@ -121,7 +128,7 @@ class DataBlog extends React.Component {
                                             <Button fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    window.open('https://airtable.com/shruXlMn10XpJ6opl', "_blank");
+                                                    window.open('https://airtable.com/shrlEc2h9RAfZEuFt', "_blank");
                                                 }}>
                                                 Apply
                                             </Button>
@@ -160,8 +167,8 @@ class DataBlog extends React.Component {
                                             <Segment style={{margin: 0}} size="big" onClick={() => {}}>
                                                 <Image centered size="large" src={article.image}></Image>
                                                     <Header style={{fontSize: 20, overflow: 'auto'}}>{article.title}</Header>
-                                                    <Header style={{fontSize: 15}}>{article.meta}</Header>
-                                                    <div style={{ fontSize: 12, color: "black"}}>
+                                                    <Header style={{fontSize: 16}}>{article.meta}</Header>
+                                                    <div style={{ fontSize: 15, color: "black"}}>
                                                         {article.authors}
                                                     </div>
                                             </Segment>

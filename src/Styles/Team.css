@@ -8,9 +8,24 @@
     margin: 1.5%;
 }
 
+.Social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    text-size-adjust: auto;
+}
+
 @media only screen and (max-width: 900px) {
     .Segment-alignment {
         margin: 1.5%;
+    }
+
+    .Social-media-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2%;
     }
 } 
 
