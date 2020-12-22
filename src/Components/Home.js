@@ -2,7 +2,7 @@
 import React from 'react';
 import {Header, Button, Image, Icon,
     Grid, Container, Divider} from 'semantic-ui-react';
-
+import {Link} from 'react-router-dom'
 // Import CSS
 import '../Styles/Home.css';
 import 'semantic-ui-css/semantic.min.css';
@@ -16,7 +16,6 @@ import numberWave from '../Assets/Home/number_wave.svg';
 import datablogWave from '../Assets/Home/background.svg';
 import flippedWave from '../Assets/Home/background_flipped.svg';
 import bottomWave from '../Assets/Home/bottom_wave.svg';
-import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
     render() {
@@ -117,14 +116,10 @@ class Home extends React.Component {
                           Take a look at some of our featured stories.
                         </p>
                         <Link to="/datablog">
-                          <Button fluid floated='right' size="big" color="orange" 
-                                // onClick={(e) => {
-                                //       e.preventDefault();
-                                //       window.location.href='/#/datablog';
-                                //   }}
-                                style={{borderRadius: 20}}>
-                            Learn More
-                          </Button>
+                        <Button fluid floated='right' size="large" color="orange" 
+                              style={{borderRadius: 20}}>
+                          Learn More
+                        </Button>
                         </Link>
                       </Grid.Column>
                     </Grid.Row>
@@ -147,14 +142,12 @@ class Home extends React.Component {
                       We tackle advanced machine learning problems in the areas of computer vision, 
                       natural language processing, and reinforcement learning. 
                     </p>
-                    <Button fluid floated='left' size="big" color="orange" 
-                            onClick={(e) => {
-                                  e.preventDefault();
-                                  window.location.href='/#/research';
-                              }}
+                    <Link to="/research">
+                    <Button fluid floated='left' size="large" color="orange"
                             style={{borderRadius: 20}}>
                         Learn More
                       </Button>
+                    </Link>
                     </div>
                   </Grid.Column>
                   <Grid.Column></Grid.Column>
@@ -182,14 +175,12 @@ class Home extends React.Component {
                       We offer pro bono consulting services for startups 
                       and companies within the Los Angeles area.
                       </p>
-                      <Button fluid floated='right' size="big" color="orange" 
-                            onClick={(e) => {
-                                  e.preventDefault();
-                                  window.location.href='/#/consulting';
-                              }}
-                            style={{borderRadius: 20}}>
+                      <Link to="/consulting">
+                      <Button fluid floated='right' size="large" color="orange" 
+                              style={{borderRadius: 20}}>
                         Learn More
                       </Button>
+                      </Link>
                     </div>
                   </Grid.Column>
                 </Grid.Row>
@@ -202,7 +193,7 @@ class Home extends React.Component {
               <Header style={{fontSize: "2em"}}>
                 Want To Contribute To DataRes? <br></br>
               </Header>
-              <Button floated='center' size="huge" color="orange" 
+              <Button floated='center' size="large" color="orange" 
                             onClick={(e) => {
                                   e.preventDefault();
                                   window.location.href='https://drive.google.com/file/d/17ypxJqurOepvSfPlGOYvGaoMzVQ5OmFv/view?usp=sharing';
