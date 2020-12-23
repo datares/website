@@ -196,7 +196,7 @@ class Home extends React.Component {
                                   e.preventDefault();
                                   window.location.href='https://drive.google.com/file/d/17ypxJqurOepvSfPlGOYvGaoMzVQ5OmFv/view?usp=sharing';
                               }}
-                            style={{borderRadius: 20,
+                            style={{borderRadius: 30,
                                     width: '40%',
                                     marginTop: '5%',
                                     padding: 20,
@@ -222,26 +222,21 @@ class Home extends React.Component {
                                                 width: "auto"}}>
               <Container fluid>
                 <div className="Social-media-icons">
-                  <Grid style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      paddingTop: '15%'
-                  }}>
+                  <Grid style={{paddingTop: '15%'}}>
                       <a href="https://www.facebook.com/ucladatares" rel="noopener noreferrer" target="_blank">
-                        <Icon inverted size="huge" color="white" name='facebook' fitted/>
+                        <Icon size="huge" color="black" name='facebook' fitted/>
                       </a>
                       <a href="https://twitter.com/DataresUcla" rel="noopener noreferrer" target="_blank">
-                        <Icon inverted size="huge" color="white" name='twitter' fitted/>
+                        <Icon size="huge" color="black" name='twitter' fitted/>
                       </a>
                       <a href="https://www.linkedin.com/company/ucla-datares/" rel="noopener noreferrer" target="_blank">
-                        <Icon inverted size="huge" color="white" name='linkedin' fitted/>
+                        <Icon size="huge" color="black" name='linkedin' fitted/>
                       </a>
                       <a href="https://www.instagram.com/ucladatares/" rel="noopener noreferrer" target="_blank">
-                        <Icon inverted size="huge" color="white" name='instagram' fitted/>
+                        <Icon size="huge" color="black" name='instagram' fitted/>
                       </a>
                       <a href="https://www.youtube.com/channel/UCmKnJ7aUWRcpfc2NMo2-_Hw" rel="noopener noreferrer" target="_blank">
-                        <Icon  inverted size="huge" color="white" name='youtube' fitted/>
+                        <Icon size="huge" color="black" name='youtube' fitted/>
                       </a>
                   </Grid>
                 </div>

@@ -102,25 +102,27 @@ class Research extends React.Component {
                                 <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
                                     Latest Research Articles
                                 </Header>
-                            <div>
+                    </Container>
+                            <div style={{paddingTop: '5%'}}>
                                 {/* TODO: Need to create an auto grid */}
                                 {Articles.map(article => (
-                                        <Container style={{margin: '5%'}}>
+                                        // <Container style={{margin: '5%'}}>
+                                        <div className='card-body'>
                                             <a href={article.url} rel="noopener noreferrer" target="_blank">
-                                            <Segment style={{margin: 0}} size="big" onClick={() => {}}>
+                                            <Segment className='segment-body' style={{margin: 0}} size="big" onClick={() => {}}>
                                                 <Image centered size="large" src={article.image}></Image>
                                                     <Header style={{fontSize: 20}}>{article.title}</Header>
-                                                    <Header style={{fontSize: 15}}>{article.meta}</Header>
-                                                    <div style={{ fontSize: 12, color: "black"}}>
+                                                    <Header style={{fontSize: 16}}>{article.meta}</Header>
+                                                    <div style={{ fontSize: 15, color: "black"}}>
                                                         {article.authors}
                                                     </div>
                                             </Segment>
                                             </a>
-                                        </Container>
+                                        </div>
+                                        // </Container>
                                 ))}
                             </div>
-                        </Container>
-                    
+                    {/* </Container> */}
                 </Container>
             </div>
         );

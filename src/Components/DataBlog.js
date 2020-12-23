@@ -18,6 +18,20 @@ import datablog_intro from '../Assets/DataBlog/intro.js'
 // Will eventually replace with articles dynamically updated from Medium website
 const Articles = [
     {
+        'url': 'https://ucladatares.medium.com/how-to-become-tiktok-famous-fe38ccdf7df6',
+        'image': 'https://miro.medium.com/max/1400/0*NWQKICZCNOTsvo7K',
+        'title': 'How To Become TikTok Famous',
+        'meta': 'December 23 2020',
+        'authors': 'Ivan Tran, Isha Shah, Kaushik Naresh, Madison Kohls'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/spotify-trends-analysis-129c8a31cf04',
+        'image': 'https://miro.medium.com/max/982/1*Vj5RB1YvdS6kR8mhJpigyA.png',
+        'title': 'Spotify Trends Analysis',
+        'meta': 'December 22 2020',
+        'authors': 'Deepthi Gangiredla, Deana Moghaddas, Ovie Soman, Trina Nguyen, Zoeb Jamal'
+    },
+    {
         'url': 'https://ucladatares.medium.com/an-investigation-of-the-california-wildfire-crisis-7104b1cb4a69',
         'image': 'https://miro.medium.com/max/1400/0*ItJqZEPpFNtGFrHO',
         'title': 'An Investigation of the California Wildfire Crisis',
@@ -168,11 +182,14 @@ class DataBlog extends React.Component {
                                     Latest DataBlog Articles
                                 </Header>
                             </div>
+                        </Container>
+                        <div style={{paddingTop: '5%'}}>
                                 {/* TODO: Need to create an auto grid */}
                                 {Articles.map(article => (
-                                        <Container fluid style={{margin: '5%'}}>
+                                        // <Container fluid style={{margin: '5%'}}>
+                                        <div className='card-body'>
                                             <a href={article.url} rel="noopener noreferrer" target="_blank">
-                                            <Segment style={{margin: 0}} size="big" onClick={() => {}}>
+                                            <Segment className='segment-body' size="big" onClick={() => {}}>
                                                 <Image centered size="large" src={article.image}></Image>
                                                     <Header style={{fontSize: 20, overflow: 'auto'}}>{article.title}</Header>
                                                     <Header style={{fontSize: 16}}>{article.meta}</Header>
@@ -181,9 +198,11 @@ class DataBlog extends React.Component {
                                                     </div>
                                             </Segment>
                                             </a>
-                                        </Container>
+                                        </div>
+                                        // </Container>
                                 ))}
-                        </Container>
+                        </div>
+                        {/* </Container> */}
                     </Container>
                 </div>
 
