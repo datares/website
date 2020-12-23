@@ -183,11 +183,10 @@ class DataBlog extends React.Component {
                                 </Header>
                             </div>
                         </Container>
-                        <div style={{paddingTop: '5%'}}>
+                        <div style={{paddingTop: '2%'}}>
                                 {/* TODO: Need to create an auto grid */}
                                 {Articles.map(article => (
-                                        // <Container fluid style={{margin: '5%'}}>
-                                        <div className='card-body'>
+                                        <Container className='card-body'>
                                             <a href={article.url} rel="noopener noreferrer" target="_blank">
                                             <Segment className='segment-body' size="big" onClick={() => {}}>
                                                 <Image centered size="large" src={article.image}></Image>
@@ -198,11 +197,9 @@ class DataBlog extends React.Component {
                                                     </div>
                                             </Segment>
                                             </a>
-                                        </div>
-                                        // </Container>
+                                        </Container>
                                 ))}
                         </div>
-                        {/* </Container> */}
                     </Container>
                 </div>
 

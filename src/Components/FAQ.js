@@ -1,6 +1,6 @@
 // Import Components
 import React from 'react';
-import {Header, Tab, Segment, Container} from 'semantic-ui-react';
+import {Header, Tab, Container} from 'semantic-ui-react';
 import ReactMarkdown from 'react-markdown';
 
 // Import JS

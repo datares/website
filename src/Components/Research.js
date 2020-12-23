@@ -103,11 +103,10 @@ class Research extends React.Component {
                                     Latest Research Articles
                                 </Header>
                     </Container>
-                            <div style={{paddingTop: '5%'}}>
+                            <div style={{paddingTop: '2%'}}>
                                 {/* TODO: Need to create an auto grid */}
                                 {Articles.map(article => (
-                                        // <Container style={{margin: '5%'}}>
-                                        <div className='card-body'>
+                                        <Container className='card-body'>
                                             <a href={article.url} rel="noopener noreferrer" target="_blank">
                                             <Segment className='segment-body' style={{margin: 0}} size="big" onClick={() => {}}>
                                                 <Image centered size="large" src={article.image}></Image>
@@ -118,8 +117,7 @@ class Research extends React.Component {
                                                     </div>
                                             </Segment>
                                             </a>
-                                        </div>
-                                        // </Container>
+                                        </Container>
                                 ))}
                             </div>
                     {/* </Container> */}
