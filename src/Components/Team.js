@@ -141,7 +141,7 @@ class Team extends React.Component {
                                                 <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                     <Image centered src={user.image} size='small'></Image>
                                                     <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
-                                                    <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                                    <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                 </Segment>
                                                 </a>
                                             </div>
@@ -154,7 +154,7 @@ class Team extends React.Component {
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                         <Image centered src={user.image} size='small'></Image>
                                                         <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
-                                                        <Header style={{fontSize: 17, color: '#F2A173'}}>{user.title}</Header>
+                                                        <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
                                                     </a>
                                                 </div>

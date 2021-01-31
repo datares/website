@@ -18,94 +18,129 @@ import datablog_intro from '../Assets/DataBlog/intro.js'
 // Will eventually replace with articles dynamically updated from Medium website
 const Articles = [
     {
+        'url': 'https://ucladatares.medium.com/uber-vs-lyft-how-do-they-decide-their-price-92222122f482',
+        'image': 'https://miro.medium.com/max/1400/0*-5xIMW2zPW7DEnUw',
+        'title': 'Uber VS Lyft: How do they decide their price?',
+        'meta': 'January 7, 2021',
+        'authors': 'Yupeng Chen, Sylvia Ma, Hana lim, Lu Cheng, Anish Dulla'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/analyzing-questions-asked-to-the-troubleshooter-of-all-tech-teams-stack-overflow-a2c561a8b8e',
+        'image': 'https://miro.medium.com/max/2000/0*CKQnNDvQuwh1LsYE',
+        'title': 'Analyzing Questions Asked To The Troubleshooter Of All Tech Teams — Stack Overflow',
+        'meta': 'January 6, 2021',
+        'authors': 'Agrim Gupta, Darren Tsang, Nora Liu, Yuan Shen'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/visualizing-trends-and-patterns-in-pitchfork-reviews-cad1a130869b',
+        'image': 'https://miro.medium.com/max/1400/0*IertjaMBGCwO2_hW',
+        'title': 'Visualizing Trends and Patterns in Pitchfork Reviews',
+        'meta': 'December 29, 2020',
+        'authors': 'Joe Fregault, Karina Santoso, Ashley Lu, Ishaan Shah'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/dont-worry-be-happy-45920dd182d4',
+        'image': 'https://miro.medium.com/max/1400/0*3B5v8yfq-nj5w9T-',
+        'title': "Don't Worry, Be Happy",
+        'meta': 'December 25, 2020',
+        'authors': 'Rachel Li, William Huang, Charisse Hung, Aarushi Gupta, Charlotte Huang'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/uncovering-what-traits-make-a-kickstarter-campaign-successful-dd4b62df9eb4',
+        'image': 'https://miro.medium.com/max/1400/0*mBv93BkaVOEK2PRi',
+        'title': 'Uncovering What Traits Make A Kickstarter Campaign Successful',
+        'meta': 'December 24, 2020',
+        'authors': 'Raymond Bai, Samantha Chung, Emily Hou, Amy Tang'
+    },
+    {
         'url': 'https://ucladatares.medium.com/how-to-become-tiktok-famous-fe38ccdf7df6',
         'image': 'https://miro.medium.com/max/1400/0*NWQKICZCNOTsvo7K',
         'title': 'How To Become TikTok Famous',
-        'meta': 'December 23 2020',
+        'meta': 'December 23, 2020',
         'authors': 'Ivan Tran, Isha Shah, Kaushik Naresh, Madison Kohls'
     },
     {
         'url': 'https://ucladatares.medium.com/spotify-trends-analysis-129c8a31cf04',
         'image': 'https://miro.medium.com/max/982/1*Vj5RB1YvdS6kR8mhJpigyA.png',
         'title': 'Spotify Trends Analysis',
-        'meta': 'December 22 2020',
+        'meta': 'December 22, 2020',
         'authors': 'Deepthi Gangiredla, Deana Moghaddas, Ovie Soman, Trina Nguyen, Zoeb Jamal'
     },
     {
         'url': 'https://ucladatares.medium.com/an-investigation-of-the-california-wildfire-crisis-7104b1cb4a69',
         'image': 'https://miro.medium.com/max/1400/0*ItJqZEPpFNtGFrHO',
         'title': 'An Investigation of the California Wildfire Crisis',
-        'meta': 'December 21 2020',
+        'meta': 'December 21, 2020',
         'authors': 'Adhvaith Vijay (Project Lead), Danielle Goldwirth, Tara Jaigopal, Jaclyn Chiu, Angelina Kim'
     },
     {
         'url': 'https://medium.com/@ucladatares/secrets-to-maximizing-success-in-the-speed-dating-experience-7f4f50c40019',
         'image': 'https://miro.medium.com/max/1400/0*KiVI-aajNSVLC7wc',
         'title': 'Secrets to Maximizing Success in the (Speed) Dating Experience',
-        'meta': 'June 5 2020',
+        'meta': 'June 5, 2020',
         'authors': 'Aaron Lee, Aden Chiu, Charlotte Huang, Grace Panos, Michelle Lee, Teresa Rexin'
     },
     {
         'url': 'https://medium.com/@ucladatares/analyzing-domestic-airlines-and-flights-4ea21f31d932',
         'image': 'https://miro.medium.com/fit/c/1400/420/0*CIQMZBw2K3OGsRn5',
         'title': 'Analyzing Domestic Airlines and Flights',
-        'meta': 'Jan 27 2020',
+        'meta': 'Jan 27, 2020',
         'authors': 'Olivia Heiner, Eddie Liu, Siddarth Chalasani, Allen Chun, Yupeng William Chen'
     },
     {
         'url': 'https://medium.com/@ucladatares/how-refereeing-and-fans-affect-35bb3c2ead58',
         'image': 'https://miro.medium.com/fit/c/936/282/0*bPoXdkbeh6ZZ3Cz7',
         'title': 'How Refereeing and Fans Affect the NBA',
-        'meta': 'Jan 20 2020',
+        'meta': 'Jan 20, 2020',
         'authors': 'Andrew Liu, Joe Fregault, Kaushik Naresh and Matei Lupu'
     },
     {
         'url': 'https://medium.com/@ucladatares/all-about-ramen-3a4e657a4bd4',
         'image': 'https://miro.medium.com/max/1400/0*fOqlBV_r59UayaWe',
         'title': 'All About Ramen',
-        'meta': 'Jan 20 2020',
+        'meta': 'Jan 20, 2020',
         'authors': 'Jun Bae, Celia Jin, Ovie Soman'
     },
     {
         'url': 'https://medium.com/@ucladatares/how-to-make-your-video-trend-on-youtube-not-clickbait-f1de5266cc2f',
         'image': 'https://miro.medium.com/max/1400/0*aMzoWddPOlAvqEPs',
         'title': 'How to Make Your Video Trend on YouTube! (Not Clickbait)',
-        'meta': 'Dec 8 2019',
+        'meta': 'Dec 8, 2019',
         'authors': 'Aaron Lee, Aden Chiu, Charlotte Huang, Grace Panos, Michelle Lee, Teresa Rexin'
     },
     {
         'url': 'https://medium.com/@ucladatares/modern-astrophysics-at-the-forefront-of-data-science-2fd9b4e64ea9',
         'image': 'https://miro.medium.com/max/1400/0*zsdCH5M5uWnXnO_x.png',
         'title': 'Modern Astrophysics At The Forefront of Data Science',
-        'meta': 'May 31 2019',
+        'meta': 'May 31, 2019',
         'authors': 'Mason MacDougall'
     },
     {
         'url': 'https://medium.com/@ucladatares/visualizations-on-crime-in-los-angeles-7013cd8f9c8b',
         'image': 'https://miro.medium.com/max/1240/0*2u3Fp3pA04Syo2eE',
         'title': 'Visualizations On Crime In Los Angeles',
-        'meta': 'May 28 2019',
+        'meta': 'May 28, 2019',
         'authors': 'Boyang Yu, Radhika Ahuja'
     },
     {
         'url': 'https://medium.com/@ucladatares/movie-ratings-analysis-478c0de6c9f8',
         'image': 'https://miro.medium.com/max/1400/1*o_tUkNLdlXy127J-aWPxwQ.png',
         'title': 'Movie Ratings Analysis',
-        'meta': 'May 28 2019',
+        'meta': 'May 28, 2019',
         'authors': ' Tanvi Pati, Vivek Menon'
     },
     {
         'url': 'https://medium.com/@ucladatares/a-quick-look-into-some-suicide-statistics-59fcd4819f35',
         'image': 'https://miro.medium.com/max/1400/0*hfQtQNNDubKw5sse',
         'title': 'A Quick Look Into Some Suicide Statistics',
-        'meta': 'May 28 2019',
+        'meta': 'May 28, 2019',
         'authors': 'Chingyi Ie, Richard Yim'
     },
     {
         'url': 'https://medium.com/@ucladatares/analyzing-denzel-currys-lyrics-through-text-mining-methods-63608318d2',
         'image': 'https://miro.medium.com/max/1400/1*dLHJTeEW5MJRAPoAlKumeA.jpeg',
         'title': 'Analyzing Denzel Curry’s Lyrics Through Text Mining Methods',
-        'meta': 'May 9 2019',
+        'meta': 'May 9, 2019',
         'authors': 'Nikhil Sharma, Raghava Govil'
     }
 ]

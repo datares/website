@@ -17,17 +17,24 @@ import wave from '../Assets/Research/team_wave.svg';
 import research_intro from '../Assets/Research/intro.js'
 var Articles = [
     {
+        'url': 'https://ucladatares.medium.com/stock-market-trading-with-reinforcement-learning-df406c2c1935',
+        'image': 'https://miro.medium.com/max/1400/0*P60tBy3dGPoWroA3',
+        'title': 'Stock Market Trading With Reinforcement Learning',
+        'meta': 'January 10, 2021',
+        'authors': 'Nilay Shah, Colin Curtis (@Colinpcurtis), Shail Mirpuri'
+    },
+    {
         'url': 'https://medium.com/@ucladatares/rlette-casino-roulette-through-reinforcement-learning-67e865843f0d',
         'image': 'https://miro.medium.com/max/1000/0*hOZaW3_QrZA0r1EC',
         'title': 'RLette — Casino Roulette through Reinforcement Learning',
-        'meta': 'July 27 2020',
+        'meta': 'July 27, 2020',
         'authors': 'Francesco Colonnese @fcolo_, Andrei Rekesh @AndreiRekesh'
     },
     {
         'url': 'https://medium.com/@ucladatares/predicting-speed-from-video-frames-dissecting-the-comma-ai-challenge-5da697b55886',
         'image': 'https://miro.medium.com/max/1400/0*JdRMZiL3PuxhGMvC',
         'title': 'Predicting speed from video frames — Dissecting the comma.ai challenge',
-        'meta': 'July 27 2020',
+        'meta': 'July 27, 2020',
         'authors': 'Francesco Colonnese @fcolo_, Andrei Rekesh @AndreiRekesh'
     }
 ]
@@ -79,7 +86,7 @@ class Research extends React.Component {
                         </Grid>
                     </Container>
                 </div>
-                <div>
+                {/* <div>
                     <Container style={{paddingBottom: 50}}>
                         <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
                                 Plans for Fall 2020
@@ -88,7 +95,7 @@ class Research extends React.Component {
                         <ReactMarkdown source={research_intro} />
                         </Segment>
                     </Container>
-                </div>
+                </div> */}
                 {/* Wave Image */}
                 <div style={{backgroundImage: `url(${wave})`,
                                 backgroundSize: "cover",
