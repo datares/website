@@ -83,7 +83,7 @@ class Consulting extends React.Component {
                                     <Header style={{fontSize: 18}}> Winter 2021 </Header>
                                     <div style={{fontSize: 16, color: 'black'}}>
                                         <p>
-                                            UCLA Athletic's has more than 100 NCAA Titles. Athletes from UCLA
+                                            UCLA Athletics has more than 100 NCAA Titles. Athletes from UCLA
                                             have produced 261 Olympic medals, ranking UCLA higher in medal count 
                                             than most countries.
                                         </p>
