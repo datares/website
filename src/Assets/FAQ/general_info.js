@@ -27,7 +27,7 @@ Follow us on our social media!
 - Medium: https://ucladatares.medium.com/
 - LinkedIn: https://www.linkedin.com/company/ucla-datares/
 
-**If you have any additional questions, please email us at: ucladatares@gmail.com**
+**If you have any additional questions, please email us at: contact@ucladatares.org**
 `
 
 export default markdown

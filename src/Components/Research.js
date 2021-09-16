@@ -17,6 +17,13 @@ import wave from '../Assets/Research/team_wave.svg';
 import research_intro from '../Assets/Research/intro.js'
 var Articles = [
     {
+        'url': 'https://ucladatares.medium.com/make-a-monet-image-style-transfer-with-cycle-gans-5475dcb525b8',
+        'image': 'https://miro.medium.com/max/1400/0*FhgV2fS2zEKcm5S6',
+        'title': 'Make-A-Monet: Image Style Transfer With Cycle GANs',
+        'meta': 'July 1, 2021',
+        'authors': 'Colin Curtis (@Colinpcurtis), Adhvaith Vijay'
+    },
+    {
         'url': 'https://ucladatares.medium.com/stock-market-trading-with-reinforcement-learning-df406c2c1935',
         'image': 'https://miro.medium.com/max/1400/0*P60tBy3dGPoWroA3',
         'title': 'Stock Market Trading With Reinforcement Learning',
@@ -74,7 +81,7 @@ class Research extends React.Component {
                                             <Button  fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    window.open('https://airtable.com/shr9InuQoVZXWoPXA', "_blank");
+                                                    window.open('https://airtable.com/shrFhpoNAPe2lQu8s', "_blank");
                                                 }}>Apply</Button>
                                         </div>
                                     </p>

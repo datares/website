@@ -18,6 +18,139 @@ import datablog_intro from '../Assets/DataBlog/intro.js'
 // Will eventually replace with articles dynamically updated from Medium website
 const Articles = [
     {
+        'url': 'https://medium.com/geekculture/covid-19-vaccinations-and-interesting-trends-87cb99f4b551',
+        'image': 'https://miro.medium.com/max/1400/0*FUtdVuSZZKReSPuV',
+        'title': 'COVID-19 Vaccinations and Interesting Trends',
+        'meta': 'June 22, 2021',
+        'authors': 'Samantha Chung, Annie Li, Shreesh Karjagi, and Isha Shah'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/when-dating-met-the-internet-9de9ac76dc62',
+        'image': 'https://miro.medium.com/max/1224/0*39ZK6mklD_4Kg5zU',
+        'title': '“When Dating Met the Internet”',
+        'meta': 'June 21, 2021',
+        'authors': 'Sivaji Turimella, Brandon Zhao, Robi Chatterjee, Kevin Hahn, Matthew Maemura'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/what-defines-a-championship-team-nba-playoff-predictions-b9f3ea2413bc',
+        'image': 'https://miro.medium.com/max/1400/0*P8d7xKtQ0nEERnQA',
+        'title': 'What Defines a Championship Team — NBA Playoff Predictions',
+        'meta': 'June 20, 2021',
+        'authors': 'Alan Wang, Rebecca Xu, Siddarth Chalasani'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/exploring-machine-learning-with-the-kepler-telescope-dc1dfada5431',
+        'image': 'https://miro.medium.com/max/1400/0*38C8eA9wyJbfBuOl',
+        'title': 'Exploring Machine Learning with the Kepler Telescope',
+        'meta': 'June 19, 2021',
+        'authors': 'Luke Rivers, Ashley Lu, Ben Brill, Hyerin Lee'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/we-all-scream-for-ice-cream-cf04d75739be',
+        'image': 'https://miro.medium.com/max/1252/0*MFPRj813IEHdwwLb',
+        'title': 'We All Scream for Ice Cream!',
+        'meta': 'June 18, 2021',
+        'authors': 'Nicole Lam, Kuan-Ting (Andrew) Chen, Kayla Teng, Paige Lee, Joshua Li'
+    },
+    {
+        'url': 'https://medium.com/geekculture/whats-the-price-of-education-9d053a7d55d6',
+        'image': 'https://miro.medium.com/max/1400/0*QVJR-gpyxeSxk5PJ',
+        'title': 'What’s the Price of Education?',
+        'meta': 'June 17, 2021',
+        'authors': 'Yixin Chen, Charisse Hung, Tianlang Ouyang, Shiyu Ma, Daphne Chen'
+    },
+    {
+        'url': 'https://medium.com/geekculture/chartmetrics-5f1d0b89ece8',
+        'image': 'https://miro.medium.com/max/2000/0*lLoKNo_UXvfDUhpt',
+        'title': 'ChartMetrics',
+        'meta': 'June 16, 2021',
+        'authors': 'Dara Tan, Jeffrey Yang, Giselle Kurniawan, Austin Pham, Natanael Wijaya'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/what-does-everyone-buy-on-amazon-3cc6955a182c',
+        'image': 'https://miro.medium.com/max/2000/0*ixet91NkGFjK04p2',
+        'title': 'What does Everyone Buy on Amazon?',
+        'meta': 'June 15, 2021',
+        'authors': 'Avishek Ghosh, Sudhanshu Agrawal, Angelina Kim, Zoey Meng, Cyrus Ho'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/representation-of-women-in-the-film-industry-e98a0456a75f',
+        'image': 'https://miro.medium.com/max/2000/0*l05oFH2RrXcwjEV3',
+        'title': 'Representation of Women in the Film Industry',
+        'meta': 'June 14, 2021',
+        'authors': 'Siew Fen Eow, Ovie Soman, Melina Diaz, Naomi Golin'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/being-woke-about-strokes-9f20be18715b',
+        'image': 'https://miro.medium.com/max/1400/0*cbNRakMjjwB8prsf',
+        'title': 'Being Woke About Strokes!',
+        'meta': 'June 13, 2021',
+        'authors': 'Anish Dulla, Akshat Srivastav, Eleanor Pae, Ojas Bardiya, Zoeb Jamal'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/transcending-quarantine-analyzing-character-traits-and-mental-health-during-covid-19-lockdowns-da8f757db86d',
+        'image': 'https://miro.medium.com/max/1400/0*DQ3czTSA1Uc7dfxX',
+        'title': 'Transcending Quarantine: Analyzing Character Traits and Mental Health During Covid-19 Lockdowns',
+        'meta': 'April 14, 2021',
+        'authors': 'Aileen Tang, Charisse Hung, Josh Li, Sivaji Turimella, Giselle Kurniawan'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/a-comprehensive-analysis-of-covid-19-vaccination-rollout-343b56355098',
+        'image': 'https://miro.medium.com/max/1380/0*ntyBllDUoMXCMvNK.png',
+        'title': 'A Comprehensive Analysis of COVID-19 Vaccine Rollout',
+        'meta': 'April 2, 2021',
+        'authors': 'Adhvaith Vijay, Deana Moghaddas, Sylvia Ma, Deepthi Gangiredla'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/everything-you-avo-wanted-to-know-about-avocados-510aa0450bb1',
+        'image': 'https://miro.medium.com/max/1400/0*rf3vYHB2_wonfkBN',
+        'title': 'Everything You Avo Wanted to Know About Avocados',
+        'meta': 'March 29, 2021',
+        'authors': 'Tara Jaigopal, Aarushi Gupta, Amy Tang, Emily Ng, Tiffany Feng'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/streaming-wars-netflix-prime-video-hulu-and-disney-c568a77a36ff',
+        'image': 'https://miro.medium.com/max/1400/0*sQ7vsPMILKmfm5AM',
+        'title': 'Streaming Wars: Netflix, Prime Video, Hulu, and Disney+',
+        'meta': 'March 27, 2021',
+        'authors': 'Zachary Chang, Eleanor Pae, Kevin Xu, Nora Liu, Annie Li'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/red-vs-blue-a-study-in-numbers-of-the-us-2020-election-f4f1e65c2943',
+        'image': 'https://miro.medium.com/max/1400/0*H6S9v74QrKjStMpj',
+        'title': 'Red vs. Blue: A Study in Numbers of the US 2020 Election',
+        'meta': 'March 26, 2021',
+        'authors': 'Ishaan Shah, Alan Wang, Yixin Chen, Ovie Soman, Nicole Park'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/understanding-healthcare-expenditure-in-the-united-states-5603bc086d2c',
+        'image': 'https://miro.medium.com/max/1400/0*UZ6H3ZUguDmUfAZS',
+        'title': 'Understanding Healthcare Expenditure in the United States',
+        'meta': 'March 25, 2021',
+        'authors': 'Naomi Golin, Avishek Ghosh, Jun Bae, Samantha Chung, Angelina Kim'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/what-makes-an-ultimate-fighter-ufc-sports-analytics-prediction-2d4cf4314b14',
+        'image': 'https://miro.medium.com/max/1378/0*Yq_AQhLizc_6qFdy',
+        'title': 'What makes an Ultimate Fighter? UFC sports analytics & prediction',
+        'meta': 'March 25, 2021',
+        'authors': 'Hana Lim , Zoeb Jamal, Dara Tan, Ben Brill, Kaushik Naresh, and Lia Bergman-Turnbull'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/unraveling-the-games-among-us-79eedb26835c',
+        'image': 'https://miro.medium.com/max/1400/0*3DZI_XY-NbyM1Cxy',
+        'title': 'Unraveling the Games Among Us',
+        'meta': 'March 23, 2021',
+        'authors': 'Rachel Li, Anish Dulla, Anika Chakrabarti, Zoey Meng, Ojas Bardiya'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/what-makes-a-movie-5d345aa68863',
+        'image': 'https://miro.medium.com/max/2942/1*kXuXRqaGXpqEneoCZlV9Tw.png',
+        'title': 'What Makes a Movie?',
+        'meta': 'March 22, 2021',
+        'authors': 'Madison Kohls, Bonnie Liu, Polina Pranovich, Danielle Goldwirth, Isha Shah'
+    },
+    {
         'url': 'https://ucladatares.medium.com/uber-vs-lyft-how-do-they-decide-their-price-92222122f482',
         'image': 'https://miro.medium.com/max/1400/0*-5xIMW2zPW7DEnUw',
         'title': 'Uber VS Lyft: How do they decide their price?',
@@ -179,7 +312,7 @@ class DataBlog extends React.Component {
                                             <Button fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    window.open('https://airtable.com/shr9InuQoVZXWoPXA', "_blank");
+                                                    window.open('https://airtable.com/shrFhpoNAPe2lQu8s', "_blank");
                                                 }}>
                                                 Apply
                                             </Button>
