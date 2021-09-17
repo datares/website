@@ -14,6 +14,8 @@ import bottomWave from '../Assets/Home/bottom_wave.svg';
 import general_info from '../Assets/FAQ/general_info';
 import research_info from '../Assets/FAQ/research_info';
 import datablog_info from '../Assets/FAQ/datablog_info';
+import consulting_info from '../Assets/FAQ/consulting_info';
+
 
 const panes = [
     {
@@ -32,6 +34,12 @@ const panes = [
         menuItem: 'Research',
         render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
                             <ReactMarkdown source={research_info} />
+                     </Tab.Pane>,
+    },
+    {
+        menuItem: 'Consulting',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={consulting_info} />
                      </Tab.Pane>,
     }
 ]
