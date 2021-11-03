@@ -31,7 +31,8 @@ import colin from '../Assets/Team/Profiles/colin.png';
 import agrim from '../Assets/Team/Profiles/agrim.png';
 import william from '../Assets/Team/Profiles/william.png';
 import luke from '../Assets/Team/Profiles/luke.png';
-
+import isha from '../Assets/Team/Profiles/isha.png';
+import ashley from '../Assets/Team/Profiles/ashley.jpeg';
 
 
 const row1 = [
@@ -102,18 +103,46 @@ const row3 = [
         'linkedin': 'https://www.linkedin.com/in/nicolepark4/'
     },
     {
+        'name': 'Ashley Lee',
+        'title': 'Finance Chair',
+        'image': ashley,
+        'linkedin': ''
+    },
+    {
         'name': 'William Huang',
         'title': 'UCLA Athletics PM*',
         'image': william,
         'linkedin': 'https://www.linkedin.com/in/whuang37/'
-    },
-    {
-        'name': 'Luke Rivers',
-        'title': '[newClientName] PM*',
-        'image': luke,
-        'linkedin': 'https://www.linkedin.com/in/luke-rivers/'
     }
 ]
+
+const row4 = [
+    {
+        'name': 'Luke Rivers',
+        'title': 'Savi PM*',
+        'image': luke,
+        'linkedin': 'https://www.linkedin.com/in/luke-rivers/'
+    },
+    {
+        'name': 'Isha Shah',
+        'title': 'Hellosaurus PM*',
+        'image': isha,
+        'linkedin': 'https://www.linkedin.com/in/isha-shah-06b74a1b8/'
+    }
+    // {
+    //     'name': 'William Huang',
+    //     'title': 'UCLA Athletics PM*',
+    //     'image': william,
+    //     'linkedin': 'https://www.linkedin.com/in/whuang37/'
+    // },
+    // {
+    //     'name': 'Luke Rivers',
+    //     'title': '[newClientName] PM*',
+    //     'image': luke,
+    //     'linkedin': 'https://www.linkedin.com/in/luke-rivers/'
+    // }
+]
+
 
 
 class Team extends React.Component {
@@ -165,7 +194,7 @@ class Team extends React.Component {
                 <div style={{backgroundImage: `url(${wave})`,
                         backgroundSize: "cover",
                         minHeight: '120vh',
-                        height: '185vh',
+                        height: '235vh',
                         width: "auto", 
                         paddingTop: 50}}>
 
@@ -213,11 +242,24 @@ class Team extends React.Component {
                                                 </div>
                                             ))}
                                     </Grid.Row>
+                                    <Grid.Row centered>                            
+                                            {row4.map(user => (
+                                                <div className='Segment-alignment'> 
+                                                    <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
+                                                    <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
+                                                        <Image centered src={user.image} size='small'></Image>
+                                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
+                                                        <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
+                                                    </Segment>
+                                                    </a>
+                                                </div>
+                                            ))}
+                                    </Grid.Row>
                                 </Grid>
                         </Container>
                     </div>
                     <div style={{textAlign: 'left', alignItems: 'left', paddingLeft: '11%',paddingBottom: '11%'}}>
-                        <p padded style={{fontSize: 17, color: '#fcba03'}}><b> *PM = Project Manager</b></p>
+                        <p padded style={{fontSize: 17, color: '#fcba03'}}><b> *PM = Project Manager with a consulting client</b></p>
                     </div>
                     </Container>
             </div>
