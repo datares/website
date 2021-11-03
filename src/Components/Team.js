@@ -107,16 +107,16 @@ const row3 = [
         'title': 'Finance Chair',
         'image': ashley,
         'linkedin': ''
-    },
+    }
+]
+
+const row4 = [
     {
         'name': 'William Huang',
         'title': 'UCLA Athletics PM*',
         'image': william,
         'linkedin': 'https://www.linkedin.com/in/whuang37/'
-    }
-]
-
-const row4 = [
+    },
     {
         'name': 'Luke Rivers',
         'title': 'Savi PM*',
