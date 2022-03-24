@@ -43,16 +43,7 @@ class Consulting extends React.Component {
                                             <Button fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    window.open('https://airtable.com/shrFhpoNAPe2lQu8s', "_blank");
-                                                }}>
-                                                Apply as Consultant (UCLA  Students)
-                                            </Button>
-                                            <br></br>
-                                            <br></br>
-                                            <Button fluid floated="right" color="light green" size="massive"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    window.open('https://docs.google.com/forms/d/11Nqi2yPMDWEn3CfaImG5sSdzxGgM-tUVjBWUfecRvG4/edit', "_blank");
+                                                    window.open('https://forms.gle/ezvdkYiHzvYnrRWS8', "_blank");
                                                 }}>
                                                 Apply to be a Client
                                             </Button>

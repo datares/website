@@ -12,135 +12,129 @@ import 'semantic-ui-css/semantic.min.css';
 import wave from '../Assets/Team/wave.svg';
 
 // Import Profiles
-// import arnav from '../Assets/Team/Profiles/arnav.png';
-// import andy from '../Assets/Team/Profiles/andy.png';
-// import dhruv from '../Assets/Team/Profiles/dhruv.png';
-// import francesco from '../Assets/Team/Profiles/francesco.png';
-import michelle from '../Assets/Team/Profiles/michelle.png';
-// import raghava from '../Assets/Team/Profiles/raghava.png';
-// import varchasvi from '../Assets/Team/Profiles/varchasvi.png';
-// import morgan from '../Assets/Team/Profiles/morgan.png';
-import rebecca from '../Assets/Team/Profiles/rebecca.jpeg';
-import nicole from '../Assets/Team/Profiles/nicole.jpeg';
-import shail from '../Assets/Team/Profiles/shail.png';
-import madison from '../Assets/Team/Profiles/madison.jpeg';
+import andrew from '../Assets/Team/Profiles/andrew.jpg';
+import anika from '../Assets/Team/Profiles/anika.jpg';
+import avishek from '../Assets/Team/Profiles/avishek.JPG';
+import brandon from '../Assets/Team/Profiles/brandon.JPG';
+import colin from '../Assets/Team/Profiles/colin.jpeg';
+import derek from '../Assets/Team/Profiles/derek.jpg';
+import irsyad from '../Assets/Team/Profiles/irsyad.jpg';
+import isha from '../Assets/Team/Profiles/isha.PNG';
 import ishaan from '../Assets/Team/Profiles/ishaan.png';
-import grace from '../Assets/Team/Profiles/grace.jpeg';
-import aileen from '../Assets/Team/Profiles/aileen.png';
-import colin from '../Assets/Team/Profiles/colin.png';
-import agrim from '../Assets/Team/Profiles/agrim.png';
-import william from '../Assets/Team/Profiles/william.png';
-import luke from '../Assets/Team/Profiles/luke.png';
-import isha from '../Assets/Team/Profiles/isha.png';
-import ashley from '../Assets/Team/Profiles/ashley.jpeg';
-
+import ivan from '../Assets/Team/Profiles/ivan.jpg';
+import justin from '../Assets/Team/Profiles/justin.jpeg';
+import karina from '../Assets/Team/Profiles/karina.jpeg';
+import madison from '../Assets/Team/Profiles/madison.jpg';
+import raymond from '../Assets/Team/Profiles/raymond.jpg';
+import sausy from '../Assets/Team/Profiles/sausy.jpeg';
+import taylor from '../Assets/Team/Profiles/taylor.jpeg';
 
 const row1 = [
     {
-        'name': 'Michelle Lee',
-        'title': 'Co-President',
-        'image': michelle,
-        'linkedin': 'https://www.linkedin.com/in/michelle14lee'
-    },
-    {
-        'name': 'Agrim Gupta',
-        'title': 'Co-President',
-        'image': agrim,
-        'linkedin': 'https://www.linkedin.com/in/guptagrim'
-    },
-    {
-        'name': 'Madison Kohls',
-        'title': 'Co-Data Blog Head',
-        'image': madison,
-        'linkedin': 'https://www.linkedin.com/in/madison-kohls/'
-    },
-    {
-        'name': 'Ishaan Shah',
-        'title': 'Co-Data Blog Head',
-        'image': ishaan,
-        'linkedin': 'https://www.linkedin.com/in/varchasvi-vedula'
-    }
-    
-]
-const row2 = [
-    {
         'name': 'Colin Curtis',
-        'title': 'Research Head',
+        'title': 'Co-President',
         'image': colin,
         'linkedin': 'https://www.linkedin.com/in/colin-curtis826/'
     },
     {
-        'name': 'Rebecca Xu',
-        'title': 'Design Head',
-        'image': rebecca,
-        'linkedin': 'https://www.linkedin.com/in/rebeccazxu/'
+        'name': 'Madison Kohls',
+        'title': 'Co-President',
+        'image': madison,
+        'linkedin': 'https://www.linkedin.com/in/madison-kohls/'
     },
     {
-        'name': 'Grace Panos',
-        'title': 'Co-Consulting Head',
-        'image': grace,
-        'linkedin': 'https://www.linkedin.com/in/grace-panos-b23342195/'
+        'name': 'Anika Chakrabarti',
+        'title': 'Co-Data Blog Head',
+        'image': anika,
+        'linkedin': 'https://www.linkedin.com/in/anika-chakrabarti-394b91205/'
     },
     {
-        'name': 'Aileen Tang',
+        'name': 'Derek Nakagawa',
+        'title': 'Co-Data Blog Head',
+        'image': derek,
+        'linkedin': '#'
+    }
+]
+
+const row2 = [
+    {
+        'name': 'Irsyad Adam',
+        'title': 'Research Head',
+        'image': irsyad,
+        'linkedin': 'https://www.linkedin.com/in/irsyad-adam-02a1a7196/'
+    },
+    {
+        'name': 'Taylor Kim',
+        'title': 'Marketing/Design Head',
+        'image': taylor,
+        'linkedin': 'https://www.linkedin.com/in/taylor-kim-b7a406221/'
+    },
+    {
+        'name': 'Isha Shah',
         'title': 'Co-Consulting Head',
-        'image': aileen,
-        'linkedin': 'https://www.linkedin.com/in/aileen-tang'
+        'image': isha,
+        'linkedin': 'https://www.linkedin.com/in/ishashah146/'
+    },
+    {
+        'name': 'Avishek Ghosh',
+        'title': 'Co-Consulting Head',
+        'image': avishek,
+        'linkedin': 'https://www.linkedin.com/in/ghosh-avishek/'
     }
 ]
 
 const row3 = [
     {
-        'name': 'Shail Mirpuri',
-        'title': 'People Analyst',
-        'image': shail,
-        'linkedin': 'https://www.linkedin.com/in/shail-mirpuri/'
+        'name': 'Ishaan Shah',
+        'title': 'Co-Beginner Track Head',
+        'image': ishaan,
+        'linkedin': 'https://www.linkedin.com/in/ishaanshah24/'
     },
     {
-        'name': 'Nicole Park',
-        'title': 'Outreach Head',
-        'image': nicole,
-        'linkedin': 'https://www.linkedin.com/in/nicolepark4/'
+        'name': 'Ivan Guan',
+        'title': 'Co-Beginner Track Head',
+        'image': ivan,
+        'linkedin': 'https://www.linkedin.com/in/ivanguan1/'
     },
     {
-        'name': 'Ashley Lee',
+        'name': 'Justin Gong',
         'title': 'Finance Chair',
-        'image': ashley,
-        'linkedin': ''
-    }
+        'image': justin,
+        'linkedin': '#'
+    },
+    {
+        'name': 'Brandon Zhao',
+        'title': 'Outreeach Head',
+        'image': brandon,
+        'linkedin': 'https://www.linkedin.com/in/brandonzhao1/'
+    },
 ]
 
 const row4 = [
     {
-        'name': 'William Huang',
+        'name': 'Sausthava Malakar',
+        'title': 'Membership Head',
+        'image': sausy,
+        'linkedin': 'https://www.linkedin.com/in/sausthava/'
+    },
+    {
+        'name': 'Raymond Bai',
         'title': 'UCLA Athletics PM*',
-        'image': william,
-        'linkedin': 'https://www.linkedin.com/in/whuang37/'
+        'image': raymond,
+        'linkedin': 'https://www.linkedin.com/in/raymondbai/'
     },
     {
-        'name': 'Luke Rivers',
-        'title': 'Savi PM*',
-        'image': luke,
-        'linkedin': 'https://www.linkedin.com/in/luke-rivers/'
+        'name': 'Karina Santoso',
+        'title': 'UCLA Athletics PM*',
+        'image': karina,
+        'linkedin': 'https://www.linkedin.com/in/karina-santoso/'
     },
     {
-        'name': 'Isha Shah',
-        'title': 'Hellosaurus PM*',
-        'image': isha,
-        'linkedin': 'https://www.linkedin.com/in/isha-shah-06b74a1b8/'
+        'name': 'Drew Letvin',
+        'title': 'UCLA Athletics PM*',
+        'image': andrew,
+        'linkedin': 'https://www.linkedin.com/in/drew-letvin/'
     }
-    // {
-    //     'name': 'William Huang',
-    //     'title': 'UCLA Athletics PM*',
-    //     'image': william,
-    //     'linkedin': 'https://www.linkedin.com/in/whuang37/'
-    // },
-    // {
-    //     'name': 'Luke Rivers',
-    //     'title': '[newClientName] PM*',
-    //     'image': luke,
-    //     'linkedin': 'https://www.linkedin.com/in/luke-rivers/'
-    // }
 ]
 
 
@@ -194,9 +188,9 @@ class Team extends React.Component {
                 <div style={{backgroundImage: `url(${wave})`,
                         backgroundSize: "cover",
                         minHeight: '120vh',
-                        height: '235vh',
+                        height: '300vh',
                         width: "auto", 
-                        paddingTop: 50}}>
+                        paddingTop: 200}}>
 
                     {/* Team Description */}
                     <Container>
@@ -208,7 +202,7 @@ class Team extends React.Component {
                                             <div className='Segment-alignment'>
                                                 <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                 <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                    <Image centered src={user.image} size='small'></Image>
+                                                    <Image centered src={user.image} height={175}></Image>
                                                     <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                     <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                 </Segment>
@@ -221,7 +215,7 @@ class Team extends React.Component {
                                                 <div className='Segment-alignment'> 
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                        <Image centered src={user.image} size='small'></Image>
+                                                        <Image centered src={user.image} height={175}></Image>
                                                         <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
@@ -234,7 +228,7 @@ class Team extends React.Component {
                                                 <div className='Segment-alignment'> 
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                        <Image centered src={user.image} size='small'></Image>
+                                                        <Image centered src={user.image} height={175}></Image>
                                                         <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
@@ -247,7 +241,7 @@ class Team extends React.Component {
                                                 <div className='Segment-alignment'> 
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                        <Image centered src={user.image} size='small'></Image>
+                                                    <Image centered src={user.image} height={175}></Image>
                                                         <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>

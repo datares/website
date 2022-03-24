@@ -81,7 +81,7 @@ class Research extends React.Component {
                                             <Button  fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    window.open('https://airtable.com/shrFhpoNAPe2lQu8s', "_blank");
+                                                    window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
                                                 }}>Apply</Button>
                                         </div>
                                     </p>
