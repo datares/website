@@ -52,7 +52,7 @@ const row1 = [
         'name': 'Derek Nakagawa',
         'title': 'Co-Data Blog Head',
         'image': derek,
-        'linkedin': '#'
+        'linkedin': ''
     }
 ]
 
@@ -100,7 +100,7 @@ const row3 = [
         'name': 'Justin Gong',
         'title': 'Finance Chair',
         'image': justin,
-        'linkedin': '#'
+        'linkedin': 'https://www.linkedin.com/in/justingong03/'
     },
     {
         'name': 'Brandon Zhao',
