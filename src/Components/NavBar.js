@@ -58,6 +58,15 @@ export default class Hello extends Component {
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
+                  <Link to="join-us">
+                    <Menu.Item
+                      name='Join Us'
+                      active={activeItem === 'Join Us'}
+                      onClick={handleItemClick}
+                      style={{color: colorCondition, 
+                              fontWeight: "bold",
+                              fontSize: "1.2em"}} />
+                  </Link>
                   <Link to='/team'>
                     <Menu.Item
                       name='Our Team'
@@ -68,7 +77,7 @@ export default class Hello extends Component {
                               fontSize: "1.2em"}} />
                   </Link>
               </Menu.Menu>
-            </Menu> 
+            </Menu>
       </div>
     }
   }
