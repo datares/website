@@ -104,7 +104,7 @@ const row3 = [
     },
     {
         'name': 'Brandon Zhao',
-        'title': 'Outreeach Head',
+        'title': 'Outreach Head',
         'image': brandon,
         'linkedin': 'https://www.linkedin.com/in/brandonzhao1/'
     },
