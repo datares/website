@@ -19,7 +19,7 @@ import brandon from '../Assets/Team/Profiles/brandon.JPG';
 import colin from '../Assets/Team/Profiles/colin.jpeg';
 import derek from '../Assets/Team/Profiles/derek.jpg';
 import irsyad from '../Assets/Team/Profiles/irsyad.jpg';
-import isha from '../Assets/Team/Profiles/isha.PNG';
+import isha from '../Assets/Team/Profiles/isha.png';
 import ishaan from '../Assets/Team/Profiles/ishaan.png';
 import ivan from '../Assets/Team/Profiles/ivan.jpg';
 import justin from '../Assets/Team/Profiles/justin.jpeg';
