@@ -29,7 +29,7 @@ const JoinUs = (props) => {
                                         </div>
                                     </p>
                                 </Grid.Column>
-                                <Grid.Column>
+                                <Grid.Column style={{paddingLeft: '10%'}} >
                                     <Image src={logo} size='large'></Image>
                                 </Grid.Column>
                             </Grid.Row>

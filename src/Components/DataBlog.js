@@ -1,7 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Segment, Grid, Button, Divider} from 'semantic-ui-react';
+            Segment, Grid, Divider} from 'semantic-ui-react';
 import ReactMarkdown from 'react-markdown'
 
 // Import JS
