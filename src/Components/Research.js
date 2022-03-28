@@ -68,13 +68,13 @@ class Research extends React.Component {
                                         Our teams investigates a range of advanced machine learning problems 
                                         primarily involving deep learning and reinforcement learning. 
                                         <Divider/>
-                                    <div style={{marginTop: '5%'}}>
+                                    {/* <div style={{marginTop: '5%'}}>
                                             <Button  fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
                                                     window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
                                                 }}>Apply</Button>
-                                        </div>
+                                        </div> */}
                                     </p>
                                 </Grid.Column>
                                 <Grid.Column>

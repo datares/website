@@ -9,6 +9,7 @@ import FAQ from './Components/FAQ.js';
 import DataBlog from './Components/DataBlog.js';
 import Research from './Components/Research.js';
 import Consulting from './Components/Consulting.js';
+import JoinUs from "./Components/JoinUs";
 import Team from './Components/Team.js';
 import NavBar from './Components/NavBar.js'
 import ScrollToTop from './Components/ScrollToTop.js'
@@ -55,6 +56,9 @@ class App extends React.Component {
                     </Route>
                     <Route path='/team'>
                       <Team handleActive={this.handleActive} />
+                    </Route>
+                    <Route path="/join-us">
+                      <JoinUs handleActive={this.handleActive} />
                     </Route>
                     <Route exact path="/">
                       <Home />

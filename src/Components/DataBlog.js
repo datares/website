@@ -309,13 +309,13 @@ class DataBlog extends React.Component {
                                         the analytical insights we've unearthed.
                                         <Divider/>
                                         <div style={{marginTop: '5%'}}>
-                                            <Button fluid floated="right" color="orange" size="massive"
+                                            {/* <Button fluid floated="right" color="orange" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
                                                     window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
                                                 }}>
                                                 Apply
-                                            </Button>
+                                            </Button> */}
                                         </div>
                                     </p>
                                 </Grid.Column>
