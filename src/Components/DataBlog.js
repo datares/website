@@ -18,6 +18,69 @@ import datablog_intro from '../Assets/DataBlog/intro.js'
 // Will eventually replace with articles dynamically updated from Medium website
 const Articles = [
     {
+        'url': 'https://ucladatares.medium.com/exploring-factors-that-make-countries-vulnerable-to-covid-19-risk-fe535fc5ba34',
+        'image': 'https://miro.medium.com/max/1400/0*jWmb6XH65-kBvPKd',
+        'title': 'Exploring Factors that Make Countries Vulnerable to COVID-19 Risk',
+        'meta': 'March 19, 2022',
+        'authors': 'Samantha Chung, Akshat Srivastav, Erica Zhou, Jim Liu, Megha Velakacharla, Shubh Kathuria'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/what-does-it-take-to-make-it-into-the-nba-hall-of-fame-6b59288caf3e',
+        'image': 'https://miro.medium.com/max/1400/0*UxFiHAea8S-w2hrB',
+        'title': 'What Does it Take to Make it Into the NBA Hall of Fame?',
+        'meta': 'March 20, 2022',
+        'authors': 'Kunal Patil (Project Lead), Derek Nakagawa, Reilly Chin'
+    }, 
+    {
+        'url': 'https://ucladatares.medium.com/the-secret-to-beating-bobby-flay-aae2d90fdd52',
+        'image': 'https://miro.medium.com/max/1400/0*zvepCbAtLPNg3kdi',
+        'title': 'The Secret to Beating Bobby Flay',
+        'meta': 'March 21, 2022',
+        'authors': 'Kayla Teng (Lead), Taylor Kim, Kevin Hamakawa, Hyerin Lee, and Nicole Ju'
+    }, 
+    {
+        'url': 'https://ucladatares.medium.com/discover-covid-19-vaccination-patterns-in-the-united-states-9729df33f2b3',
+        'image': 'https://miro.medium.com/max/1400/0*7omVKbwSwynoEg-I.jpg',
+        'title': 'Discover COVID-19 Vaccination Patterns In The United States',
+        'meta': 'March 22, 2022',
+        'authors': 'Binze Li (Lead), Kara Chu, Christine Shen, Paige Lee, and Huiyuan Li'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/will-you-get-a-second-date-a-predictive-model-of-dating-match-rates-53c955bf2c68',
+        'image': 'https://miro.medium.com/max/1400/1*DBvWvxONMukhtA9CJMBfMQ.jpeg',
+        'title': 'Will You Get a Second Date? — A Predictive Model of Dating Match Rates',
+        'meta': 'March 23, 2022',
+        'authors': 'Alan Wang (Lead), Zoeb Jamal, Justin Gong, Brandon Pan, Kowoon Jeong, and Yashas Jain'
+    }, 
+    {
+        'url': 'https://ucladatares.medium.com/sky-high-rent-prices-in-los-angeles-c1607e017b4c',
+        'image': 'https://miro.medium.com/max/1400/0*sAqHnAyRwG51f_y8',
+        'title': 'Sky-High: Rent Prices in Los Angeles',
+        'meta': 'March 24, 2022',
+        'authors': 'Nishaanth Krishnan (Project Lead), Tracy Charles, Anika Chakrabati, Hyuma Tio, and Lily Zhou'
+    }, 
+    {
+        'url': 'https://ucladatares.medium.com/gdp-is-outdated-we-need-a-better-alternative-d1fcf06fa998',
+        'image': 'https://miro.medium.com/max/1400/0*22OfmOO2fvN7wJWb',
+        'title': 'GDP is Outdated: We Need a Better Alternative',
+        'meta': 'March 25, 2022',
+        'authors': 'Shiyu Murashima, Austin Ma, Joyce Jeon, Audrey Tey, David Spector, Robi Chatterjee'
+    }, 
+    {
+        'url': 'https://ucladatares.medium.com/exploring-the-covid-19-pandemics-effect-on-quality-of-life-and-democracy-on-a-global-scale-62b60a5ab61a',
+        'image': 'https://miro.medium.com/max/1400/0*qpVnAous--btPgOI',
+        'title': 'Exploring the COVID-19 Pandemic’s Effect on Quality of Life and Democracy on a Global Scale',
+        'meta': 'March 26, 2022',
+        'authors': 'Julia Craciun and Dhruv Krishan (Team Co-Leads), Ryan Barney, Lebogang Mooketsi, and Yufei Wang'
+    }, 
+    {
+        'url': 'https://ucladatares.medium.com/whos-getting-married-in-the-u-s-today-741a940d13b9',
+        'image': 'https://miro.medium.com/max/1400/1*TDPXl0tsl7l2-jcvJonetg.png',
+        'title': 'Who’s Getting Married in the U.S. Today?',
+        'meta': 'March 26, 2022',
+        'authors': 'Wiona Tan, Eric Xia, Alyssa Liu, and Lina Molla'
+    }, 
+    {
         'url': 'https://medium.com/geekculture/covid-19-vaccinations-and-interesting-trends-87cb99f4b551',
         'image': 'https://miro.medium.com/max/1400/0*FUtdVuSZZKReSPuV',
         'title': 'COVID-19 Vaccinations and Interesting Trends',
