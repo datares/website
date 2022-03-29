@@ -81,6 +81,20 @@ const Articles = [
         'authors': 'Wiona Tan, Eric Xia, Alyssa Liu, and Lina Molla'
     }, 
     {
+        'url': 'https://ucladatares.medium.com/congressional-resignations-money-power-or-scandal-de9e323ec927',
+        'image': 'https://miro.medium.com/max/1400/1*8gjt8Giw_NymyNXOExoF3g.png',
+        'title': 'Congressional Resignations: Money, Power, or Scandal?',
+        'meta': 'March 28, 2022',
+        'authors': 'Tian Ouyang, Disha Beeraladinni, Sean Lim, Melody Chen, Nalin Chopra'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/the-success-of-movies-at-the-oscars-box-office-and-reviews-e33e5059ea40',
+        'image': 'https://miro.medium.com/max/1400/0*hzc8q8-AwMQHy4N7',
+        'title': 'The Success of Movies at the Oscars, Box Office, and Reviews',
+        'meta': 'March 28, 2022',
+        'authors': 'Anvesha Dutta (Project Lead), Amelie Ionescu, Casey Truong, Darren Sohn, Prateik Sinha'
+    },
+    {
         'url': 'https://medium.com/geekculture/covid-19-vaccinations-and-interesting-trends-87cb99f4b551',
         'image': 'https://miro.medium.com/max/1400/0*FUtdVuSZZKReSPuV',
         'title': 'COVID-19 Vaccinations and Interesting Trends',
