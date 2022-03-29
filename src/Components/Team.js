@@ -52,7 +52,7 @@ const row1 = [
         'name': 'Derek Nakagawa',
         'title': 'Co-Data Blog Head',
         'image': derek,
-        'linkedin': ''
+        'linkedin': 'https://www.linkedin.com/in/derek-nakagawa-77a9aa180/'
     }
 ]
 
