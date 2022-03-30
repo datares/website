@@ -22,15 +22,6 @@ export default class Hello extends Component {
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
-                  <Link to="/faq">
-                    <Menu.Item
-                      name='FAQ'
-                      active={activeItem === 'FAQ'}
-                      onClick={handleItemClick}
-                      style={{color: colorCondition,
-                              fontWeight: "bold",
-                              fontSize: "1.2em"}} />
-                  </Link>
                   <Link to='/datablog'>
                     <Menu.Item
                       name='DataBlog'
@@ -58,12 +49,12 @@ export default class Hello extends Component {
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
-                  <Link to="join-us">
+                  <Link to="/faq">
                     <Menu.Item
-                      name='Join Us'
-                      active={activeItem === 'Join Us'}
+                      name='FAQ'
+                      active={activeItem === 'FAQ'}
                       onClick={handleItemClick}
-                      style={{color: colorCondition, 
+                      style={{color: colorCondition,
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
@@ -71,6 +62,15 @@ export default class Hello extends Component {
                     <Menu.Item
                       name='Our Team'
                       active={activeItem === 'Our Team'}
+                      onClick={handleItemClick}
+                      style={{color: colorCondition, 
+                              fontWeight: "bold",
+                              fontSize: "1.2em"}} />
+                  </Link>
+                  <Link to="join-us">
+                    <Menu.Item
+                      name='Join Us'
+                      active={activeItem === 'Join Us'}
                       onClick={handleItemClick}
                       style={{color: colorCondition, 
                               fontWeight: "bold",
