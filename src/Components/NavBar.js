@@ -17,7 +17,6 @@ export default class Hello extends Component {
                       name='Home'
                       active={activeItem === 'Home'}
                       onClick={handleItemClick}
-                      
                       style={{color: colorCondition,
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
@@ -49,21 +48,21 @@ export default class Hello extends Component {
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
-                  <Link to="/faq">
-                    <Menu.Item
-                      name='FAQ'
-                      active={activeItem === 'FAQ'}
-                      onClick={handleItemClick}
-                      style={{color: colorCondition,
-                              fontWeight: "bold",
-                              fontSize: "1.2em"}} />
-                  </Link>
                   <Link to='/team'>
                     <Menu.Item
                       name='Our Team'
                       active={activeItem === 'Our Team'}
                       onClick={handleItemClick}
                       style={{color: colorCondition, 
+                              fontWeight: "bold",
+                              fontSize: "1.2em"}} />
+                  </Link>
+                  <Link to="/faq">
+                    <Menu.Item
+                      name='FAQ'
+                      active={activeItem === 'FAQ'}
+                      onClick={handleItemClick}
+                      style={{color: colorCondition,
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
