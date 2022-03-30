@@ -16,7 +16,7 @@ which installs all the dependencies, and starts the website on `http://localhost
 ## Developing
 When creating a new branch in git, please name the branch using the following format, `<your name>/<feature>`.  For example, if I'm updating the navbar for the website, a good convention would be to name the branch `colin/update-navbar`.
 
-Before pushing, please ensure the app builds using `yarn build`, because otherwise the CI/CD will reject your changes.
+Before pushing, please ensure the app builds using `yarn build`, because otherwise the CI/CD will reject your changes.  Also, ensure your code passes the linter to maintain style guidelines.
 
 When you're done developing your feature, please make a pull request on GitHub to trigger our testing suite.
 
