@@ -14,7 +14,6 @@ import wave from '../Assets/Consulting/team_wave.svg';
 
 // Client Images
 import basePaws from '../Assets/Consulting/Clients/basepaws.jpg';
-import uclaAthletics from '../Assets/Consulting/Clients/ucla-athletics.png';
 
 class Consulting extends React.Component {
     componentDidMount(){
@@ -83,28 +82,7 @@ class Consulting extends React.Component {
                         
                         <div style={{alignItems: 'center', alignContent: 'center'}}>
 
-                            <Container className='card-body'>
-                                <a href='https://www.uclabruins.com/' rel="noopener noreferrer" target="_blank">
-                                <Segment className='segment-body' size='big' onClick={() => {}} >
-                                    <Container>
-                                        <Image src={uclaAthletics} centered size='small'></Image>
-                                    </Container>
-                                    <Header style={{fontSize: 18}}> Winter 2021, Spring 2021 </Header>
-                                    <div style={{fontSize: 16, color: 'black'}}>
-                                        <p>
-                                            UCLA Athletics has 100+ NCAA Titles. Athletes from UCLA
-                                            have produced 261 Olympic medals, making UCLA more successful 
-                                            than most countries.
-                                        </p>
-                                        <Divider/>
-                                        <p> We tried to find out how we could leverage data on athlete wellbeing to optimize training plans and in-game strategies across a multitude of sports programs.
-                                        </p>
-                                        <p> View our <a href = "https://drive.google.com/file/d/1W56qbR0LU40fM_U2HiSjUBkKL9VnlXCM/edit"><u> resume here </u></a> to read about the various data consulting services we provide to UCLA Athletics, to make their Athletics program even more legendary. For a more detailed description of our workflow for UCLA Athletics, you can read <a href = "https://drive.google.com/file/d/18z7tYx06rYoaF7cDGOroDZxt7MnWtvL1/view?usp=sharing"><u>our documentation here</u></a> (presented on DataRes Demo Day Spring '21).
-                                        </p>
-                                    </div>
-                                </Segment>
-                                </a>
-                            </Container>
+                           
 
                             <Container className='card-body'>
                                 <a href='https://www.basepaws.com/' rel="noopener noreferrer" target="_blank">

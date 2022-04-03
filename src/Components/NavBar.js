@@ -48,6 +48,15 @@ export default class Hello extends Component {
                               fontWeight: "bold",
                               fontSize: "1.2em"}} />
                   </Link>
+                  <Link to='/athletics'>
+                    <Menu.Item
+                      name='UCLA Athletics'
+                      active={activeItem === 'Athletics'}
+                      onClick={handleItemClick}
+                      style={{color: colorCondition, 
+                              fontWeight: "bold",
+                              fontSize: "1.2em"}} />
+                  </Link>
                   <Link to='/team'>
                     <Menu.Item
                       name='Our Team'
