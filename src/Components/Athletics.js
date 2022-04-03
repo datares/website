@@ -21,7 +21,6 @@ const Athletics = () => {
                             <Grid.Column width={9} style={{marginTop: 20}}>
                                 <p className='Description'>
                                     Our team works directly with UCLA Athletics to provide sports analytics.
-                                    TODO: more text
                                 </p>
                             </Grid.Column>
                             <Grid.Column width={7}>
