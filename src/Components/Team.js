@@ -42,60 +42,9 @@ const row1 = [
         'image': madison,
         'linkedin': 'https://www.linkedin.com/in/madison-kohls/'
     },
-    {
-        'name': 'Anika Chakrabarti',
-        'title': 'Co-Data Blog Head',
-        'image': anika,
-        'linkedin': 'https://www.linkedin.com/in/anika-chakrabarti-394b91205/'
-    },
-    {
-        'name': 'Derek Nakagawa',
-        'title': 'Co-Data Blog Head',
-        'image': derek,
-        'linkedin': 'https://www.linkedin.com/in/derek-nakagawa-77a9aa180/'
-    }
 ]
 
 const row2 = [
-    {
-        'name': 'Irsyad Adam',
-        'title': 'Research Head',
-        'image': irsyad,
-        'linkedin': 'https://www.linkedin.com/in/irsyad-adam-02a1a7196/'
-    },
-    {
-        'name': 'Taylor Kim',
-        'title': 'Marketing/Design Head',
-        'image': taylor,
-        'linkedin': 'https://www.linkedin.com/in/taylor-kim-b7a406221/'
-    },
-    {
-        'name': 'Isha Shah',
-        'title': 'Co-Consulting Head',
-        'image': isha,
-        'linkedin': 'https://www.linkedin.com/in/ishashah146/'
-    },
-    {
-        'name': 'Avishek Ghosh',
-        'title': 'Co-Consulting Head',
-        'image': avishek,
-        'linkedin': 'https://www.linkedin.com/in/ghosh-avishek/'
-    }
-]
-
-const row3 = [
-    {
-        'name': 'Ishaan Shah',
-        'title': 'Co-Beginner Track Head',
-        'image': ishaan,
-        'linkedin': 'https://www.linkedin.com/in/ishaanshah24/'
-    },
-    {
-        'name': 'Ivan Guan',
-        'title': 'Co-Beginner Track Head',
-        'image': ivan,
-        'linkedin': 'https://www.linkedin.com/in/ivanguan1/'
-    },
     {
         'name': 'Justin Gong',
         'title': 'Finance Chair',
@@ -108,15 +57,67 @@ const row3 = [
         'image': brandon,
         'linkedin': 'https://www.linkedin.com/in/brandonzhao1/'
     },
-]
-
-const row4 = [
     {
         'name': 'Sausthava Malakar',
         'title': 'Membership Head',
         'image': sausy,
         'linkedin': 'https://www.linkedin.com/in/sausthava/'
     },
+    {
+        'name': 'Taylor Kim',
+        'title': 'Marketing/Design Head',
+        'image': taylor,
+        'linkedin': 'https://www.linkedin.com/in/taylor-kim-b7a406221/'
+    },
+]
+
+const row3 = [
+    {
+        'name': 'Anika Chakrabarti',
+        'title': 'Co-Data Blog Head',
+        'image': anika,
+        'linkedin': 'https://www.linkedin.com/in/anika-chakrabarti-394b91205/'
+    },
+    {
+        'name': 'Derek Nakagawa',
+        'title': 'Co-Data Blog Head',
+        'image': derek,
+        'linkedin': 'https://www.linkedin.com/in/derek-nakagawa-77a9aa180/'
+    },
+    {
+        'name': 'Isha Shah',
+        'title': 'Co-Consulting Head',
+        'image': isha,
+        'linkedin': 'https://www.linkedin.com/in/ishashah146/'
+    },
+    {
+        'name': 'Avishek Ghosh',
+        'title': 'Co-Consulting Head',
+        'image': avishek,
+        'linkedin': 'https://www.linkedin.com/in/ghosh-avishek/'
+    },
+    {
+        'name': 'Irsyad Adam',
+        'title': 'Research Head',
+        'image': irsyad,
+        'linkedin': 'https://www.linkedin.com/in/irsyad-adam-02a1a7196/'
+    },
+    {
+        'name': 'Ishaan Shah',
+        'title': 'Co-Beginner Track Head',
+        'image': ishaan,
+        'linkedin': 'https://www.linkedin.com/in/ishaanshah24/'
+    },
+    {
+        'name': 'Ivan Guan',
+        'title': 'Co-Beginner Track Head',
+        'image': ivan,
+        'linkedin': 'https://www.linkedin.com/in/ivanguan1/'
+    },
+]
+
+const row4 = [
+    
     {
         'name': 'Raymond Bai',
         'title': 'UCLA Athletics PM*',
@@ -188,15 +189,19 @@ class Team extends React.Component {
                 <div style={{backgroundImage: `url(${wave})`,
                         backgroundSize: "cover",
                         minHeight: '120vh',
-                        height: '300vh',
-                        width: "auto", 
+                        height: '375vh',
+                        width: "auto",
                         paddingTop: 200}}>
 
                     {/* Team Description */}
                     <Container>
                     <div style={{paddingTop: '11%', alignItems: 'center', textAlign: 'center'}}>
                         <Container fluid style={{paddingBottom: '5%'}}>
+                                
                                 <Grid>
+                                    <Grid.Row centered>
+                                        <p>Executive Board</p>
+                                    </Grid.Row>
                                     <Grid.Row centered>
                                         {row1.map(user => (
                                             <div className='Segment-alignment'>
@@ -206,9 +211,12 @@ class Team extends React.Component {
                                                     <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                     <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                 </Segment>
-                                                </a>
+                                                 </a>
                                             </div>
                                         ))}
+                                    </Grid.Row>
+                                    <Grid.Row centered>
+                                        <p>Management Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row2.map(user => (
@@ -223,6 +231,9 @@ class Team extends React.Component {
                                                 </div>
                                             ))}
                                     </Grid.Row>
+                                    <Grid.Row centered>
+                                        <p>Team Heads</p>
+                                    </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row3.map(user => (
                                                 <div className='Segment-alignment'> 
@@ -235,6 +246,9 @@ class Team extends React.Component {
                                                     </a>
                                                 </div>
                                             ))}
+                                    </Grid.Row>
+                                    <Grid.Row centered>
+                                        <p>Specialized Team Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row4.map(user => (
