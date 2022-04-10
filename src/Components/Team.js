@@ -47,7 +47,8 @@ const row1 = [
 const row2 = [
     {
         'name': 'Justin Gong',
-        'title': 'Finance Chair',
+
+        'title': 'Finance Head',
         'image': justin,
         'linkedin': 'https://www.linkedin.com/in/justingong03/'
     },
@@ -180,7 +181,7 @@ class Team extends React.Component {
               <Container>
                   <div style={{paddingTop: '3%', fontSize: '0.6em'}}>
                     <p>
-                        <strong>Contact us:</strong> <u>ucladatares@gmail.com</u>
+                        <strong>Contact us:</strong> <a href="mailto:datares@ucla.edu">datares@ucla.edu</a>
                     </p>
                   </div>
               </Container>

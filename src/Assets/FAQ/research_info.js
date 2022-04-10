@@ -3,7 +3,7 @@ const markdown = `
 # Reseach Team FAQ
 
 ## What projects will I be working on if I’m on the Research Team?
-Please visit our website to learn more about the Research Team and the projects that we have worked on in the past: https://datares.github.io/#/research
+Please visit our website to learn more about the Research Team and the projects that we have worked on in the past: https://ucladatares.com/#/research
 This quarter, we will be tackling a problem using natural language processing (NLP).
 
 ## What does the recruitment process look like?
