@@ -207,7 +207,7 @@ class Home extends React.Component {
                 <p style={{fontSize: "0.9em"}}>
                 Interested in learning more about our organization? Want to collab?<br/> 
                 Reach out to us at <span/> 
-                <a href="mailto:ucladatares@gmail.com">ucladatares@gmail.com</a> or get in touch with us online.
+                <a href="mailto:datares@ucla.edu">datares@ucla.edu</a> or get in touch with us online.
                 </p>
                 <div style={{marginTop: '5%'}}>
                     
