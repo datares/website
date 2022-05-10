@@ -186,6 +186,30 @@ class Home extends React.Component {
             </Container>
           </div>
 
+
+          <div className="subscribe-header">
+            <Container>
+              <div className='newsletter-subscribe'>
+                <p style={{fontSize: "0.9em"}}>
+                Want to stay up to date with all the latest DataRes news? Subscribe to our newsletter! <br/> 
+                <span/> 
+                </p>
+              </div>
+              <Button floated='center' size="large" color="orange" 
+                            onClick={(e) => {
+                                  e.preventDefault();
+                                  window.location.href='https://ucladatares.us14.list-manage.com/subscribe?u=d8a2e69c43a898058be10fcdb&id=f153c9e211';
+                              }}
+                            style={{borderRadius: 30,
+                                    width: '40%',
+                                    marginTop: '5%',
+                                    padding: 20,
+                                    fontSize: 25}}>
+                       Subscribe! 
+              </Button>
+            </Container>
+          </div>
+
           <div className="contribute-header">
             <Container>
               <Header style={{fontSize: "2em"}}>
@@ -215,6 +239,8 @@ class Home extends React.Component {
               </div>
             </Container>
           </div>
+
+
 
           <div className='Footer' style={{backgroundImage: `url(${bottomWave})`,
                                                 backgroundSize: "cover",

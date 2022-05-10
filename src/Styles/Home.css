@@ -94,6 +94,17 @@
     color: black;
 }
 
+.subscribe-header {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+    color: black;
+}
+
 .contribute-header-description {
     margin-top: 5%;
 }
