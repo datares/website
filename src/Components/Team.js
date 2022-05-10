@@ -105,13 +105,13 @@ const row3 = [
     },
     {
         'name': 'Ishaan Shah',
-        'title': 'Co-Beginner Track Head',
+        'title': 'Co-DataLearn Head',
         'image': ishaan,
         'linkedin': 'https://www.linkedin.com/in/ishaanshah24/'
     },
     {
         'name': 'Ivan Guan',
-        'title': 'Co-Beginner Track Head',
+        'title': 'Co-DataLearn Head',
         'image': ivan,
         'linkedin': 'https://www.linkedin.com/in/ivanguan1/'
     },
@@ -155,7 +155,7 @@ class Team extends React.Component {
                         Our Board Members
                     </Header>
                 </div>
-
+Track 
             <div>
               <Container fluid>
                 <div className="Social-media-icons">
