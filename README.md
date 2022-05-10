@@ -1,8 +1,11 @@
+<img src="https://ucladatares.com/static/media/logo.416d2c1d.svg" width="9%"></img>  
+&ensp; 
+![GitHub last commit](https://img.shields.io/github/last-commit/datares/website) 
+[![Netlify Status](https://img.shields.io/netlify/ede91354-e171-4150-996e-564c70411cfb)](https://img.shields.io/netlify/ede91354-e171-4150-996e-564c70411cfb)
+[![GitHub Super-Linter](https://img.shields.io/github/workflow/status/datares/website/Lint%20Code%20Base?label=linter)](https://img.shields.io/github/workflow/status/datares/website/Lint%20Code%20Base?label=linter)
+
+
 # The Official DataRes Website
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ede91354-e171-4150-996e-564c70411cfb/deploy-status)](https://app.netlify.com/sites/celadon-salamander-26442a/deploys)
-
-[![GitHub Super-Linter](https://github.com/datares/website/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## Getting Started
 To set up the development environment,
