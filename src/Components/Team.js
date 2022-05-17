@@ -155,7 +155,6 @@ class Team extends React.Component {
                         Our Board Members
                     </Header>
                 </div>
-Track 
             <div>
               <Container fluid>
                 <div className="Social-media-icons">
