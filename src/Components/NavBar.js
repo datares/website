@@ -68,6 +68,20 @@ export default class Hello extends Component {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
+                    <Dropdown item openOnFocus text="Events" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
+                        <Dropdown.Menu>
+                            <Dropdown.Item>
+                                <Link to='/events'>
+                                    <Menu.Item
+                                    name='Events'
+                                    active={activeItem === 'Events'}
+                                    onClick={handleItemClick}
+                                    style={{color: "black", 
+                                            fontWeight: "bold"}} />
+                                </Link>
+                            </Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                     <Link to='/team'>
                         <Menu.Item
                         name='Our Team'
