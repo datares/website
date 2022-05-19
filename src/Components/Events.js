@@ -106,6 +106,7 @@ const Events = () => {
                                         e =>
                                             <Image src={e.src} centered size="medium"></Image>
                                     )}
+                                    
                                 </Carousel>
                             </Container>
                             <Header style={{fontSize: 18}}>Club Community</Header>
