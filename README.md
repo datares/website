@@ -14,10 +14,10 @@ git clone https://github.com/datares/website.git && cd website
 yarn install
 yarn start
 ```
-which installs all the dependencies, and starts the website on `http://localhost:3000`.
+which installs all the dependencies and starts the website on `http://localhost:3000`.
 
 ## Developing
-When creating a new branch in git, please name the branch using the following format, `<your name>/<feature>`.  For example, if I'm updating the navbar for the website, a good convention would be to name the branch `colin/update-navbar`.
+When creating a new branch in git, please name the branch using the following format, `<your name>/<jira-ticket>`.  For example our Jira project key is "DWEB", and this should be followed by the ticket number, so for the first ticket I would want to name the branch `colin/DWEB-1`.  You'll also want to assign yourself to the ticket.
 
 Before pushing, please ensure the app builds using `yarn build`, because otherwise the CI/CD will reject your changes.  Also, ensure your code passes the linter to maintain style guidelines.
 
