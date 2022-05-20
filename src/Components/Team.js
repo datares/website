@@ -13,9 +13,9 @@ import wave from '../Assets/Team/wave.svg';
 
 
 // Import Profiles
-import andrew from '../Assets/Team/Profiles/andrew.jpg';
-import irsyad from '../Assets/Team/Profiles/irsyad.jpg';
-import raymond from '../Assets/Team/Profiles/raymond.jpg';
+import andrew from '../Assets/Team/Profiles/Andrew.jpg';
+import irsyad from '../Assets/Team/Profiles/Irsyad.jpg';
+import raymond from '../Assets/Team/Profiles/Raymond.jpg';
 import anika from '../Assets/Team/Profiles/anika.jpg';
 import avishek from '../Assets/Team/Profiles/avishek.JPG';
 import brandon from '../Assets/Team/Profiles/brandon.JPG';

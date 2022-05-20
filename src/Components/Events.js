@@ -43,7 +43,8 @@ const Events = () => {
                                 <p className='Description'>
                                     DataRes has a large presence on the UCLA campus and we
                                     often host events open to the wider campus community and
-                                    find ourselves participating in various other events.
+                                    find ourselves participating in various other data science 
+                                    focused events
                                 </p>
                             </Grid.Column>
                             <Grid.Column width={7}>
