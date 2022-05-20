@@ -10,6 +10,7 @@ import DataBlog from './Components/DataBlog.js';
 import Research from './Components/Research.js';
 import Consulting from './Components/Consulting.js';
 import Athletics from './Components/Athletics.js';
+import Events from './Components/Events.js';
 import JoinUs from "./Components/JoinUs";
 import Team from './Components/Team.js';
 import NavBar from './Components/NavBar.js';
@@ -58,6 +59,9 @@ class App extends React.Component {
                     </Route>
                     <Route path='/athletics'>
                       <Athletics handleActive={this.handleActive} />
+                    </Route>
+                    <Route path='/events'>
+                      <Events handleActive={this.handleActive} />
                     </Route>
                     <Route path='/team'>
                       <Team handleActive={this.handleActive} />
