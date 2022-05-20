@@ -13,6 +13,7 @@ import datafest3 from "../Assets/Events/datafest3.jpg"
 import datafest4 from "../Assets/Events/datafest4.jpg"
 import laser_tag from "../Assets/Events/laser_tag.jpg"
 import datalearn from "../Assets/Events/datalearn.jpg"
+import consulting from "../Assets/Events/consulting.jpg"
 
 const Events = () => {
     const datafest_images = [datafest1, datafest2, datafest3, datafest4]
@@ -24,8 +25,12 @@ const Events = () => {
         {
             src: datalearn,
             content: "DataLearn info session"
+        }, {
+            src: consulting,
+            content: "consulting team social"
         }
     ]
+    
     // label={{ as: 'a', color: 'blue', content: e.content, ribbon: true, }} 
     // TODO: figure out what we want to do with this
 
@@ -79,7 +84,7 @@ const Events = () => {
                                 <p>
                                     ASA DataFest@UCLA is an annual datathon hosted at UCLA and allows students to try and find the best insight, and communicate that insight, from a large, complex dataset in a time sensitive manner.
                                 </p>
-                                <p>This year, we had 23 DataRes members participate, including a team that won best use of statistical models!
+                                <p>This year, we had 25+ DataRes members participate, including a team that won best use of statistical models!
                                 </p>
                             </div>
                         </Segment>
