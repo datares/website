@@ -11,23 +11,28 @@ import 'semantic-ui-css/semantic.min.css';
 // Import Images
 import wave from '../Assets/Team/wave.svg';
 
+
 // Import Profiles
 import andrew from '../Assets/Team/Profiles/andrew.jpg';
-import anika from '../Assets/Team/Profiles/anika.jpg';
-import avishek from '../Assets/Team/Profiles/avishek.JPG';
-import brandon from '../Assets/Team/Profiles/brandon.JPG';
-import colin from '../Assets/Team/Profiles/colin.jpeg';
-import derek from '../Assets/Team/Profiles/derek.jpg';
 import irsyad from '../Assets/Team/Profiles/irsyad.jpg';
-import isha from '../Assets/Team/Profiles/isha.png';
-import ishaan from '../Assets/Team/Profiles/ishaan.png';
-import ivan from '../Assets/Team/Profiles/ivan.jpg';
-import justin from '../Assets/Team/Profiles/justin.jpeg';
-import karina from '../Assets/Team/Profiles/karina.jpeg';
-import madison from '../Assets/Team/Profiles/madison.jpg';
 import raymond from '../Assets/Team/Profiles/raymond.jpg';
-import sausy from '../Assets/Team/Profiles/sausy.jpeg';
-import taylor from '../Assets/Team/Profiles/taylor.jpeg';
+
+
+// Update Profiles
+import anika from '../Assets/Team/Profiles/Anika.jpg';
+import avishek from '../Assets/Team/Profiles/Avishek.jpg';
+import brandon from '../Assets/Team/Profiles/Brandon.jpg';
+import colin from '../Assets/Team/Profiles/Colin.jpg';
+import derek from '../Assets/Team/Profiles/Derek.jpg';
+import isha from '../Assets/Team/Profiles/Isha.jpg';
+import ishaan from '../Assets/Team/Profiles/Ishaan.jpg';
+import ivan from '../Assets/Team/Profiles/Ivan.jpg';
+import justin from '../Assets/Team/Profiles/Justin.jpg';
+import karina from '../Assets/Team/Profiles/Karina.jpg';
+import madison from '../Assets/Team/Profiles/Madison.jpg';
+import sausy from '../Assets/Team/Profiles/Sausthava.jpg';
+import taylor from '../Assets/Team/Profiles/Taylor.jpg';
+
 
 const row1 = [
     {
