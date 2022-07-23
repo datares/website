@@ -18,6 +18,90 @@ import datablog_intro from '../Assets/DataBlog/intro.js'
 // Will eventually replace with articles dynamically updated from Medium website
 const Articles = [
     {
+        'url': 'https://ucladatares.medium.com/you-got-a-friend-in-me-a-predictive-model-of-ideal-friendships-d88bc6726d3a',
+        'image': 'https://miro.medium.com/max/1400/0*UBpNTmkhJo1LIjzz',
+        'title': 'You Got a Friend in Me — A Predictive Model of Ideal Friendships',
+        'meta': 'June 21, 2022',
+        'authors': 'Alan Wang (Lead), Justin Gong, Yashas Jain, Kowoon Jeong, & Derek Nakagawa'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/students-alcohol-consumption-should-you-drink-before-finals-130104c588fc',
+        'image': 'https://miro.medium.com/max/1400/0*QD3LKpFIhsvuz7N9',
+        'title': 'Students\' Alcohol Consumption: Should you drink before finals?s',
+        'meta': 'June 21, 2022',
+        'authors': 'Annie Li (Project Lead), Helena Xu, Reilly Chin, Xiaohan Sun'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/exploring-the-success-rates-of-different-marvel-movies-d80e664100b1',
+        'image': 'https://miro.medium.com/max/1400/0*VBExlEBOFJGrXJw3.jpg',
+        'title': 'Exploring the Success Rates of different Marvel Movies',
+        'meta': 'June 21, 2022',
+        'authors': 'Samantha Chung (Project Lead), Disha Beeraladinni, Lina Molla, Samantha Wong, Takoa Oba, Tiffany Minami'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/identify-economic-bubble-da09f341ca7a',
+        'image': 'https://miro.medium.com/max/1400/0*Dc2jKPyakrP10YXi.png',
+        'title': 'Identify Economic Bubble',
+        'meta': 'June 21, 2022',
+        'authors': 'Daniel Fang (Project Lead), Disha Beeraladinni, Tiffany Minami, Lina Molla, Samantha Wong, Takao Oba, Dani Wu'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/was-the-great-resignation-inevitable-b316d8ee1aab',
+        'image': 'https://miro.medium.com/max/778/0*qZlN4o3TFbWb1znx',
+        'title': 'Was the Great Resignation Inevitable?',
+        'meta': 'June 21, 2022',
+        'authors': 'Megha Velakacharla (Project Lead), Sai Priyanka Iragavarapu, Steven Lu Chen, Joseph Ramirez'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/the-efficacy-of-the-rule-changes-in-the-2021-22-nba-season-e21c3dff9bae',
+        'image': 'https://miro.medium.com/max/1400/0*MjYBFslW3GZvHnOA',
+        'title': 'The Efficacy of the Rule Changes in the 2021-22 NBA Season',
+        'meta': 'June 21, 2022',
+        'authors': 'Ved Phadke (Project Lead), Ryan Barney, Trent Bellinger, Riddhi Sood, Aaron Tae'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/effects-of-covid-19-on-the-world-happiness-report-f5dcca9c1012',
+        'image': 'https://miro.medium.com/max/1400/0*p8BPs0xd6bSajGLV.jpg',
+        'title': 'Effects of Covid-19 on the World Happiness Report',
+        'meta': 'June 19, 2022',
+        'authors': 'Sean Lim (Project Lead), Binze Li, Nicole Ju, Christine Shen, Paige Lee'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/whats-the-recipe-to-a-5-star-restaurant-e8d75e773b87',
+        'image': 'https://miro.medium.com/max/1400/0*2YWp6rEjiiY9_fST',
+        'title': 'What\'s the Recipe to a 5-Star Restaurant?',
+        'meta': 'June 19, 2022',
+        'authors': 'Joyce Jeon (Project Lead), Kyle Lee, Darren Sohn, Robi Chatterjee, Tracy Charles'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/pandemics-affect-on-the-airline-industry-fbe5d529910e',
+        'image': 'https://miro.medium.com/max/1400/0*aVk9T9vVtGB6fTXY',
+        'title': 'Pandemic\'s Affect on the Airline Industry',
+        'meta': 'June 18, 2022',
+        'authors': 'Nalin Chopra (Project Lead), Kara Chu, Belle Ho, Hyuma Miura Tio'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/making-a-hit-song-22f13f62ac59',
+        'image': 'https://miro.medium.com/max/1400/0*-2Fe7yBvKYEL9tpJ',
+        'title': 'Making a Hit Song',
+        'meta': 'June 18, 2022',
+        'authors': 'David Spector (Project Lead), Madeline Zhang, Hyerin Lee, Morgan Chan, Peiyuan Lee'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/exploring-the-right-way-to-play-wordle-bc618a92cefe',
+        'image': 'https://miro.medium.com/max/1400/0*Fo3KFWLtgr5K_7w9',
+        'title': 'Exploring the Right Way to Play Wordle',
+        'meta': 'June 17, 2022',
+        'authors': 'Kevin Hamakawa (Project Lead), Arjun Pawar, Ena Zou, Olivia Wesiger, Amelie Ionescu'
+    },
+    {
+        'url': 'https://ucladatares.medium.com/the-key-to-success-analyzing-mlb-pitcher-performance-from-the-2020-2021-season-title-6d289da6d3cf',
+        'image': 'https://miro.medium.com/max/1400/0*b86XUxwQk9tri2ZX',
+        'title': 'The Key to Success: Analyzing MLB Pitcher Performance from the 2020–2021 Season Title',
+        'meta': 'June 17, 2022',
+        'authors': 'Taylor Kim (Project Lead), Shiyu Murashima, Wolfe Pickett, Andrew Schweitzer'
+    },
+    {
         'url': 'https://ucladatares.medium.com/exploring-factors-that-make-countries-vulnerable-to-covid-19-risk-fe535fc5ba34',
         'image': 'https://miro.medium.com/max/1400/0*jWmb6XH65-kBvPKd',
         'title': 'Exploring Factors that Make Countries Vulnerable to COVID-19 Risk',
