@@ -35,8 +35,7 @@ class App extends React.Component {
     return (
       <div className="App">
 
-          <div style={{backgroundImage: activeItem === 'Home' ? `url(${navbarWave})`: '',
-                       backgroundSize: "cover",
+          <div style={{backgroundColor: 'white',
                        height: "45vh",
                        width: "auto"}}>
             <div className="Navbar-items">

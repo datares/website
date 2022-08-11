@@ -15,33 +15,38 @@ import orangeBar from '../Assets/Home/orange_bar.svg';
 import numberWave from '../Assets/Home/number_wave.svg';
 import datablogWave from '../Assets/Home/background.svg';
 import flippedWave from '../Assets/Home/background_flipped.svg';
-import bottomWave from '../Assets/Home/bottom_wave.svg';
+// import bottomWave from '../Assets/Home/bottom_wave.svg';
 
 class Home extends React.Component {
     render() {
         return (
         <div>
-          <div className="Landing">
+          {/* <div className="Landing">
             <Container fluid>
               <div class="Logo-alignment">
                 <Image src={logo} size="huge" centered></Image>
               </div>
               <div>
-                <Header style={{paddingTop: '3%', fontSize: 25}}> Data Science @ UCLA </Header>
+                <Header style={{paddingTop: '3%', fontSize: 25}}></Header>
               </div>
             </Container>
-          </div>
+          </div> */}
 
-          <div className="intro-header">
+          {/*
+            insert some sort of cool animation
+            ideas: animate distributions or something like that
+           */}
+
+          <div className="intro-header" style={{backgroundColor: '#333b65', paddingTop: '20%', paddingBottom: '20%'}}>
               <Container>
-                <Grid style={{paddingTop: '8%'}}>
+                <Grid>
                   <Grid.Row>
-                    <Grid.Column>
-                    <Image src={ orangeBar } size='large'></Image>
-                      <Header style={{fontSize: "2em"}}>
-                        At DataRes, we solve problems and craft stories with data.
+                    <Grid.Column style={{textAlign: 'center'}}>
+                      <Header style={{fontSize: "1em", color: 'white'}}>
+                        Welcome to the home of Data Science at UCLA
                       </Header>
-                      <p>
+                      <p style={{fontSize: "1em", color: 'white'}}>
+                        At DataRes, we solve problems and craft stories with data.
                         We provide a platform for aspiring data scientists and analysts
                         to collaborate on impactful data projects. If you love playing
                         with data, creating powerful visualizations, or building
@@ -50,12 +55,56 @@ class Home extends React.Component {
                       </Grid.Column>
                   </Grid.Row>
                 </Grid>
-                <Divider style={{width: '50%', margin: 'auto', marginTop: '8%'}} clearing/>
               </Container>
+          </div>
+
+          <div style={{paddingTop: '10%'}}>
+            <Container>
+              <Header>
+                Branches
+              </Header>
+              <Grid className='our-branches'>
+                <Grid.Row columns={2}>
+                  <Grid.Column>
+                    <p className='branch-name'>Data Blog</p>
+                    <p className='branch-description'>Creating data-backed narratives</p>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <p className='branch-name'>Research</p>
+                    <p className='branch-description'>Pushing the limits of machine learning</p>
+                  </Grid.Column>
+                </Grid.Row>
+                <Grid.Row columns={2}>
+                <Grid.Column>
+                    <p className='branch-name'>Consulting</p>
+                    <p className='branch-description'>Developing data-driven solutions</p>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <p className='branch-name'>UCLA Athletics</p>
+                    <p className='branch-description'>Stuff about athletics</p>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Container>
+          </div>
+
+          <div style={{backgroundColor: '#333b65', paddingTop: '2.5%', paddingBottom: '2.5%', justifyContent: 'center'}}>
+            <Container>
+              <Grid>
+                <Grid.Row columns={2}>
+                  <Grid.Column>
+                    <p style={{color: 'white'}} className='newsletter-text'>Want to stay up to date with all the latest DataRes news?</p>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Button color='black' fontWeight="bold" href="https://ucladatares.us14.list-manage.com/subscribe?u=d8a2e69c43a898058be10fcdb&id=f153c9e211">Join our Mailing List!</Button>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Container>
           </div>
           
           {/* Where we've been */}
-          <div>
+          {/* <div>
             <Container style={{marginTop: '1%'}}>
               <Header style={{fontSize: 50}}>
                       Where We've Been
@@ -64,9 +113,9 @@ class Home extends React.Component {
                   <Image src={logos} size='massive' style={{marginTop: "5%", marginBottom: "5%"}} centered></Image>
               </div>
             </Container>
-          </div>
+          </div> */}
 
-          <div className='Stats-header' style={{backgroundImage: `url(${numberWave})`,
+          {/* <div className='Stats-header' style={{backgroundImage: `url(${numberWave})`,
                                                 backgroundSize: "cover",
                                                 height: "45vh",
                                                 width: "auto"}}>
@@ -92,9 +141,9 @@ class Home extends React.Component {
                 </Grid.Row>
               </Grid>
             </Container>
-          </div>
+          </div> */}
 
-          <div className='datablog-header' style={{backgroundImage: `url(${datablogWave})`,
+          {/* <div className='datablog-header' style={{backgroundImage: `url(${datablogWave})`,
                                                 backgroundSize: "cover",
                                                 minHeight: "80vh",
                                                 height: "80vh",
@@ -154,11 +203,7 @@ class Home extends React.Component {
             </Container>
           </div>
 
-          <div className='consulting-header' style={{backgroundImage: `url(${flippedWave})`,
-                                                  backgroundSize: "cover",
-                                                  minHeight: "100vh",
-                                                  height: "110vh",
-                                                  width: "auto"}}>
+          <div className='consulting-header'>
             <Container>
               <Grid>
                 <Grid.Row columns={2}>
@@ -184,10 +229,10 @@ class Home extends React.Component {
                 </Grid.Row>
               </Grid>
             </Container>
-          </div>
+          </div> */}
 
 
-          <div className="subscribe-header">
+          {/* <div className="subscribe-header">
             <Container>
               <div className='newsletter-subscribe'>
                 <p style={{fontSize: "0.9em"}}>
@@ -208,9 +253,9 @@ class Home extends React.Component {
                        Subscribe! 
               </Button>
             </Container>
-          </div>
+          </div> */}
 
-          <div className="contribute-header">
+          {/* <div className="contribute-header">
             <Container>
               <Header style={{fontSize: "2em"}}>
                 Want To Contribute To DataRes? <br></br>
@@ -238,14 +283,11 @@ class Home extends React.Component {
                 </div>     
               </div>
             </Container>
-          </div>
+          </div> */}
 
 
 
-          <div className='Footer' style={{backgroundImage: `url(${bottomWave})`,
-                                                backgroundSize: "cover",
-                                                height: "45vh",
-                                                width: "auto"}}>
+          <div className='Footer'>
               <Container fluid>
                 <div className="Social-media-icons">
                   <Grid style={{paddingTop: '15%'}}>
@@ -268,9 +310,7 @@ class Home extends React.Component {
                 </div>
               </Container>
           </div>
-             
         </div>
-        
         );
     }
 }
