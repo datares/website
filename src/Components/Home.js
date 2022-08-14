@@ -8,13 +8,13 @@ import '../Styles/Home.css';
 import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
-import logo from '../Assets/Home/logo.svg';
-import logos from '../Assets/Team/logos.png';
+// import logo from '../Assets/Home/logo.svg';
+// import logos from '../Assets/Team/logos.png';
 
-import orangeBar from '../Assets/Home/orange_bar.svg';
-import numberWave from '../Assets/Home/number_wave.svg';
-import datablogWave from '../Assets/Home/background.svg';
-import flippedWave from '../Assets/Home/background_flipped.svg';
+// import orangeBar from '../Assets/Home/orange_bar.svg';
+// import numberWave from '../Assets/Home/number_wave.svg';
+// import datablogWave from '../Assets/Home/background.svg';
+// import flippedWave from '../Assets/Home/background_flipped.svg';
 // import bottomWave from '../Assets/Home/bottom_wave.svg';
 
 class Home extends React.Component {

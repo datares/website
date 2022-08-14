@@ -21,7 +21,7 @@ import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
-import navbarWave from './Assets/nav_wave.svg';
+// import navbarWave from './Assets/nav_wave.svg';
 
 class App extends React.Component {
   constructor(props) {
