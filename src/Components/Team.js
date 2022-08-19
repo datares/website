@@ -1,12 +1,15 @@
 // Import React Components
 import React from 'react';
 import {Header, Container, Image, 
-            Grid, Segment} from 'semantic-ui-react';
+            Grid, Segment, Icon} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Team.css';
 import '../Styles/Utils.css';
 import 'semantic-ui-css/semantic.min.css';
+
+// Import Images
+import wave from '../Assets/Team/wave.svg';
 
 
 // Import Profiles
@@ -147,21 +150,59 @@ class Team extends React.Component {
     }
     render() {
         return (
-            <div style={{backgroundColor: '#333b65'}}>
-                <div style={{paddingBottom: '5%', paddingTop: '5%'}}>
-                    <Header style={{fontSize: 80, color: 'white'}}>
+            <div>
+            
+                <div style={{paddingBottom: 30, paddingTop: 20}}>
+                    <Header style={{fontSize: 80}}>
                         Our Board Members
                     </Header>
                 </div>
+            <div>
+              <Container fluid>
+                <div className="Social-media-icons">
+                  <Grid>
+                      <a href="https://www.facebook.com/ucladatares" rel="noopener noreferrer" target="_blank">
+                        <Icon size="large" color="black" name='facebook' fitted/>
+                      </a>
+                      <a href="https://twitter.com/DataresUcla" rel="noopener noreferrer" target="_blank">
+                        <Icon size="large" color="black" name='twitter' fitted/>
+                      </a>
+                      <a href="https://www.linkedin.com/company/ucla-datares/" rel="noopener noreferrer" target="_blank">
+                        <Icon size="large" color="black" name='linkedin' fitted/>
+                      </a>
+                      <a href="https://www.instagram.com/ucladatares/" rel="noopener noreferrer" target="_blank">
+                        <Icon size="large" color="black" name='instagram' fitted/>
+                      </a>
+                      <a href="https://www.youtube.com/channel/UCmKnJ7aUWRcpfc2NMo2-_Hw" rel="noopener noreferrer" target="_blank">
+                        <Icon size="large" color="black" name='youtube' fitted/>
+                      </a>
+                  </Grid>
+                </div>
+              </Container>
+              <Container>
+                  <div style={{paddingTop: '3%', fontSize: '0.6em'}}>
+                    <p>
+                        <strong>Contact us:</strong> <a href="mailto:datares@ucla.edu">datares@ucla.edu</a>
+                    </p>
+                  </div>
+              </Container>
+          </div>
 
-                <div>
+                <div style={{backgroundImage: `url(${wave})`,
+                        backgroundSize: "cover",
+                        minHeight: '120vh',
+                        height: '375vh',
+                        width: "auto",
+                        paddingTop: 200}}>
+
+                    {/* Team Description */}
                     <Container>
-                    <div style={{alignItems: 'center', textAlign: 'center'}}>
-                        <Container fluid style={{paddingBottom: '1%'}}>
+                    <div style={{paddingTop: '11%', alignItems: 'center', textAlign: 'center'}}>
+                        <Container fluid style={{paddingBottom: '5%'}}>
                                 
                                 <Grid>
                                     <Grid.Row centered>
-                                        <p style={{color: 'white'}}>Executive Board</p>
+                                        <p>Executive Board</p>
                                     </Grid.Row>
                                     <Grid.Row centered>
                                         {row1.map(user => (
@@ -169,7 +210,7 @@ class Team extends React.Component {
                                                 <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                 <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                     <Image centered src={user.image} height={175}></Image>
-                                                    <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                                    <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                     <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                 </Segment>
                                                  </a>
@@ -177,7 +218,7 @@ class Team extends React.Component {
                                         ))}
                                     </Grid.Row>
                                     <Grid.Row centered>
-                                        <p style={{color: 'white'}}>Management Heads</p>
+                                        <p>Management Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row2.map(user => (
@@ -185,7 +226,7 @@ class Team extends React.Component {
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                         <Image centered src={user.image} height={175}></Image>
-                                                        <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
                                                     </a>
@@ -193,7 +234,7 @@ class Team extends React.Component {
                                             ))}
                                     </Grid.Row>
                                     <Grid.Row centered>
-                                        <p style={{color: 'white'}}>Team Heads</p>
+                                        <p>Team Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row3.map(user => (
@@ -201,7 +242,7 @@ class Team extends React.Component {
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                         <Image centered src={user.image} height={175}></Image>
-                                                        <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
                                                     </a>
@@ -209,7 +250,7 @@ class Team extends React.Component {
                                             ))}
                                     </Grid.Row>
                                     <Grid.Row centered>
-                                        <p style={{color: 'white'}}>Specialized Team Heads</p>
+                                        <p>Specialized Team Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row4.map(user => (
@@ -217,7 +258,7 @@ class Team extends React.Component {
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
                                                     <Image centered src={user.image} height={175}></Image>
-                                                        <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
+                                                        <Header style={{fontSize: 20, color: 'black'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
                                                     </a>
@@ -232,6 +273,8 @@ class Team extends React.Component {
                     </div>
                     </Container>
             </div>
+            
+
             </div>
         );
     }
