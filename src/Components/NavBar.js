@@ -1,27 +1,28 @@
 import React, {Component} from 'react';
-import {Dropdown, Menu, Image} from 'semantic-ui-react';
+import {Dropdown, Menu} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import {
   isBrowser
 } from "react-device-detect";
-import logo from '../Assets/Home/logo.svg';
-
-
 export default class Hello extends Component {
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
     render () {
       const {activeItem, handleItemClick} = this.props
-      const colorCondition = (activeItem === "Home" && isBrowser)  ? "black" : "black";
+      const colorCondition = (activeItem === "Home" && isBrowser)  ? "white" : "black";
       return (
         <div>
             <Menu style={{padding: 20}} position="right" size="large" secondary stackable>
-                <Menu.Menu position="left">
+                <Menu.Menu position="right">
                     <Link to="/">
-                        <Image src={logo} size="small" centered></Image>
+                        <Menu.Item
+                        name='Home'
+                        active={activeItem === 'Home'}
+                        onClick={handleItemClick}
+                        style={{color: colorCondition,
+                                fontWeight: "bold",
+                                fontSize: "1.2em"}} />
                     </Link>
-                </Menu.Menu>
-                <Menu.Menu position='right'>
-                    <Dropdown item openOnFocus text="branches" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
+                    <Dropdown item openOnFocus text="Branches" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
                         <Dropdown.Menu>
                             <Dropdown.Item>
                                 <Link to='/datablog'>
@@ -67,7 +68,7 @@ export default class Hello extends Component {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Dropdown item openOnFocus text="community" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
+                    <Dropdown item openOnFocus text="Community" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
                         <Dropdown.Menu>
                             <Dropdown.Item>
                                 <Link to='/events'>
@@ -83,7 +84,7 @@ export default class Hello extends Component {
                     </Dropdown>
                     <Link to='/team'>
                         <Menu.Item
-                        name='Team'
+                        name='Our Team'
                         active={activeItem === 'Our Team'}
                         onClick={handleItemClick}
                         style={{color: colorCondition, 
@@ -92,7 +93,7 @@ export default class Hello extends Component {
                     </Link>
                     <Link to="/faq">
                         <Menu.Item
-                        name='About'
+                        name='FAQ'
                         active={activeItem === 'FAQ'}
                         onClick={handleItemClick}
                         style={{color: colorCondition,
