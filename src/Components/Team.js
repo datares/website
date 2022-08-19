@@ -1,7 +1,7 @@
 // Import React Components
 import React from 'react';
 import {Header, Container, Image, 
-            Grid, Segment, Icon} from 'semantic-ui-react';
+            Grid, Segment} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Team.css';
@@ -154,13 +154,9 @@ class Team extends React.Component {
                     </Header>
                 </div>
 
-                <div style={{
-                        backgroundSize: "cover",
-                        width: "auto",
-                        }}> 
-
+                <div>
                     <Container>
-                    <div style={{paddingTop: '0%', alignItems: 'center', textAlign: 'center'}}>
+                    <div style={{alignItems: 'center', textAlign: 'center'}}>
                         <Container fluid style={{paddingBottom: '1%'}}>
                                 
                                 <Grid>
