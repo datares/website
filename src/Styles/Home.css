@@ -1,6 +1,6 @@
 .Home {
     text-align: center;
-    color: black;
+    /* color: black; */
 }
 
 .Landing {
@@ -52,6 +52,31 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     text-align: left;
+}
+
+.our-branches {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+}
+
+.branch-name {
+    font-size: larger;
+}
+
+.branch-description {
+    font-size: small;
+}
+
+.newsletter-text {
+    color: 'white';
+    font-size: large;
+    max-width: 50%;
+    font-weight: bold;
 }
 
 .datablog-header {
