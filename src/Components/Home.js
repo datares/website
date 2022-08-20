@@ -7,30 +7,11 @@ import {Link} from 'react-router-dom'
 import '../Styles/Home.css';
 import 'semantic-ui-css/semantic.min.css';
 
-// Import Images
-// import logo from '../Assets/Home/logo.svg';
-// import logos from '../Assets/Team/logos.png';
-
-// import orangeBar from '../Assets/Home/orange_bar.svg';
-// import numberWave from '../Assets/Home/number_wave.svg';
-// import datablogWave from '../Assets/Home/background.svg';
-// import flippedWave from '../Assets/Home/background_flipped.svg';
-// import bottomWave from '../Assets/Home/bottom_wave.svg';
 
 class Home extends React.Component {
     render() {
         return (
         <div>
-          {/* <div className="Landing">
-            <Container fluid>
-              <div class="Logo-alignment">
-                <Image src={logo} size="huge" centered></Image>
-              </div>
-              <div>
-                <Header style={{paddingTop: '3%', fontSize: 25}}></Header>
-              </div>
-            </Container>
-          </div> */}
 
           {/*
             insert some sort of cool animation
