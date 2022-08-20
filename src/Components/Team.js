@@ -1,7 +1,7 @@
 // Import React Components
 import React from 'react';
 import {Header, Container, Image, 
-            Grid, Segment, Icon} from 'semantic-ui-react';
+            Grid, Segment} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Team.css';

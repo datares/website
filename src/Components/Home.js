@@ -1,8 +1,8 @@
 // Import React Components
 import React from 'react';
-import {Header, Button, Image, Icon,
-    Grid, Container, Divider} from 'semantic-ui-react';
-import {Link} from 'react-router-dom'
+import {Header, Button, Icon,
+    Grid, Container} from 'semantic-ui-react';
+// import {Link} from 'react-router-dom'
 // Import CSS
 import '../Styles/Home.css';
 import 'semantic-ui-css/semantic.min.css';
