@@ -1,61 +1,46 @@
 import React from "react";
-import {Header, Container, Image, Grid, Button, Divider} from 'semantic-ui-react';
-import wave from '../Assets/DataBlog/team_wave.svg';
-import logo from "../Assets/Home/logo.svg"
+import {Container, Grid, Button} from 'semantic-ui-react';
 
-const JoinUs = (props) => {
-    return (
-        <div className='Body'>
-                {/* Main Description  */}
-                <div className="Header">
+// const JoinUs = () => 
+class JoinUs extends React.Component {
+    render() {
+        return (
+            <div>
+                <div style={{backgroundColor: '#333b65', color: 'white', paddingBottom: '20%'}}>
                     <Container>
-                        <div className='Title'>
-                            <Header> Join Us </Header>
+                        <div style={{textAlign: 'center', color: 'white', paddingBottom: '10%', paddingTop: '10%'}}>
+                            <h1 style={{fontSize: '1.5em'}}>Join our team!</h1>
                         </div>
                         <Grid>
                             <Grid.Row columns={2}>
                                 <Grid.Column>
-                                    <p className='Description'>
-                                        Recruiting for each of the DataRes teams happens at the beginning of every quarter, and more info can be found on the specific applications for this recruiting cycle on the 
+                                    <p style={{fontSize: '.7em'}}>
+                                        {/* Recruiting for each of the DataRes teams happens at the beginning of every quarter, and more info can be found on the specific applications for this recruiting cycle on the 
                                         application below.  Please check out our Facebook and Instagram for the most
-                                        up to date information about applications.
-                                        <Divider/>
-                                    <div style={{marginTop: '5%'}}>
-                                            <Button  fluid floated="right" color="orange" size="massive"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
-                                                }}>Apply</Button>
-                                        </div>
+                                        up to date information about applications.                                     */}
+                                        Recruiting for each of the DataRes teams happens at the beginning of every quarter,
+                                        and currently we preparing to open applications for Fall 2022 during Week 0.
+                                        Please check our Facebook and Instagram for the most up to date information
+                                        about applications and when they'll be released!
                                     </p>
                                 </Grid.Column>
-                                <Grid.Column style={{paddingLeft: '10%'}} >
-                                    <Image src={logo} size='large'></Image>
+                                <Grid.Column>
+                                <div style={{marginTop: '5%', paddingTop: '20%'}}>
+                                            <Button  color="white" size="large"
+                                                onClick={() => {
+                                                    window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
+                                                }}
+                                                >
+                                                Apply!</Button>
+                                        </div>
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
                     </Container>
                 </div>
-
-                <div style={{backgroundImage: `url(${wave})`,
-                                backgroundSize: "cover",
-                                height: "50vh",
-                                width: "auto",
-                                paddingBottom: 50}}>
-                </div>
-                {/* Ideally, add react search bar */}
-                {/* <Container style={{paddingBottom: 50}}>
-                    <Container fluid>
-                                <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                                    Latest Research Articles
-                                </Header>
-                    </Container>
-                            <div style={{paddingTop: '2%'}}>
-    
-                            </div>
-                </Container> */}
             </div>
-    )
+        )
+    }
 }
 
 export default JoinUs;

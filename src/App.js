@@ -20,14 +20,15 @@ import ScrollToTop from './Components/ScrollToTop.js'
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
-// Import Images
-// import navbarWave from './Assets/nav_wave.svg';
 
 class App extends React.Component {
   constructor(props) {
     super()
     this.state = { activeItem: 'Home' }
   }
+  // style={{backgroundColor: 'white',
+  // height: "45vh",
+  // width: "auto"}}
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   handleActive = (e, new_active) => this.setState({ activeItem: new_active })
   render () {
@@ -35,9 +36,7 @@ class App extends React.Component {
     return (
       <div className="App">
 
-          <div style={{backgroundColor: 'white',
-                       height: "45vh",
-                       width: "auto"}}>
+          <div>
             <div className="Navbar-items">
                 <Router basename="/">
                   <ScrollToTop />
