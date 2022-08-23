@@ -22,13 +22,11 @@ class Consulting extends React.Component {
     }
     render() {
         return (
-            <div className='Body'>
-                
-            {/* Main Description  */}
-            <div className="Header">
+            <div style={{backgroundColor: "#333b65", color: 'white'}}>
+                <div className="Header">
                     <Container>
                         <div className='Title'>
-                            <Header> Consulting </Header>
+                            <h1 style={{fontSize: '1.5em'}}>Consulting</h1>
                         </div>
                         <Grid>
                             <Grid.Row columns={2}>
@@ -39,7 +37,7 @@ class Consulting extends React.Component {
                                         tangible impact wherever possible. <a href = "https://drive.google.com/file/d/1W56qbR0LU40fM_U2HiSjUBkKL9VnlXCM/edit" download><u> Download our resume. </u></a>
                                         <Divider/>
                                         <div style={{marginTop: '5%'}}>
-                                            <Button fluid floated="right" color="orange" size="massive"
+                                            <Button fluid floated="right" color="white" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
                                                     window.open('https://forms.gle/ezvdkYiHzvYnrRWS8', "_blank");
@@ -58,32 +56,17 @@ class Consulting extends React.Component {
                     
                 </div>
 
-                {/* Wave Image */}
-                <div>
-                    <div style={{backgroundImage: `url(${wave})`,
-                                                    backgroundSize: "cover",
-                                                    height: "50vh",
-                                                    width: "auto",
-                                                    marginTop: '1%',
-                                                    paddingBottom: 50}}>
-                        
-                    </div>
-                </div>
-
                 {/* Add client list here */}
                 <div style={{marginTop: '5%', paddingBottom: '10%'}}>
                     
                     <Container fluid>
-                        <div style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                            <Header>
+                        <div>
+                            <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%', color: 'white'}}>
                                 Our Clients
                             </Header>
                         </div>
                         
                         <div style={{alignItems: 'center', alignContent: 'center'}}>
-
-                           
-
                             <Container className='card-body'>
                                 <a href='https://www.basepaws.com/' rel="noopener noreferrer" target="_blank">
                                 <Segment className='segment-body' size='big' onClick={() => {}}>
