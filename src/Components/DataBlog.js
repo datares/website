@@ -1,8 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Segment, Grid, Divider} from 'semantic-ui-react';
-import ReactMarkdown from 'react-markdown'
+            Segment, Grid} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/DataBlog.css';

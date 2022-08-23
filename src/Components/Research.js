@@ -1,7 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Segment, Grid, Divider} from 'semantic-ui-react';
+            Segment, Grid} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Research.css';
@@ -10,7 +10,6 @@ import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
 import researchImage from '../Assets/Research/research_image.svg';
-import wave from '../Assets/Research/team_wave.svg';
 var Articles = [
     {
         'url': 'https://ucladatares.medium.com/make-a-monet-image-style-transfer-with-cycle-gans-5475dcb525b8',

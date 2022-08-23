@@ -10,7 +10,6 @@ import '../Styles/Consulting.css';
 
 // Import Images
 import consultingImage from '../Assets/Consulting/consulting_image.svg';
-import wave from '../Assets/Consulting/team_wave.svg';
 
 // Client Images
 import basePaws from '../Assets/Consulting/Clients/basepaws.jpg';

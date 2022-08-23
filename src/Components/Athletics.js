@@ -2,7 +2,6 @@ import React from 'react';
 import {Header, Container, Image,
     Grid, Divider, Segment} from 'semantic-ui-react';
 
-import wave from '../Assets/DataBlog/team_wave.svg';
 import uclaAthletics from '../Assets/Consulting/Clients/ucla-athletics.png';
 
 
