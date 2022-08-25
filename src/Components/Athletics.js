@@ -2,19 +2,18 @@ import React from 'react';
 import {Header, Container, Image,
     Grid, Divider, Segment} from 'semantic-ui-react';
 
-import wave from '../Assets/DataBlog/team_wave.svg';
 import uclaAthletics from '../Assets/Consulting/Clients/ucla-athletics.png';
 
 
 const Athletics = () => {
     return (
-        <div className='Body'>
+        <div style={{backgroundColor: "#333b65", color: 'white'}}>
 
             {/* Main Description  */}
             <div className="Header">
                 <Container>
                     <div className='Title'>
-                        <Header>UCLA Athletics</Header>
+                        <h1 style={{fontSize: '1.5em'}}>UCLA Athletics</h1>
                     </div>
                     <Grid>
                         <Grid.Row columns={2}>
@@ -34,8 +33,8 @@ const Athletics = () => {
             {/* Add client list here */}
             <div style={{marginTop: '5%', paddingBottom: '10%'}}>
                 <Container fluid>
-                    <div style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                        <Header>
+                    <div>
+                        <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%', color: 'white'}}>
                             Our Client
                         </Header>
                     </div>
@@ -66,18 +65,6 @@ const Athletics = () => {
                     </Container>
                     </div>
                 </Container>
-            </div>
-
-            {/* Wave Image */}
-            <div>
-                <div style={{backgroundImage: `url(${wave})`,
-                                                backgroundSize: "cover",
-                                                height: "50vh",
-                                                width: "auto",
-                                                marginTop: '1%',
-                                                paddingBottom: 50}}>
-                    
-                </div>
             </div>
         </div>
     )

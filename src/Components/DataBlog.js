@@ -1,8 +1,7 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Segment, Grid, Divider} from 'semantic-ui-react';
-import ReactMarkdown from 'react-markdown'
+            Segment, Grid} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/DataBlog.css';
@@ -11,8 +10,6 @@ import 'semantic-ui-css/semantic.min.css';
 
 // Import Images
 import blogImage from '../Assets/DataBlog/blog_image.svg';
-import wave from '../Assets/DataBlog/team_wave.svg';
-import datablog_intro from '../Assets/DataBlog/intro.js'
 
 // Temporarily added articles (in datewise order)
 // Will eventually replace with articles dynamically updated from Medium website
@@ -450,7 +447,7 @@ class DataBlog extends React.Component {
     }
     render() {
         return (
-            <div className='Body'>
+            <div style={{backgroundColor: '#333b65'}}>
 
                 {/* Main Description  */}
                 <div className="Header">
@@ -462,22 +459,13 @@ class DataBlog extends React.Component {
                                 </Grid.Column>
                                 <Grid.Column width={9}>
                                     <div className='Title'>
-                                        <Header> Data Blog </Header>
+                                        <h1 style={{color: "white", fontSize: '1.5em'}}>Data Blog</h1>
                                     </div>
-                                    <p className='Description'>
+                                    <p className='Description' style={{color: "white"}}>
                                         Our teams publish a variety of data-centric journal articles,
                                         complemented by colorful visualizations. Take a look at some of
                                         the analytical insights we've unearthed.
-                                        <Divider/>
-                                        <div style={{marginTop: '5%'}}>
-                                            {/* <Button fluid floated="right" color="orange" size="massive"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
-                                                }}>
-                                                Apply
-                                            </Button> */}
-                                        </div>
+                                        {/* <Divider/> */}
                                     </p>
                                 </Grid.Column>
                             </Grid.Row>
@@ -486,17 +474,9 @@ class DataBlog extends React.Component {
                 </div>
                 <div>
                     <Container style={{paddingBottom: 50}}>
-                        <Segment style={{textAlign: 'left'}}>
-                            <ReactMarkdown source={datablog_intro} />
-                        </Segment>
+                        <p style={{textAlign: 'left', color: 'white', fontSize: 20}}>The Data Blog team focuses on deriving insights from data to develop fun and informative articles on Medium. Each quarter, members will collaborate in teams to find data of a topic of interest, conduct data analysis in R or Python, build meaningful visualizations, and communicate their findings through a written article. As a Data Blog member, you will gain experience in data storytelling through the article development process and engaging in weekly meetings to present your findings. Check out some of our previous work below or at  
+                        <a href="https://ucladatares.medium.com/"> https://ucladatares.medium.com/</a></p>
                     </Container>
-                </div>
-                {/* Wave Image */}
-                <div style={{backgroundImage: `url(${wave})`,
-                                                backgroundSize: "cover",
-                                                height: "50vh",
-                                                width: "auto",
-                                                paddingBottom: 80}}>
                 </div>
 
                 {/* Ideally, add react search bar */}
@@ -507,9 +487,7 @@ class DataBlog extends React.Component {
                     <Container style={{paddingBottom: 50}}>
                         <Container fluid>
                             <div style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                                <Header >
-                                    Latest DataBlog Articles
-                                </Header>
+                                <h1 style={{color: "white", fontSize: '1.2em'}}>Latest DataBlog Articles</h1>
                             </div>
                         </Container>
                         <div style={{paddingTop: '2%'}}>

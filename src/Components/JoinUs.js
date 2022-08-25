@@ -14,7 +14,7 @@ class JoinUs extends React.Component {
                         <Grid>
                             <Grid.Row columns={2}>
                                 <Grid.Column>
-                                    <p style={{fontSize: '.7em'}}>
+                                    <p style={{fontSize: '.7em', textAlign: "left"}}>
                                         {/* Recruiting for each of the DataRes teams happens at the beginning of every quarter, and more info can be found on the specific applications for this recruiting cycle on the 
                                         application below.  Please check out our Facebook and Instagram for the most
                                         up to date information about applications.                                     */}

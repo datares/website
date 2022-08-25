@@ -1,18 +1,15 @@
 // Import Components
 import React from 'react';
 import {Header, Container, Image, 
-            Segment, Grid, Divider} from 'semantic-ui-react';
+            Segment, Grid} from 'semantic-ui-react';
 
 // Import JS
 import '../Styles/Research.css';
 import '../Styles/Utils.css';
 import 'semantic-ui-css/semantic.min.css';
 
-// import YouTube from 'react-youtube';
-
 // Import Images
 import researchImage from '../Assets/Research/research_image.svg';
-import wave from '../Assets/Research/team_wave.svg';
 var Articles = [
     {
         'url': 'https://ucladatares.medium.com/make-a-monet-image-style-transfer-with-cycle-gans-5475dcb525b8',
@@ -53,28 +50,20 @@ class Research extends React.Component {
     
     render() {
         return (
-            <div className='Body'>
+            <div style={{backgroundColor: "#333b65"}}>
                 
                 {/* Main Description  */}
-                <div className="Header">
+                <div className="Header" style={{color: "white"}}>
                     <Container>
                         <div className='Title'>
-                            <Header> Research </Header>
+                        <h1 style={{fontSize: '1.5em'}}>Research</h1>
                         </div>
                         <Grid>
                             <Grid.Row columns={2}>
                                 <Grid.Column>
                                     <p className='Description'>
-                                        Our teams investigates a range of advanced machine learning problems 
+                                        Our team investigates a range of advanced machine learning problems 
                                         primarily involving deep learning and reinforcement learning. 
-                                        <Divider/>
-                                    {/* <div style={{marginTop: '5%'}}>
-                                            <Button  fluid floated="right" color="orange" size="massive"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
-                                                }}>Apply</Button>
-                                        </div> */}
                                     </p>
                                 </Grid.Column>
                                 <Grid.Column>
@@ -85,16 +74,10 @@ class Research extends React.Component {
                     </Container>
                 </div>
 
-                <div style={{backgroundImage: `url(${wave})`,
-                                backgroundSize: "cover",
-                                height: "50vh",
-                                width: "auto",
-                                paddingBottom: 50}}>
-                </div>
                 {/* Ideally, add react search bar */}
                 <Container style={{paddingBottom: 50}}>
                     <Container fluid>
-                                <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
+                                <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%', color: 'white'}}>
                                     Latest Research Articles
                                 </Header>
                     </Container>
