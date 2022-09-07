@@ -1,7 +1,7 @@
 // Import React Modules
 import React from 'react';
-import {HashRouter as Router, 
-  Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch,
+  Route} from 'react-router-dom';
 
 // Import custom modules
 import Home from './Components/Home.js';
@@ -22,50 +22,38 @@ import 'semantic-ui-css/semantic.min.css';
 
 
 class App extends React.Component {
-  constructor(props) {
-    super()
-    this.state = { activeItem: 'Home' }
-  }
-  // style={{backgroundColor: 'white',
-  // height: "45vh",
-  // width: "auto"}}
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-  handleActive = (e, new_active) => this.setState({ activeItem: new_active })
   render () {
-    const {activeItem} = this.state;
     return (
       <div className="App">
-
           <div>
             <div className="Navbar-items">
                 <Router basename="/">
                   <ScrollToTop />
-                  <NavBar activeItem={activeItem} 
-                          handleItemClick={this.handleItemClick}/>
+                  <NavBar/>
                   <Switch>
                     <Route path='/faq'>
-                      <FAQ handleActive={this.handleActive} />
+                      <FAQ />
                     </Route>
                     <Route path="/datablog">
-                      <DataBlog handleActive={this.handleActive}  />
+                      <DataBlog  />
                     </Route>
                     <Route path='/research'>
-                      <Research handleActive={this.handleActive} />
+                      <Research />
                     </Route>
                     <Route path='/consulting'>
-                      <Consulting handleActive={this.handleActive} />
+                      <Consulting />
                     </Route>
                     <Route path='/athletics'>
-                      <Athletics handleActive={this.handleActive} />
+                      <Athletics />
                     </Route>
                     <Route path='/events'>
-                      <Events handleActive={this.handleActive} />
+                      <Events />
                     </Route>
                     <Route path='/team'>
-                      <Team handleActive={this.handleActive} />
+                      <Team />
                     </Route>
                     <Route path="/join-us">
-                      <JoinUs handleActive={this.handleActive} />
+                      <JoinUs />
                     </Route>
                     <Route exact path="/">
                       <Home />

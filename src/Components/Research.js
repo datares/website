@@ -12,6 +12,13 @@ import 'semantic-ui-css/semantic.min.css';
 import researchImage from '../Assets/Research/research_image.svg';
 var Articles = [
     {
+        'url': 'https://ucladatares.medium.com/deep-learning-on-graphs-integration-of-dgl-and-neo4j-dbms-for-social-analysis-321563eb900f',
+        'image': 'https://miro.medium.com/max/1400/1*djwPJmnxOHeDCtnsConWbQ.png',
+        'title': 'Deep Learning on Graphs: Integration of DGL and Neo4j DBMS for Social Analysis',
+        'meta': 'August 28, 2022',
+        'authors': 'Irsyad Adam'
+    },
+    {
         'url': 'https://ucladatares.medium.com/make-a-monet-image-style-transfer-with-cycle-gans-5475dcb525b8',
         'image': 'https://miro.medium.com/max/1400/0*FhgV2fS2zEKcm5S6',
         'title': 'Make-A-Monet: Image Style Transfer With Cycle GANs',
@@ -42,12 +49,6 @@ var Articles = [
 ]
 
 class Research extends React.Component {
-    
-    componentDidMount() {
-        const {handleActive} = this.props;
-        handleActive("Research");
-    }
-    
     render() {
         return (
             <div style={{backgroundColor: "#333b65"}}>

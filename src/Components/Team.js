@@ -141,10 +141,6 @@ const row4 = [
 
 
 class Team extends React.Component {
-    componentDidMount(){
-        const {handleActive} = this.props;
-        handleActive("Team");
-    }
     render() {
         return (
             <div style={{backgroundColor: '#333b65'}}>

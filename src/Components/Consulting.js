@@ -15,10 +15,6 @@ import consultingImage from '../Assets/Consulting/consulting_image.svg';
 import basePaws from '../Assets/Consulting/Clients/basepaws.jpg';
 
 class Consulting extends React.Component {
-    componentDidMount(){
-        const {handleActive} = this.props;
-        handleActive("Consulting");
-    }
     render() {
         return (
             <div style={{backgroundColor: "#333b65", color: 'white'}}>

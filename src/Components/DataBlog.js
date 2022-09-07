@@ -442,10 +442,6 @@ const Articles = [
 // const num_rows = Math.ceil(num_articles/articles_per_row);
 
 class DataBlog extends React.Component {
-    componentDidMount(){
-        const {handleActive} = this.props;
-        handleActive("Data Blog");
-    }
     render() {
         return (
             <div style={{backgroundColor: '#333b65', color: 'white'}}>

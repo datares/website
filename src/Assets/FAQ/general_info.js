@@ -23,7 +23,7 @@ You may only submit one application and choose one team to apply to. Applying mo
 Follow us on our social media!
 - Facebook: https://www.facebook.com/ucladatares
 - Instagram: https://www.instagram.com/ucladatares/
-- Website: https://datares.github.io/#/
+- Website: https://ucladatares.com
 - Medium: https://ucladatares.medium.com/
 - LinkedIn: https://www.linkedin.com/company/ucla-datares/
 
