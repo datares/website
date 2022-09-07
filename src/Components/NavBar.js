@@ -21,7 +21,7 @@ export default class Hello extends Component {
                     </Link>
                 </Menu.Menu>
                 <Menu.Menu position='right'>
-                    <Dropdown item openOnFocus text="branches" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
+                    <Dropdown item openOnFocus text="Branches" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
                         <Dropdown.Menu>
                             <Dropdown.Item>
                                 <Link to='/datablog'>
@@ -67,7 +67,7 @@ export default class Hello extends Component {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Dropdown item openOnFocus text="community" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
+                    <Dropdown item openOnFocus text="Community" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
                         <Dropdown.Menu>
                             <Dropdown.Item>
                                 <Link to='/events'>
