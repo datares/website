@@ -1,6 +1,6 @@
 // Import React Modules
 import React from 'react';
-import {HashRouter as Router, 
+import {BrowserRouter as Router, 
   Switch, Route} from 'react-router-dom';
 
 // Import custom modules
