@@ -12,7 +12,6 @@ import Consulting from './Components/Consulting.js';
 import Athletics from './Components/Athletics.js';
 import Events from './Components/Events.js';
 import JoinUs from "./Components/JoinUs";
-import Team from './Components/Team.js';
 import NavBar from './Components/NavBar.js';
 
 import ScrollToTop from './Components/ScrollToTop.js'
@@ -60,9 +59,6 @@ class App extends React.Component {
                     </Route>
                     <Route path='/events'>
                       <Events handleActive={this.handleActive} />
-                    </Route>
-                    <Route path='/team'>
-                      <Team handleActive={this.handleActive} />
                     </Route>
                     <Route path="/join-us">
                       <JoinUs handleActive={this.handleActive} />

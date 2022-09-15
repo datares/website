@@ -1,12 +1,45 @@
 import React from "react";
-import {Container, Grid, Button} from 'semantic-ui-react';
+import {Container, Grid, Button, Tab} from 'semantic-ui-react';
 
-// const JoinUs = () => 
+import general_info from '../Assets/FAQ/general_info';
+import research_info from '../Assets/FAQ/research_info';
+import datablog_info from '../Assets/FAQ/datablog_info';
+import consulting_info from '../Assets/FAQ/consulting_info';
+
+import ReactMarkdown from 'react-markdown';
+
+const panes = [
+    {
+        menuItem: 'General',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={general_info} />
+                      </Tab.Pane>,
+    },
+    {
+        menuItem: 'Data Blog',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={datablog_info} />
+                      </Tab.Pane>,
+    },
+    {
+        menuItem: 'Research',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={research_info} />
+                     </Tab.Pane>,
+    },
+    {
+        menuItem: 'Consulting',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={consulting_info} />
+                     </Tab.Pane>,
+    }
+]
+
 class JoinUs extends React.Component {
     render() {
         return (
-            <div>
-                <div style={{backgroundColor: '#333b65', color: 'white', paddingBottom: '20%'}}>
+            <div style={{backgroundColor: '#333b65'}}>
+                <div style={{color: 'white'}}>
                     <Container>
                         <div style={{textAlign: 'center', color: 'white', paddingBottom: '10%', paddingTop: '10%'}}>
                             <h1 style={{fontSize: '1.5em'}}>Join our team!</h1>
@@ -37,6 +70,12 @@ class JoinUs extends React.Component {
                             </Grid.Row>
                         </Grid>
                     </Container>
+                </div>
+                <div style={{paddingLeft: '20%', paddingRight: '20%', paddingTop: '10%', paddingBottom: '10%'}}>
+                    <div style={{textAlign: 'center', color: 'white', paddingBottom: '10%', paddingTop: '10%'}}>
+                            <h1 style={{fontSize: '1.5em'}}>Learn More About DataRes!</h1>
+                    </div>
+                    <Tab menu={{ color: 'orange'}} panes={panes} />
                 </div>
             </div>
         )
