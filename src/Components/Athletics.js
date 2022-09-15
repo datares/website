@@ -2,7 +2,7 @@ import React from 'react';
 import {Header, Container, Image,
     Grid, Divider, Segment} from 'semantic-ui-react';
 
-import uclaAthletics from '../Assets/Consulting/Clients/ucla-athletics.png';
+import athleticsImage from '../Assets/Consulting/Clients/ucla-athletics.png';
 
 
 const Athletics = () => {
@@ -23,7 +23,7 @@ const Athletics = () => {
                                 </p>
                             </Grid.Column>
                             <Grid.Column width={7}>
-                                <Image src={ uclaAthletics } align="right" size='medium'></Image>
+                                <Image src={athleticsImage} align="right" size='medium'></Image>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
@@ -45,7 +45,7 @@ const Athletics = () => {
                         <a href='https://www.uclabruins.com/' rel="noopener noreferrer" target="_blank">
                         <Segment className='segment-body' size='big' onClick={() => {}} >
                             <Container>
-                                <Image src={uclaAthletics} centered size='small'></Image>
+                                <Image src={athleticsImage} centered size='small'></Image>
                             </Container>
                             <Header style={{fontSize: 18}}> Winter 2021, Spring 2021 </Header>
                             <div style={{fontSize: 16, color: 'black'}}>
