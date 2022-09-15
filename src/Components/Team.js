@@ -148,9 +148,9 @@ class Team extends React.Component {
     render() {
         return (
             <div style={{backgroundColor: '#333b65'}}>
-                <div style={{paddingBottom: '5%', paddingTop: '5%'}}>
+                <div style={{paddingBottom: '5%', paddingTop: '10%'}}>
                     <Header style={{fontSize: 80, color: 'white'}}>
-                        Our Board Members
+                        Our Team
                     </Header>
                 </div>
 
@@ -172,7 +172,7 @@ class Team extends React.Component {
                                             <div className='Segment-alignment'>
                                                 <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                 <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                    <Image centered src={user.image} height={175}></Image>
+                                                    <Image centered src={user.image} height={175} circular></Image>
                                                     <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
                                                     <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                 </Segment>
@@ -188,7 +188,7 @@ class Team extends React.Component {
                                                 <div className='Segment-alignment'> 
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                        <Image centered src={user.image} height={175}></Image>
+                                                        <Image centered src={user.image} height={175} circular></Image>
                                                         <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
@@ -204,7 +204,7 @@ class Team extends React.Component {
                                                 <div className='Segment-alignment'> 
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                        <Image centered src={user.image} height={175}></Image>
+                                                        <Image centered src={user.image} height={175} circular></Image>
                                                         <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>
@@ -215,12 +215,12 @@ class Team extends React.Component {
                                     <Grid.Row centered>
                                         <p style={{color: 'white'}}>Specialized Team Heads</p>
                                     </Grid.Row>
-                                    <Grid.Row centered>                            
+                                    <Grid.Row centered>
                                             {row4.map(user => (
                                                 <div className='Segment-alignment'> 
                                                     <a href={user.linkedin} rel="noopener noreferrer" target='_blank'>
                                                     <Segment padded style={{backgroundColor: 'transparent', border: 0}}>
-                                                    <Image centered src={user.image} height={175}></Image>
+                                                    <Image centered src={user.image} height={175} circular></Image>
                                                         <Header style={{fontSize: 20, color: 'white'}}>{user.name}</Header>
                                                         <Header style={{fontSize: 17, color: '#fcba03'}}>{user.title}</Header>
                                                     </Segment>

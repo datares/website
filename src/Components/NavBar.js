@@ -21,6 +21,15 @@ export default class Hello extends Component {
                     </Link>
                 </Menu.Menu>
                 <Menu.Menu position='right'>
+                    <Link to="/faq">
+                        <Menu.Item
+                        name='About'
+                        active={activeItem === 'FAQ'}
+                        onClick={handleItemClick}
+                        style={{color: colorCondition,
+                                fontWeight: "bold",
+                                fontSize: "1.2em"}} />
+                    </Link>
                     <Dropdown item openOnFocus text="Branches" style={{fontWeight: "bold", fontSize: "1.2em", color: colorCondition}}>
                         <Dropdown.Menu>
                             <Dropdown.Item>
@@ -81,24 +90,6 @@ export default class Hello extends Component {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Link to='/team'>
-                        <Menu.Item
-                        name='Team'
-                        active={activeItem === 'Our Team'}
-                        onClick={handleItemClick}
-                        style={{color: colorCondition, 
-                                fontWeight: "bold",
-                                fontSize: "1.2em"}} />
-                    </Link>
-                    <Link to="/faq">
-                        <Menu.Item
-                        name='About'
-                        active={activeItem === 'FAQ'}
-                        onClick={handleItemClick}
-                        style={{color: colorCondition,
-                                fontWeight: "bold",
-                                fontSize: "1.2em"}} />
-                    </Link>
                     <Link to="join-us">
                         <Menu.Item
                         name='Join Us'
