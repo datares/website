@@ -10,7 +10,7 @@ import '../Styles/FAQ.css';
 class FAQ extends React.Component {
     componentDidMount() {
         const {handleActive} = this.props;
-        handleActive("FAQ");
+        handleActive("About");
     }
 
     render() {

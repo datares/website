@@ -21,20 +21,17 @@ import 'semantic-ui-css/semantic.min.css';
 
 
 class App extends React.Component {
-  constructor(props) {
+  constructor() {
     super()
     this.state = { activeItem: 'Home' }
   }
-  // style={{backgroundColor: 'white',
-  // height: "45vh",
-  // width: "auto"}}
+
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   handleActive = (e, new_active) => this.setState({ activeItem: new_active })
   render () {
     const {activeItem} = this.state;
     return (
       <div className="App">
-
           <div>
             <div className="Navbar-items">
                 <Router basename="/">
@@ -42,7 +39,7 @@ class App extends React.Component {
                   <NavBar activeItem={activeItem} 
                           handleItemClick={this.handleItemClick}/>
                   <Switch>
-                    <Route path='/faq'>
+                    <Route path='/about'>
                       <FAQ handleActive={this.handleActive} />
                     </Route>
                     <Route path="/datablog">
@@ -64,7 +61,7 @@ class App extends React.Component {
                       <JoinUs handleActive={this.handleActive} />
                     </Route>
                     <Route exact path="/">
-                      <Home />
+                      <Home handleActive={this.handleActive} />
                     </Route>
                   </Switch>
                 </Router>
