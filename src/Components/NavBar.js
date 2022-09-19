@@ -11,20 +11,24 @@ export default class Hello extends Component {
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
     render () {
       const {activeItem, handleItemClick} = this.props
-      const colorCondition = (activeItem === "Home" && isBrowser)  ? "black" : "black";
+      const colorCondition = "black"; // (activeItem === "Home" && isBrowser)  ? "black" : "black";
       return (
         <div>
             <Menu style={{padding: 20}} position="right" size="large" secondary stackable>
                 <Menu.Menu position="left">
                     <Link to="/">
-                        <Image src={logo} size="small" centered></Image>
+                    {/* name='Home' onClick={handleItemClick} active={activeItem === 'Home'} */}
+                        {/* <Menu.Item>
+                        <Image src={logo} size="small" centered/>
+                        </Menu.Item> */}
+                        <Image src={logo} size="small" centered/>
                     </Link>
                 </Menu.Menu>
                 <Menu.Menu position='right'>
-                    <Link to="/faq">
+                    <Link to="/about">
                         <Menu.Item
                         name='About'
-                        active={activeItem === 'FAQ'}
+                        active={activeItem === 'About'}
                         onClick={handleItemClick}
                         style={{color: colorCondition,
                                 fontWeight: "bold",
