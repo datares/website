@@ -2,10 +2,11 @@
 import React from 'react';
 import {Header, Button, Icon,
     Grid, Container, Image} from 'semantic-ui-react';
-// import {Link} from 'react-router-dom'
-// Import CSS
 import '../Styles/Home.css';
 import 'semantic-ui-css/semantic.min.css';
+
+import {Link} from 'react-router-dom';
+
 
 import blogImage from '../Assets/DataBlog/blog_image.svg';
 import researchImage from '../Assets/Research/research_image.svg';
@@ -24,7 +25,7 @@ class Home extends React.Component {
 
           <div className="intro-header" style={{backgroundColor: '#333b65', paddingTop: '20%', paddingBottom: '20%'}}>
               <Container>
-                <Grid style={{paddingTop: '8%'}}>
+                <Grid>
                   <Grid.Row>
                     <Grid.Column style={{textAlign: 'center'}}>
                       <Header style={{fontSize: "1em", color: 'white'}}>
@@ -50,27 +51,38 @@ class Home extends React.Component {
               </Header>
               <Grid className='our-branches'>
                 <Grid.Row columns={2}>
-                  <Grid.Column>
-                    <p className='branch-name'>Data Blog</p>
-                    <p className='branch-description'>Creating data-backed narratives</p>
-                    <Image centered src={blogImage} size='small'></Image>
+                  <Grid.Column style={{color: "black"}}>
+                    <Link to="/datablog">
+                      <p style={{fontSize: ".7em", color: "black"}}>Data Blog</p>
+                      <p style={{fontSize: ".5em", color: "black"}}>Creating data-backed narratives</p>
+                      <Image centered src={blogImage} size='small'></Image>
+                    </Link>
+
                   </Grid.Column>
+                  
                   <Grid.Column>
-                    <p className='branch-name'>Research</p>
-                    <p className='branch-description'>Pushing the limits of machine learning</p>
+                    <Link to="/research">
+                    <p style={{fontSize: ".7em", color: "black"}}>Research</p>
+                    <p style={{fontSize: ".5em", color: "black"}}>Pushing the limits of machine learning</p>
                     <Image centered src={researchImage} size='small'></Image>
+                    </Link>
+                    
                   </Grid.Column>
                 </Grid.Row>
                 <Grid.Row columns={2}>
-                <Grid.Column>
-                    <p className='branch-name'>Consulting</p>
-                    <p className='branch-description'>Developing data-driven solutions</p>
-                    <Image centered src={consultingImage} size='small'></Image>
+                  <Grid.Column>
+                    <Link to="consulting">
+                      <p style={{fontSize: ".7em", color: "black"}}>Consulting</p>
+                      <p style={{fontSize: ".5em", color: "black"}}>Developing data-driven solutions</p>
+                      <Image centered src={consultingImage} size='small'></Image>
+                    </Link>
                   </Grid.Column>
                   <Grid.Column>
-                    <p className='branch-name'>UCLA Athletics</p>
-                    <p className='branch-description'>Providing next-gen sports analytics for a legendary program</p>
-                    <Image centered src={athleticsImage} size='small'></Image>
+                    <Link to="athletics">
+                      <p style={{fontSize: ".7em", color: "black"}}>UCLA Athletics</p>
+                      <p style={{fontSize: ".5em", color: "black"}}>Providing next-gen sports analytics for a legendary program</p>
+                      <Image centered src={athleticsImage} size='small'></Image>
+                    </Link>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
@@ -84,7 +96,7 @@ class Home extends React.Component {
                   <Grid.Column>
                     <p style={{color: 'white'}} className='newsletter-text'>Want to stay up to date with all the latest DataRes news?</p>
                   </Grid.Column>
-                  <Grid.Column>
+                  <Grid.Column style={{paddingTop: '4%'}}>
                     <Button color='black' fontWeight="bold" href="https://ucladatares.us14.list-manage.com/subscribe?u=d8a2e69c43a898058be10fcdb&id=f153c9e211">Join our Mailing List!</Button>
                   </Grid.Column>
                 </Grid.Row>
