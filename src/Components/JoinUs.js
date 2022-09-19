@@ -1,61 +1,103 @@
 import React from "react";
-import {Header, Container, Image, Grid, Button, Divider} from 'semantic-ui-react';
-import wave from '../Assets/DataBlog/team_wave.svg';
-import logo from "../Assets/Home/logo.svg"
+import {Container, Grid, Button, Tab} from 'semantic-ui-react';
+import ReactMarkdown from 'react-markdown';
 
-const JoinUs = (props) => {
-    return (
-        <div className='Body'>
-                {/* Main Description  */}
-                <div className="Header">
-                    <Container>
-                        <div className='Title'>
-                            <Header> Join Us </Header>
-                        </div>
-                        <Grid>
-                            <Grid.Row columns={2}>
-                                <Grid.Column>
-                                    <p className='Description'>
-                                        Recruiting for each of the DataRes teams happens at the beginning of every quarter, and more info can be found on the specific applications for this recruiting cycle on the 
-                                        application below.  Please check out our Facebook and Instagram for the most
-                                        up to date information about applications.
-                                        <Divider/>
-                                    <div style={{marginTop: '5%'}}>
-                                            <Button  fluid floated="right" color="orange" size="massive"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    window.open('https://airtable.com/shrB31U11OMoyyoxV', "_blank");
-                                                }}>Apply</Button>
-                                        </div>
-                                    </p>
-                                </Grid.Column>
-                                <Grid.Column style={{paddingLeft: '10%'}} >
-                                    <Image src={logo} size='large'></Image>
-                                </Grid.Column>
-                            </Grid.Row>
-                        </Grid>
-                    </Container>
-                </div>
+import general_info from '../Assets/FAQ/general_info';
+import research_info from '../Assets/FAQ/research_info';
+import datablog_info from '../Assets/FAQ/datablog_info';
+import consulting_info from '../Assets/FAQ/consulting_info';
 
-                <div style={{backgroundImage: `url(${wave})`,
-                                backgroundSize: "cover",
-                                height: "50vh",
-                                width: "auto",
-                                paddingBottom: 50}}>
-                </div>
-                {/* Ideally, add react search bar */}
-                {/* <Container style={{paddingBottom: 50}}>
-                    <Container fluid>
-                                <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                                    Latest Research Articles
-                                </Header>
-                    </Container>
-                            <div style={{paddingTop: '2%'}}>
-    
+const panes = [
+    {
+        menuItem: 'General',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={general_info} />
+                      </Tab.Pane>,
+    },
+    {
+        menuItem: 'Data Blog',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={datablog_info} />
+                      </Tab.Pane>,
+    },
+    {
+        menuItem: 'Research',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={research_info} />
+                     </Tab.Pane>,
+    },
+    {
+        menuItem: 'Consulting',
+        render: () => <Tab.Pane attached={false} style={{textAlign: 'left', padding: '5%'}}>
+                            <ReactMarkdown source={consulting_info} />
+                     </Tab.Pane>,
+    }
+]
+
+const applicationPage = () => {
+    const applyOpen = new Date("09/20/2022");
+    const applyClose = new Date("09/29/2022");
+    const applicationLink = "https://airtable.com/shrdZu1HBZR5eSVhE";
+    if (applyOpen < Date.now() && Date.now() < new Date(applyClose).setHours(24, 0, 0, 0)) {
+        // need this weird date logic to make sure current time is less than midnight for applyClose
+        return (
+            <Grid>
+                <Grid.Row columns={2}>
+                    <Grid.Column>
+                        <p style={{fontSize: '.7em', textAlign: "left"}}>
+                            Applications to join DataRes are currently open and will close at midnight on {applyClose.toLocaleDateString()}!  Each of our teams will be reviewing applications and reaching out sometime during week 1 about decisions.
+                        </p>
+                    </Grid.Column>
+                    <Grid.Column>
+                    <div style={{marginTop: '5%', paddingTop: '20%'}}>
+                                <Button  color="white" size="large" onClick={() => window.open(applicationLink, "_blank")}>
+                                    Apply!
+                                </Button>
                             </div>
-                </Container> */}
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+        )
+    }
+    else {
+        return (
+            <Grid>
+                <Grid.Row columns={2}>
+                    <Grid.Column>
+                        <p style={{fontSize: '.7em', textAlign: "left"}}>
+                            DataRes is currently not recruiting.
+                            Recruiting for each of the DataRes teams happens at the beginning of every quarter.
+                            Please check out our Facebook and Instagram for the most
+                            up to date information about upcoming applications.
+                        </p>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+        )
+    }
+}
+
+class JoinUs extends React.Component {
+    render() {
+        return (
+            <div style={{backgroundColor: '#333b65'}}>
+                <div style={{color: 'white'}}>
+                    <Container>
+                        <div style={{textAlign: 'center', color: 'white', paddingBottom: '10%', paddingTop: '10%'}}>
+                            <h1 style={{fontSize: '1.5em'}}>Join our team!</h1>
+                        </div>
+                        {applicationPage()}
+                    </Container>
+                </div>
+                <div style={{paddingLeft: '20%', paddingRight: '20%', paddingTop: '10%', paddingBottom: '10%'}}>
+                    <div style={{textAlign: 'center', color: 'white', paddingBottom: '10%', paddingTop: '10%'}}>
+                            <h1 style={{fontSize: '1.5em'}}>Learn More About DataRes!</h1>
+                    </div>
+                    <Tab menu={{ color: 'orange'}} panes={panes} />
+                </div>
             </div>
-    )
+        )
+    }
 }
 
 export default JoinUs;

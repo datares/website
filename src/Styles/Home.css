@@ -3,47 +3,6 @@
     color: black;
 }
 
-.Landing {
-    margin-top: 23%;
-}
-
-.Landing-header {
-    min-height: 150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-}
-
-.App-header {
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-  }
-  
-.General-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-}
-
-.datares-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    text-align: left;
-}
-
 .intro-header {
     min-height: 70vh;
     display: flex;
@@ -54,99 +13,10 @@
     text-align: left;
 }
 
-.datablog-header {
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    text-align: left;
-    color: white;
-}
-
-.consulting-header {
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    text-align: left;
-    color: white;
-}
-
-.research-header {
-    display: flex;
-    min-height: 70vh;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    text-align: left;
-    color: black;
-}
-
-.contribute-header {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    text-align: center;
-    color: black;
-}
-
-.subscribe-header {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    text-align: center;
-    color: black;
-}
-
-.contribute-header-description {
-    margin-top: 5%;
-}
-
-.Stats-header {
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-.Wave-spacing {
-    margin-top: 10%;
-}
-
 .Footer {
     min-height: 30vh;
     justify-content: center;
     font-size: 2vmin;
-}
-
-.Stat-Number {
-    font-size: 3.5em;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    padding: 5%;
-    margin: 0;
-}
-
-.Stat-Description {
-    font-size: 1.2em;
-    color: white;
-    text-align: center;
-    font-weight: bold;
 }
 
 .Social-media-icons {
@@ -156,22 +26,6 @@
 }
 
 @media only screen and (max-width: 900px){
-    .Stat-Number {
-        font-size: 2em;
-        color: white;
-        text-align: center;
-        font-weight: bold;
-        padding: 5%;
-        margin: 5%;
-    }
-    
-    .Stat-Description {
-        font-size: 1em;
-        color: white;
-        text-align: center;
-        font-weight: bold;
-    }
-
     .Social-media-icons {
         padding-top: 50%;
         align-items: center;

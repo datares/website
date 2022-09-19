@@ -1,47 +1,38 @@
 // Import React Components
 import React from 'react';
-import {Header, Button, Image, Icon,
-    Grid, Container, Divider} from 'semantic-ui-react';
-import {Link} from 'react-router-dom'
-// Import CSS
+import {Header, Button, Icon,
+    Grid, Container, Image} from 'semantic-ui-react';
 import '../Styles/Home.css';
 import 'semantic-ui-css/semantic.min.css';
 
-// Import Images
-import logo from '../Assets/Home/logo.svg';
-import logos from '../Assets/Team/logos.png';
+import {Link} from 'react-router-dom';
 
-import orangeBar from '../Assets/Home/orange_bar.svg';
-import numberWave from '../Assets/Home/number_wave.svg';
-import datablogWave from '../Assets/Home/background.svg';
-import flippedWave from '../Assets/Home/background_flipped.svg';
-import bottomWave from '../Assets/Home/bottom_wave.svg';
+
+import blogImage from '../Assets/DataBlog/blog_image.svg';
+import researchImage from '../Assets/Research/research_image.svg';
+import consultingImage from '../Assets/Consulting/consulting_image.svg';
+import athleticsImage from '../Assets/Consulting/Clients/ucla-athletics.png';
 
 class Home extends React.Component {
     render() {
         return (
         <div>
-          <div className="Landing">
-            <Container fluid>
-              <div class="Logo-alignment">
-                <Image src={logo} size="huge" centered></Image>
-              </div>
-              <div>
-                <Header style={{paddingTop: '3%', fontSize: 25}}> Data Science @ UCLA </Header>
-              </div>
-            </Container>
-          </div>
 
-          <div className="intro-header">
+          {/*
+            insert some sort of cool animation
+            ideas: animate distributions or something like that
+           */}
+
+          <div className="intro-header" style={{backgroundColor: '#333b65', paddingTop: '20%', paddingBottom: '20%'}}>
               <Container>
-                <Grid style={{paddingTop: '8%'}}>
+                <Grid>
                   <Grid.Row>
-                    <Grid.Column>
-                    <Image src={ orangeBar } size='large'></Image>
-                      <Header style={{fontSize: "2em"}}>
-                        At DataRes, we solve problems and craft stories with data.
+                    <Grid.Column style={{textAlign: 'center'}}>
+                      <Header style={{fontSize: "1em", color: 'white'}}>
+                        Welcome to the home of Data Science at UCLA
                       </Header>
-                      <p>
+                      <p style={{fontSize: "1em", color: 'white'}}>
+                        At DataRes, we solve problems and craft stories with data.
                         We provide a platform for aspiring data scientists and analysts
                         to collaborate on impactful data projects. If you love playing
                         with data, creating powerful visualizations, or building
@@ -50,202 +41,70 @@ class Home extends React.Component {
                       </Grid.Column>
                   </Grid.Row>
                 </Grid>
-                <Divider style={{width: '50%', margin: 'auto', marginTop: '8%'}} clearing/>
               </Container>
           </div>
-          
-          {/* Where we've been */}
-          <div>
-            <Container style={{marginTop: '1%'}}>
-              <Header style={{fontSize: 50}}>
-                      Where We've Been
-              </Header>
-              <div>
-                  <Image src={logos} size='massive' style={{marginTop: "5%", marginBottom: "5%"}} centered></Image>
-              </div>
-            </Container>
-          </div>
 
-          <div className='Stats-header' style={{backgroundImage: `url(${numberWave})`,
-                                                backgroundSize: "cover",
-                                                height: "45vh",
-                                                width: "auto"}}>
+          <div style={{paddingTop: '10%', paddingBottom: '10%'}}>
             <Container>
-              <Grid style={{paddingRight: 20}}>
-                <Grid.Row columns={4}>
-                  <Grid.Column>
-                    <p className="Stat-Number">10+</p>
-                    <p className="Stat-Description">Articles Published</p>
+              <Header>
+                Branches
+              </Header>
+              <Grid className='our-branches'>
+                <Grid.Row columns={2}>
+                  <Grid.Column style={{color: "black"}}>
+                    <Link to="/datablog">
+                      <p style={{fontSize: ".7em", color: "black"}}>Data Blog</p>
+                      <p style={{fontSize: ".5em", color: "black"}}>Creating data-backed narratives</p>
+                      <Image centered src={blogImage} size='small'></Image>
+                    </Link>
+
                   </Grid.Column>
+                  
                   <Grid.Column>
-                    <p className="Stat-Number">5</p>
-                    <p className="Stat-Description">Research Projects</p>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <p className="Stat-Number">70+</p>
-                    <p className="Stat-Description">Active Members</p>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <p className="Stat-Number">35+</p>
-                    <p className="Stat-Description">Companies Represented</p>
+                    <Link to="/research">
+                    <p style={{fontSize: ".7em", color: "black"}}>Research</p>
+                    <p style={{fontSize: ".5em", color: "black"}}>Pushing the limits of machine learning</p>
+                    <Image centered src={researchImage} size='small'></Image>
+                    </Link>
+                    
                   </Grid.Column>
                 </Grid.Row>
-              </Grid>
-            </Container>
-          </div>
-
-          <div className='datablog-header' style={{backgroundImage: `url(${datablogWave})`,
-                                                backgroundSize: "cover",
-                                                minHeight: "80vh",
-                                                height: "80vh",
-                                                width: "auto"}}>
-            <div>
-              <Container>
-                <Grid style={{paddingTop: '2%'}}>
-                    <Grid.Row columns={2}>
-                      <Grid.Column></Grid.Column>
-                      <Grid.Column>
-                        <Image src={ orangeBar } size='large'></Image>
-                        <Header style={{fontSize: "1.8em", color: 'white'}}>
-                          Data Blog: Creating data-backed narratives.
-                        </Header>
-                        <p>
-                          We publish a variety of data centric journal articles.
-                          Take a look at some of our featured stories.
-                        </p>
-                        <Link to="/datablog">
-                        <Button fluid floated='right' size="large" color="orange" 
-                              style={{borderRadius: 20}}>
-                          Learn More
-                        </Button>
-                        </Link>
-                      </Grid.Column>
-                    </Grid.Row>
-                  </Grid>
-              </Container>
-            </div>
-          </div>
-
-          <div className="research-header">
-            <Container>
-              <Grid style={{marginTop: '5%', marginBottom: '5%'}}>
                 <Grid.Row columns={2}>
                   <Grid.Column>
-                    <div>
-                    <Image src={ orangeBar } size='large'></Image>
-                    <Header style={{fontSize: "1.8em"}}>
-                      Research: Pushing the limits of machine learning. 
-                    </Header>
-                    <p>
-                      We tackle advanced machine learning problems in the areas of computer vision, 
-                      natural language processing, and reinforcement learning. 
-                    </p>
-                    <Link to="/research">
-                    <Button fluid floated='left' size="large" color="orange"
-                            style={{borderRadius: 20}}>
-                        Learn More
-                      </Button>
+                    <Link to="consulting">
+                      <p style={{fontSize: ".7em", color: "black"}}>Consulting</p>
+                      <p style={{fontSize: ".5em", color: "black"}}>Developing data-driven solutions</p>
+                      <Image centered src={consultingImage} size='small'></Image>
                     </Link>
-                    </div>
                   </Grid.Column>
-                  <Grid.Column></Grid.Column>
+                  <Grid.Column>
+                    <Link to="athletics">
+                      <p style={{fontSize: ".7em", color: "black"}}>UCLA Athletics</p>
+                      <p style={{fontSize: ".5em", color: "black"}}>Providing next-gen sports analytics for a legendary program</p>
+                      <Image centered src={athleticsImage} size='small'></Image>
+                    </Link>
+                  </Grid.Column>
                 </Grid.Row>
               </Grid>
             </Container>
           </div>
 
-          <div className='consulting-header' style={{backgroundImage: `url(${flippedWave})`,
-                                                  backgroundSize: "cover",
-                                                  minHeight: "100vh",
-                                                  height: "110vh",
-                                                  width: "auto"}}>
+          <div style={{backgroundColor: '#333b65', paddingTop: '2.5%', paddingBottom: '2.5%', justifyContent: 'center'}}>
             <Container>
               <Grid>
                 <Grid.Row columns={2}>
-                  <Grid.Column></Grid.Column>
                   <Grid.Column>
-                    <div style={{marginTop: '50%'}}>
-                      <Image src={ orangeBar } size='large'></Image>
-                      <Header style={{fontSize: "1.8em", color: 'white'}}>
-                        Consulting: Developing data-driven solutions.
-                      </Header>
-                      <p>
-                      We offer pro bono consulting services for startups 
-                      and companies within the Los Angeles area.
-                      </p>
-                      <Link to="/consulting">
-                      <Button fluid floated='right' size="large" color="orange" 
-                              style={{borderRadius: 20}}>
-                        Learn More
-                      </Button>
-                      </Link>
-                    </div>
+                    <p style={{color: 'white'}} className='newsletter-text'>Want to stay up to date with all the latest DataRes news?</p>
+                  </Grid.Column>
+                  <Grid.Column style={{paddingTop: '4%'}}>
+                    <Button color='black' fontWeight="bold" href="https://ucladatares.us14.list-manage.com/subscribe?u=d8a2e69c43a898058be10fcdb&id=f153c9e211">Join our Mailing List!</Button>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
             </Container>
           </div>
-
-
-          <div className="subscribe-header">
-            <Container>
-              <div className='newsletter-subscribe'>
-                <p style={{fontSize: "0.9em"}}>
-                Want to stay up to date with all the latest DataRes news? Subscribe to our newsletter! <br/> 
-                <span/> 
-                </p>
-              </div>
-              <Button floated='center' size="large" color="orange" 
-                            onClick={(e) => {
-                                  e.preventDefault();
-                                  window.location.href='https://ucladatares.us14.list-manage.com/subscribe?u=d8a2e69c43a898058be10fcdb&id=f153c9e211';
-                              }}
-                            style={{borderRadius: 30,
-                                    width: '40%',
-                                    marginTop: '5%',
-                                    padding: 20,
-                                    fontSize: 25}}>
-                       Subscribe! 
-              </Button>
-            </Container>
-          </div>
-
-          <div className="contribute-header">
-            <Container>
-              <Header style={{fontSize: "2em"}}>
-                Want To Contribute To DataRes? <br></br>
-              </Header>
-              <Button floated='center' size="large" color="orange" 
-                            onClick={(e) => {
-                                  e.preventDefault();
-                                  window.location.href='https://drive.google.com/file/d/17ypxJqurOepvSfPlGOYvGaoMzVQ5OmFv/view?usp=sharing';
-                              }}
-                            style={{borderRadius: 30,
-                                    width: '40%',
-                                    marginTop: '5%',
-                                    padding: 20,
-                                    fontSize: 25}}>
-                        Sponsor Us
-              </Button>
-              <div className='contribute-header-description'>
-                <p style={{fontSize: "0.9em"}}>
-                Interested in learning more about our organization? Want to collab?<br/> 
-                Reach out to us at <span/> 
-                <a href="mailto:datares@ucla.edu">datares@ucla.edu</a> or get in touch with us online.
-                </p>
-                <div style={{marginTop: '5%'}}>
-                    
-                </div>     
-              </div>
-            </Container>
-          </div>
-
-
-
-          <div className='Footer' style={{backgroundImage: `url(${bottomWave})`,
-                                                backgroundSize: "cover",
-                                                height: "45vh",
-                                                width: "auto"}}>
+  
+          <div className='Footer'>
               <Container fluid>
                 <div className="Social-media-icons">
                   <Grid style={{paddingTop: '15%'}}>

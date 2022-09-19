@@ -2,19 +2,18 @@ import React from 'react';
 import {Header, Container, Image,
     Grid, Divider, Segment} from 'semantic-ui-react';
 
-import wave from '../Assets/DataBlog/team_wave.svg';
-import uclaAthletics from '../Assets/Consulting/Clients/ucla-athletics.png';
+import athleticsImage from '../Assets/Consulting/Clients/ucla-athletics.png';
 
 
 const Athletics = () => {
     return (
-        <div className='Body'>
+        <div style={{backgroundColor: "#333b65", color: 'white'}}>
 
             {/* Main Description  */}
             <div className="Header">
                 <Container>
                     <div className='Title'>
-                        <Header>UCLA Athletics</Header>
+                        <h1 style={{fontSize: '1.5em'}}>UCLA Athletics</h1>
                     </div>
                     <Grid>
                         <Grid.Row columns={2}>
@@ -24,7 +23,7 @@ const Athletics = () => {
                                 </p>
                             </Grid.Column>
                             <Grid.Column width={7}>
-                                <Image src={ uclaAthletics } align="right" size='medium'></Image>
+                                <Image src={athleticsImage} align="right" size='medium'></Image>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
@@ -34,8 +33,8 @@ const Athletics = () => {
             {/* Add client list here */}
             <div style={{marginTop: '5%', paddingBottom: '10%'}}>
                 <Container fluid>
-                    <div style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                        <Header>
+                    <div>
+                        <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%', color: 'white'}}>
                             Our Client
                         </Header>
                     </div>
@@ -46,7 +45,7 @@ const Athletics = () => {
                         <a href='https://www.uclabruins.com/' rel="noopener noreferrer" target="_blank">
                         <Segment className='segment-body' size='big' onClick={() => {}} >
                             <Container>
-                                <Image src={uclaAthletics} centered size='small'></Image>
+                                <Image src={athleticsImage} centered size='small'></Image>
                             </Container>
                             <Header style={{fontSize: 18}}> Winter 2021, Spring 2021 </Header>
                             <div style={{fontSize: 16, color: 'black'}}>
@@ -66,18 +65,6 @@ const Athletics = () => {
                     </Container>
                     </div>
                 </Container>
-            </div>
-
-            {/* Wave Image */}
-            <div>
-                <div style={{backgroundImage: `url(${wave})`,
-                                                backgroundSize: "cover",
-                                                height: "50vh",
-                                                width: "auto",
-                                                marginTop: '1%',
-                                                paddingBottom: 50}}>
-                    
-                </div>
             </div>
         </div>
     )
