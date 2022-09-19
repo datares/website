@@ -35,8 +35,8 @@ const panes = [
 ]
 
 const applicationPage = () => {
-    const applyOpen = new Date("09/10/2022");
-    const applyClose = new Date("09/19/2022");
+    const applyOpen = new Date("09/20/2022");
+    const applyClose = new Date("09/29/2022");
     const applicationLink = "https://airtable.com/shrdZu1HBZR5eSVhE";
     if (applyOpen < Date.now() && Date.now() < new Date(applyClose).setHours(24, 0, 0, 0)) {
         // need this weird date logic to make sure current time is less than midnight for applyClose
