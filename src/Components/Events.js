@@ -2,8 +2,6 @@ import React from 'react';
 import {Header, Container, Image,
     Grid, Divider, Segment} from 'semantic-ui-react';
 
-import wave from '../Assets/DataBlog/team_wave.svg';
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
@@ -35,12 +33,11 @@ const Events = () => {
     // TODO: figure out what we want to do with this
 
     return (
-        <div className='Body'>
-            {/* Main Description  */}
+        <div style={{backgroundColor: "#333b65", color: "white"}}>
             <div className="Header">
                 <Container>
                     <div className='Title'>
-                        <Header>Events</Header>
+                        <h1 style={{fontSize: '1.5em'}}>Events</h1>
                     </div>
                     <Grid>
                         <Grid.Row columns={2}>
@@ -51,9 +48,6 @@ const Events = () => {
                                     campus community
                                 </p>
                             </Grid.Column>
-                            <Grid.Column width={7}>
-                                {/* <Image src={ uclaAthletics } align="right" size='medium'></Image> */}
-                            </Grid.Column>
                         </Grid.Row>
                     </Grid>
                 </Container>
@@ -62,9 +56,7 @@ const Events = () => {
             <div style={{marginTop: '5%', paddingBottom: '10%'}}>
                 <Container fluid>
                     <div style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                        <Header>
-                            ASA DataFest
-                        </Header>
+                        <h1 style={{fontSize: '1.5em'}}>ASA DataFest</h1>
                     </div>
 
                     <div style={{alignItems: 'center', alignContent: 'center'}}>
@@ -96,9 +88,7 @@ const Events = () => {
             <div style={{marginTop: '5%', paddingBottom: '10%'}}>
                 <Container fluid>
                     <div style={{fontSize: 40, marginBottom: '5%', marginTop: '5%'}}>
-                        <Header>
-                            Social and Educational Events
-                        </Header>
+                        <h1 style={{fontSize: '1.5em'}}>Social and Educational Events</h1>
                     </div>
                     
                     <div style={{alignItems: 'center', alignContent: 'center'}}>
@@ -128,19 +118,7 @@ const Events = () => {
                     </Container>
                     </div>
                 </Container>
-            </div>
-
-            {/* Wave Image */}
-            <div>
-                <div style={{backgroundImage: `url(${wave})`,
-                                                backgroundSize: "cover",
-                                                height: "50vh",
-                                                width: "auto",
-                                                marginTop: '1%',
-                                                paddingBottom: 50}}>
-                    
-                </div>
-            </div>
+            </div>            
         </div>
     )
 }

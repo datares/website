@@ -1,6 +1,6 @@
 // Import React Modules
 import React from 'react';
-import {HashRouter as Router, 
+import {BrowserRouter as Router, 
   Switch, Route} from 'react-router-dom';
 
 // Import custom modules
@@ -12,7 +12,6 @@ import Consulting from './Components/Consulting.js';
 import Athletics from './Components/Athletics.js';
 import Events from './Components/Events.js';
 import JoinUs from "./Components/JoinUs";
-import Team from './Components/Team.js';
 import NavBar from './Components/NavBar.js';
 
 import ScrollToTop from './Components/ScrollToTop.js'
@@ -20,32 +19,27 @@ import ScrollToTop from './Components/ScrollToTop.js'
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
-// Import Images
-import navbarWave from './Assets/nav_wave.svg';
 
 class App extends React.Component {
-  constructor(props) {
+  constructor() {
     super()
     this.state = { activeItem: 'Home' }
   }
+
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   handleActive = (e, new_active) => this.setState({ activeItem: new_active })
   render () {
     const {activeItem} = this.state;
     return (
       <div className="App">
-
-          <div style={{backgroundImage: activeItem === 'Home' ? `url(${navbarWave})`: '',
-                       backgroundSize: "cover",
-                       height: "45vh",
-                       width: "auto"}}>
+          <div>
             <div className="Navbar-items">
                 <Router basename="/">
                   <ScrollToTop />
                   <NavBar activeItem={activeItem} 
                           handleItemClick={this.handleItemClick}/>
                   <Switch>
-                    <Route path='/faq'>
+                    <Route path='/about'>
                       <FAQ handleActive={this.handleActive} />
                     </Route>
                     <Route path="/datablog">
@@ -63,14 +57,11 @@ class App extends React.Component {
                     <Route path='/events'>
                       <Events handleActive={this.handleActive} />
                     </Route>
-                    <Route path='/team'>
-                      <Team handleActive={this.handleActive} />
-                    </Route>
                     <Route path="/join-us">
                       <JoinUs handleActive={this.handleActive} />
                     </Route>
                     <Route exact path="/">
-                      <Home />
+                      <Home handleActive={this.handleActive} />
                     </Route>
                   </Switch>
                 </Router>

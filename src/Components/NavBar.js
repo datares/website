@@ -1,22 +1,27 @@
 import React, {Component} from 'react';
-import {Dropdown, Menu} from 'semantic-ui-react';
+import {Dropdown, Menu, Image} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
-import {
-  isBrowser
-} from "react-device-detect";
+import logo from '../Assets/Home/logo.svg';
+
+
 export default class Hello extends Component {
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
     render () {
       const {activeItem, handleItemClick} = this.props
-      const colorCondition = (activeItem === "Home" && isBrowser)  ? "white" : "black";
+      const colorCondition = "black"; // (activeItem === "Home" && isBrowser)  ? "black" : "black";
       return (
         <div>
             <Menu style={{padding: 20}} position="right" size="large" secondary stackable>
-                <Menu.Menu position="right">
+                <Menu.Menu position="left">
                     <Link to="/">
+                        <Image src={logo} size="small" centered></Image>
+                    </Link>
+                </Menu.Menu>
+                <Menu.Menu position='right'>
+                    <Link to="/about">
                         <Menu.Item
-                        name='Home'
-                        active={activeItem === 'Home'}
+                        name='About'
+                        active={activeItem === 'About'}
                         onClick={handleItemClick}
                         style={{color: colorCondition,
                                 fontWeight: "bold",
@@ -82,24 +87,6 @@ export default class Hello extends Component {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Link to='/team'>
-                        <Menu.Item
-                        name='Our Team'
-                        active={activeItem === 'Our Team'}
-                        onClick={handleItemClick}
-                        style={{color: colorCondition, 
-                                fontWeight: "bold",
-                                fontSize: "1.2em"}} />
-                    </Link>
-                    <Link to="/faq">
-                        <Menu.Item
-                        name='FAQ'
-                        active={activeItem === 'FAQ'}
-                        onClick={handleItemClick}
-                        style={{color: colorCondition,
-                                fontWeight: "bold",
-                                fontSize: "1.2em"}} />
-                    </Link>
                     <Link to="join-us">
                         <Menu.Item
                         name='Join Us'
