@@ -165,7 +165,7 @@ class Team extends React.Component {
                                 
                                 <Grid>
                                     <Grid.Row centered>
-                                        <p>Executive Board</p>
+                                        <p style={{color: 'white'}}>Executive Board</p>
                                     </Grid.Row>
                                     <Grid.Row centered>
                                         {row1.map(user => (
@@ -181,7 +181,7 @@ class Team extends React.Component {
                                         ))}
                                     </Grid.Row>
                                     <Grid.Row centered>
-                                        <p>Management Heads</p>
+                                        <p style={{color: 'white'}}>Management Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row2.map(user => (
@@ -197,7 +197,7 @@ class Team extends React.Component {
                                             ))}
                                     </Grid.Row>
                                     <Grid.Row centered>
-                                        <p>Team Heads</p>
+                                        <p style={{color: 'white'}}>Team Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>                            
                                             {row3.map(user => (
@@ -213,7 +213,7 @@ class Team extends React.Component {
                                             ))}
                                     </Grid.Row>
                                     <Grid.Row centered>
-                                        <p>Specialized Team Heads</p>
+                                        <p style={{color: 'white'}}>Specialized Team Heads</p>
                                     </Grid.Row>
                                     <Grid.Row centered>
                                             {row4.map(user => (
