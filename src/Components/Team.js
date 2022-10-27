@@ -24,8 +24,8 @@ import ivan from '../Assets/Team/Profiles/ivan.jpg';
 import justin from '../Assets/Team/Profiles/Justin.jpg';
 import karina from '../Assets/Team/Profiles/Karina.jpg';
 import madison from '../Assets/Team/Profiles/madison.jpg';
-import sausy from '../Assets/Team/Profiles/Sausy.jpg';
 import taylor from '../Assets/Team/Profiles/Taylor.jpg';
+import olivia from '../Assets/Team/Profiles/olivia.jpg'
 
 
 const row1 = [
@@ -58,10 +58,10 @@ const row2 = [
         'linkedin': 'https://www.linkedin.com/in/brandonzhao1/'
     },
     {
-        'name': 'Sausthava Malakar',
+        'name': 'Olivia Wang',
         'title': 'Membership Head',
-        'image': sausy,
-        'linkedin': 'https://www.linkedin.com/in/sausthava/'
+        'image': olivia,
+        'linkedin': 'https://www.linkedin.com/in/jinhui-olivia-wang-b641341a7/'
     },
     {
         'name': 'Taylor Kim',

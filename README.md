@@ -11,6 +11,7 @@
 To set up the development environment,
 ```bash
 git clone https://github.com/datares/website.git && cd website
+nvm use
 yarn install
 yarn start
 ```
