@@ -12,7 +12,8 @@ import '../Styles/Consulting.css';
 import consultingImage from '../Assets/Consulting/consulting_image.svg';
 
 // Client Images
-import basePaws from '../Assets/Consulting/Clients/basepaws.jpg';
+import clients from '../Assets/Consulting/Clients/clients.png';
+
 
 class Consulting extends React.Component {
     componentDidMount(){
@@ -31,11 +32,15 @@ class Consulting extends React.Component {
                             <Grid.Row columns={2}>
                                 <Grid.Column width={9} style={{marginTop: 20}}>
                                     <p className='Description'>
-                                        Our team offers pro-bono consulting services to local businesses and 
-                                        labs, leveraging their data to generate meaningful insights and create 
-                                        tangible impact wherever possible. <a href = "https://drive.google.com/file/d/1W56qbR0LU40fM_U2HiSjUBkKL9VnlXCM/edit" download><u> Download our resume. </u></a>
-                                        <Divider/>
-                                        <div style={{marginTop: '5%'}}>
+
+                                        DataRes Consulting is a student organization dedicated to connecting well-trained, passionate UCLA students with companies to meaningfully convert their data to actionable insights and strategies.
+
+                                        <br />
+                                        <br />
+
+                                        If you're interested in collaborating with DataRes Consulting, you can send us an <a href="https://docs.google.com/forms/d/e/1FAIpQLSesbIvmw-Ghy5jeXDJbfaXnEwtsVrwXL9ikIX3MG90ySQ49Vg/viewform">application</a> or contact us at <a href="mailto:ucladatares.partnerships@gmail.com">ucladatares.partnerships@gmail.com</a>!
+                                        {/* <Divider/> */}
+                                        {/* <div style={{marginTop: '5%'}}>
                                             <Button fluid floated="right" color="white" size="massive"
                                                 onClick={(e) => {
                                                     e.preventDefault();
@@ -43,7 +48,7 @@ class Consulting extends React.Component {
                                                 }}>
                                                 Apply to be a Client
                                             </Button>
-                                        </div>
+                                        </div> */}
                                     </p>    
                                 </Grid.Column>
                                 <Grid.Column width={7}>
@@ -57,34 +62,53 @@ class Consulting extends React.Component {
 
                 {/* Add client list here */}
                 <div style={{marginTop: '5%', paddingBottom: '10%'}}>
+                    <h1 style={{fontSize: '1.5em', paddingBottom: '5%' }}>Our Services</h1>
+                    <Grid divided="vertically" style={{paddingLeft: '5%', paddingRight: '5%'}}>
+                        <Grid.Row columns={4}>
+                            <Grid.Column className="stuff">
+                                <h1 className="services">Predictive Modeling</h1>
+                                <h3 className="services" align="left">Our consultants use artificial intelligence algorithms to perform supervised and unsupervised machine learning.</h3>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <h1 className="services">Data Analysis</h1>
+                                <h3 className="services">Our consultants can web scrape and use APIs to collect data, and analyze that data with various statistical techniques such as natural language processing.</h3>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <h1 className="services">Data Visualization</h1>
+                                <h3 className="services">Our consultants create interactive, customizable visualizations and build easy-to-view dashboards.
+                                </h3>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <h1 className="services">Data Driven Insights</h1>
+                                <h3 className="services">Our consultants combine business strategy and data science to provide meaningful actionable insights on how to improve our client's business models.</h3>
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
                     
                     <Container fluid>
                         <div>
                             <Header style={{fontSize: 40, marginBottom: '5%', marginTop: '5%', color: 'white'}}>
-                                Our Clients
+                                Who We've Worked With
                             </Header>
                         </div>
+
+                        <Container>
+                            <Image src={clients} centered size=".5"/>
+                        </Container>
                         
                         <div style={{alignItems: 'center', alignContent: 'center'}}>
                             <Container className='card-body'>
                                 <a href='https://www.basepaws.com/' rel="noopener noreferrer" target="_blank">
                                 <Segment className='segment-body' size='big' onClick={() => {}}>
-                                    <Container>
-                                        <Image src={basePaws} centered size='small'></Image>
-                                    </Container>
-                                    <Header style={{fontSize: 18}}> Fall 2020, Winter 2021 </Header>
-                                    <div style={{fontSize: 16, color: 'black'}}>
-                                        <p> Basepaws is the world's first at-home cat DNA test. Their test helps cat owners learn about their cat's health, breed traits, and habits with just a bit of DNA.</p>
-                                        <p> Basepaws recently received an investment on ABC's popular pitch deck reality TV Show – 'Shark Tank'
-                                            <a href="https://www.youtube.com/watch?v=fWDZOMO0dr0&ab_channel=Basepaws-CatDNATest" rel="noopener noreferrer" target="_blank">
-                                                <span> (watch here <Icon name='external alternate'/>) </span> 
-                                            </a> 
-                                            for its at-home feline DNA test CatKit. Robert Herjavec and 
-                                            Kevin O'Leary, investors on the reality show, agreed to a 
-                                            joint investment.</p>
-                                        <Divider/>
+                                    {/* <Container>
+                                        <Image src={clients} centered size='large'></Image>
+                                    </Container> */}
+                                    <Header style={{fontSize: 18}}>Client Testimonials</Header>
+                                    <div style={{fontSize: 16, color: 'black', textAlign: 'left'}}>
+                                        <p>“Hellosaurus had the privilege of working with the UCLA DataRes team during the 2021 to 2022 school year. We were extremely impressed with the team's creative analysis, technical chops, and clear communication. The actionable insights surfaced by UCLA DataRes will prove immensely valuable to Hellosaurus's continued growth.”</p>
+                                        {/* <Divider/>
                                         <p> Some key questions we asked while providing consulting services to them – What insights can we derive through analyzing customer survey responses? How can we improve customer satisfaction for a company selling feline DNA health tests?</p>
-                                        <p> For them, we Deployed NLP models (topic modeling) on longer survey responses to identify trends and key reasons for negative reviews . We also dentified patterns between healthcare expenses and feline health to drive marketing decisions on which testing kit should be recommended to which type of client.</p>
+                                        <p> For them, we Deployed NLP models (topic modeling) on longer survey responses to identify trends and key reasons for negative reviews . We also dentified patterns between healthcare expenses and feline health to drive marketing decisions on which testing kit should be recommended to which type of client.</p> */}
                                     </div>
                                 </Segment>
                                 </a>

@@ -4,6 +4,11 @@
     margin-top: 5%;
 }
 
+.services {
+    padding-left: 5%;
+    text-align: left;
+}
+
 .card-body {
     margin: 5%;
 }
